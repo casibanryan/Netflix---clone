@@ -20,7 +20,7 @@ function VideoShowcase() {
                     autoPlay={"autoplay"}
                     preload="auto"
                     loop>
-                        <source src={{ videoPreview1 }} alt="video-preview-1" />
+                        <source src={ videoPreview1 } alt="video-preview-1" />
                         Your browser does not support the video tag.
                     </video>
                 </div>
