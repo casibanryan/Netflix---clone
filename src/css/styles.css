@@ -726,8 +726,8 @@ progress {
   }
 
   footer.footer {
-    padding-top: 14rem;
-    padding-bottom: 1rem;
+    padding-top: 14rem !important;
+    padding-bottom: 1rem !important;
   }
 
 }
