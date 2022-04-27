@@ -52,8 +52,6 @@ function SignIn() {
                                 </div>
 
                                 <a href="!#" className="mb-2 btn btn-facebook btn-login text-muted fs-6 p-0" type="submit">
-                                    <span style={{ backgroundColor:"#3B579D" }}
-                                        className="bi-facebook me-2 text-light px-2 py-1"></span>
                                     Login
                                     with
                                     Facebook
