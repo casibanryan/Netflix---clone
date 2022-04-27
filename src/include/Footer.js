@@ -5,7 +5,7 @@ function Footer() {
   return (
     <>
         {/* Footer*/}
-    <footer className="footer bg-black">
+    <footer className="footer bg-black pt-sm-5">
         <div className="container">
             <div className="row">
                 <div className="col-lg-6 h-100 text-center text-lg-start my-auto">
