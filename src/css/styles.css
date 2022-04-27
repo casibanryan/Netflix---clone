@@ -688,7 +688,35 @@ progress {
   margin-left: auto;
 }
 
+/* mobile responsive */
 @media (min-width: 576px) {
+  #heading__title {
+    margin-top: 20px !important;
+  }
+  
+  #contactForm>div {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  
+  .showcase .showcase-img {
+    min-height: 25rem !important;
+    background-size: cover;
+  }
+  
+  .frequently-asked {
+    padding: 0 !important;
+  }
+  
+  .showcase .showcase-text {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  header.masthead {
+    height: 60vh !important;
+  }
+
 
   .container-sm,
   .container {
@@ -703,6 +731,7 @@ progress {
   .container {
     max-width: 720px;
   }
+  
 }
 
 @media (min-width: 992px) {
@@ -12353,4 +12382,7 @@ footer.footer {
   font-weight: bold;
 }
 
+/* @media only screen and (max-width: 768px) {
 
+  
+} */
