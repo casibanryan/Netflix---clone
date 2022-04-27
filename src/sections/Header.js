@@ -1,9 +1,12 @@
 import React from 'react'
+import NavBar from '../include/NavBar';
 
 function Header() {
   return (
     <React.Fragment>
+        
         <header className="masthead" style={{ height:"80vh" }}>
+        <NavBar />
         <div className="container position-relative">
             <div className="row justify-content-center">
                 <div className="col-xl-6">
@@ -36,4 +39,4 @@ function Header() {
   )
 }
 
-export default Header
+export default Header;

@@ -71,4 +71,4 @@ function VideoShowcase() {
   )
 }
 
-export default VideoShowcase
+export default VideoShowcase;
