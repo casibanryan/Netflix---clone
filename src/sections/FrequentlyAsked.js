@@ -19,14 +19,14 @@ function FrequentlyAsked() {
                     <h2 className="accordion-header" id={`flush-heading${index+1} `}>
                         <button className="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse"
                             data-bs-target={`#flush-collapse${index+1}`} aria-expanded="false" aria-controls={`flush-collapse${index+1}`}>
-                                {data.title}
+                                {data.question}
                         </button>
                     </h2>
                     <div id={`flush-collapse${index+1}`} className="accordion-collapse collapse" aria-label={`flush-heading${index+1} `}
                         data-bs-parent="#accordionFlushExample">
                         <div className="accordion-body" style={{ backgroundColor:"#303030" }}>
                             <h4 className="my-3">
-                                {data.content}
+                                {data.answer}
                                </h4>
                         </div>
                     </div>
