@@ -30,7 +30,6 @@ function NavBar() {
                     type="text/css" />
         </Helmet>
         </React.Fragment>
-       
   )
 }
 
