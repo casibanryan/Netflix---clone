@@ -710,12 +710,15 @@ progress {
   }
   
   .frequently-asked {
-    padding: 0 !important;
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
   }
   
   .showcase .showcase-text {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
   }
   
   header.masthead {
