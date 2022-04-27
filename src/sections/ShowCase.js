@@ -2,7 +2,8 @@ import React from 'react'
 import videoPreview1 from '../assets/video-preview-1.mp4';
 import videoPreview2 from '../assets/video-preview-2.mp4';
 import showCase3 from '../assets/img/bg-showcase-3.jpg'
-
+import poster1 from '../assets/img/video-poster-preview1.jpg';
+import poster2 from '../assets/img/video-poster-preview2.jpg';
 
 
 
@@ -15,7 +16,7 @@ function ShowCase() {
         <div className="container-fluid p-0">
             <div className="row g-0">
                 <div className="col-lg-6 order-lg-2 text-white showcase-img">
-                    <video id="netflixVideo" autoPlay="autoplay" preload="none" muted loop>
+                    <video id="netflixVideo" autoPlay="autoplay" preload="none" muted loop poster={poster1} >
                         <source src={ videoPreview1 } alt="video-preview-1" />
                         Your browser does not support the video tag.
                     </video>
@@ -32,7 +33,7 @@ function ShowCase() {
             <hr />
             <div className="row g-0">
                 <div className="col-lg-6 text-white showcase-img">
-                    <video autoPlay="autoplay" preload="none"  muted loop> 
+                    <video autoPlay="autoplay" preload="none"  muted loop poster={poster2}> 
                         <source src={ videoPreview2 } />
                         Your browser does not support the video tag.
                     </video>
