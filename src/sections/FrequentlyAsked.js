@@ -12,7 +12,6 @@ function FrequentlyAsked() {
             <div className="accordion accordion-flush mb-5" id="accordionFlushExample">
 
                 {/* mapping the frequently asked data */}
-
                 {
                     frequentlyAskedData.map((data, index) => (
                         <div className="accordion-item text-white" key={index}>
@@ -31,6 +30,7 @@ function FrequentlyAsked() {
                         </div>
                     </div>
                 </div>
+                
                     ))}
             
                 

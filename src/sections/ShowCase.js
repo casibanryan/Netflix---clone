@@ -15,7 +15,7 @@ function ShowCase() {
         <div className="container-fluid p-0">
             <div className="row g-0">
                 <div className="col-lg-6 order-lg-2 text-white showcase-img">
-                    <video id="netflixVideo" autoPlay="autoplay" muted loop>
+                    <video id="netflixVideo" autoPlay="autoplay" preload="none" muted loop>
                         <source src={ videoPreview1 } alt="video-preview-1" />
                         Your browser does not support the video tag.
                     </video>
@@ -32,7 +32,7 @@ function ShowCase() {
             <hr />
             <div className="row g-0">
                 <div className="col-lg-6 text-white showcase-img">
-                    <video autoPlay="autoplay" muted loop>
+                    <video autoPlay="autoplay" preload="none"  muted loop> 
                         <source src={ videoPreview2 } />
                         Your browser does not support the video tag.
                     </video>
