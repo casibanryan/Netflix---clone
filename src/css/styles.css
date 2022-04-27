@@ -727,36 +727,6 @@ progress {
     height: 60vh !important;
   }
 
-.form-control {
-  min-height: calc(1.5em + 1rem + 2px);
-  padding: 0.5rem 0.75rem;
-  font-size: 0.875rem;
-  border-radius: 0.2rem;
-}
-
-.form-control::-webkit-file-upload-button {
-  padding: 0.5rem 0.75rem;
-  margin: -0.5rem -0.75rem;
-  -webkit-margin-end: 0.75rem;
-  margin-inline-end: 0.75rem;
-}
-
-.form-control::file-selector-button {
-  padding: 0.5rem 0.75rem;
-  margin: -0.5rem -0.75rem;
-  -webkit-margin-end: 0.75rem;
-  margin-inline-end: 0.75rem;
-}
-
-.form-control::-webkit-file-upload-button {
-  padding: 0.5rem 0.75rem;
-  margin: -0.5rem -0.75rem;
-  -webkit-margin-end: 0.75rem;
-  margin-inline-end: 0.75rem;
-}
-
-
-
 }
 
 @media (min-width: 576px) {
