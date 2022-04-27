@@ -62,7 +62,7 @@ function FrequentlyAsked() {
                     </h2>
                     <div id="flush-collapseThree" className="accordion-collapse collapse"
                         aria-label="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div className="accordion-body" style="background-color:#303030">
+                        <div className="accordion-body" style={{ backgroundColor:"#303030" }}>
                             <h4 className="my-3">
                                 Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web
                                 at netflix.com from your
