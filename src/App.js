@@ -14,6 +14,7 @@ function App() {
           <NavBar />
           <Header />
           <VideoShowcase />
+          <FrequentlyAsked />
         <Footer />
         </>
   )
