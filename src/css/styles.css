@@ -9526,6 +9526,10 @@ fieldset:disabled .btn {
     padding-top: 3rem !important;
   }
 
+  .pt-sm-14 {
+    padding-bottom: 14rem !important;
+  }
+
   .pe-sm-0 {
     padding-right: 0 !important;
   }
