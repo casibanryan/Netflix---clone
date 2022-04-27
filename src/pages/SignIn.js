@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../assets/img/logo.png';
 import {Link} from 'react-router-dom';
-import './css/styles.css'
+import '../css/styles.css'
 
 function SignIn() {
   return (
@@ -26,12 +26,12 @@ function SignIn() {
                                 <div className="form-floating mb-4">
                                     <input type="email" className="form-control form-control-sm" id="floatingInput"
                                         placeholder="name@example.com" required />
-                                    <label for="floatingInput">Email or Phone number</label>
+                                    <label htmlFor="floatingInput">Email or Phone number</label>
                                 </div>
                                 <div className="form-floating mb-4">
                                     <input type="password" className="form-control form-control-sm" id="floatingPassword"
                                         placeholder="Password" required />
-                                    <label for="floatingPassword">Password</label>
+                                    <label htmlFor="floatingPassword">Password</label>
                                 </div>
 
                                 <div className="d-grid mt-3">
@@ -41,7 +41,7 @@ function SignIn() {
                                 </div>
                                 <div className="form-check mt-2">
                                     <input className="form-check-input" type="checkbox" value="" id="rememberPasswordCheck" />
-                                    <label className="form-check-label text-secondary" for="rememberPasswordCheck">
+                                    <label className="form-check-label text-secondary" htmlFor="rememberPasswordCheck">
                                         <div className="d-flex">
                                             <p className="me-5">Remember me</p>
                                             <p className="ms-5 fs-6"><a href="!#" className="text-decoration-none">Need
