@@ -9,7 +9,7 @@ function App() {
   return (
         <React.Fragment>
           <Routes>
-               <Route path="/landPage" element={ <LandPage />} />
+               <Route path="/" element={ <LandPage />} />
                <Route path="/signIn" element= { <SignIn />} />
           </Routes>
         </React.Fragment>
