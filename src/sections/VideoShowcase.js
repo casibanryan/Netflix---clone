@@ -1,7 +1,7 @@
 import React from 'react'
 import videoPreview1 from '../assets/video-preview-1.mp4';
 import videoPreview2 from '../assets/video-preview-2.mp4';
-import showCase3 from './assets/img/bg-showcase-3.jpg'
+import showCase3 from '../assets/img/bg-showcase-3.jpg'
 function VideoShowcase() {
   return (
     <>
