@@ -688,11 +688,12 @@ progress {
   margin-left: auto;
 }
 
-@media (min-width: 576px) {
-  
-  .container-sm,
-  .container {
-    max-width: 540px;
+/*mobile responsive */ 
+@media only screen and (max-width: 768px) {
+
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
   }
   #heading__title {
     margin-top: 20px !important;
@@ -720,6 +721,17 @@ progress {
   header.masthead {
     height: 60vh !important;
   }
+
+
+}
+
+@media (min-width: 576px) {
+  
+  .container-sm,
+  .container {
+    max-width: 540px;
+  }
+  
 }
 
 @media (min-width: 768px) {
