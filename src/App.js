@@ -1,7 +1,7 @@
 import React from 'react'
 import LandPage from './pages/LandPage';
 import SignIn from './pages/SignIn';
-import './css/styles.css'
+
 import {Routes, Route} from 'react-router-dom';
 
 
