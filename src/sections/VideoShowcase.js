@@ -2,6 +2,10 @@ import React from 'react'
 import videoPreview1 from '../assets/video-preview-1.mp4';
 import videoPreview2 from '../assets/video-preview-2.mp4';
 import showCase3 from '../assets/img/bg-showcase-3.jpg'
+
+
+
+
 function VideoShowcase() {
   return (
     <>
@@ -11,8 +15,8 @@ function VideoShowcase() {
         <div className="container-fluid p-0">
             <div className="row g-0">
                 <div className="col-lg-6 order-lg-2 text-white showcase-img">
-                    <video id="netflixVideo" autoPlay="autoplay" muted loop>
-                        <source src={{ videoPreview1 }} />
+                    <video id="netflixVideo" autoPlay={true} muted loop>
+                        <source src={{ videoPreview1 }} alt="video-preview-1" />
                         Your browser does not support the video tag.
                     </video>
                 </div>
