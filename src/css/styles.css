@@ -705,7 +705,7 @@ progress {
   }
   
   .showcase .showcase-img {
-    min-height: 28rem !important;
+    min-height: 18rem !important;
     background-size: cover;
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
