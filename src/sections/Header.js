@@ -1,22 +1,20 @@
 import React from 'react'
 import logo from '../assets/img/logo.png';
 import {Helmet} from 'react-helmet';
+import {Link} from 'react-router-dom';
+
 
 function Header() {
-
-  
-   
-
   return (
     <React.Fragment>
 
         <header className="masthead" style={{ height:"80vh" }}>
             <nav className="navbar navbar-light static-top">
                     <div className="container">
-                        <a className="navbar-brand" href="#!">
+                        <Link to="/" className="navbar-brand" >
                             <img src={ logo } />
-                        </a>
-                        <a className="btn btn-primary btn-sm" href="sign-in.html">Sign In</a>
+                        </Link>
+                        <Link to="/signIn" className="btn btn-primary btn-sm">Sign In</Link>
                     </div>
                 </nav>
         <div className="container position-relative">
