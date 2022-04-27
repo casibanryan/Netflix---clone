@@ -13,7 +13,7 @@ function LandPage() {
         <NavBar />
          <Header />
         <VideoShowcase />
-        <FrequentlyAsked />
+   
        <Footer />
 
    </React.Fragment>  
