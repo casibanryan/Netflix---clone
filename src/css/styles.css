@@ -707,6 +707,8 @@ progress {
   .showcase .showcase-img {
     min-height: 25rem !important;
     background-size: cover;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
   }
   
   .frequently-asked {
