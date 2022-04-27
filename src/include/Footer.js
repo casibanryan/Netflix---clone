@@ -1,5 +1,5 @@
 import React from 'react'
-import {Helment} from 'react-helmet';
+import {Helmet} from 'react-helmet';
 
 function Footer() {
   return (
