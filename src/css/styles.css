@@ -724,12 +724,6 @@ progress {
   header.masthead {
     height: 60vh !important;
   }
-
-  footer.footer {
-    padding-top: 14rem !important;
-    padding-bottom: 1rem !important;
-  }
-
 }
 
 @media (min-width: 576px) {
@@ -9527,10 +9521,6 @@ fieldset:disabled .btn {
 
   .pt-sm-5 {
     padding-top: 3rem !important;
-  }
-
-  .pt-sm-14 {
-    padding-top: 14rem !important;
   }
 
   .pe-sm-0 {

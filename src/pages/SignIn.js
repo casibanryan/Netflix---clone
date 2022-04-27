@@ -1,4 +1,3 @@
-import Footer from '../include/Footer';
 import React from 'react'
 import logo from '../assets/img/logo.png';
 import {Link} from 'react-router-dom';
@@ -54,7 +53,7 @@ function SignIn() {
 
                                 <a href="!#" className="mb-2 btn btn-facebook btn-login text-muted fs-6 p-0" type="submit">
                                     <span style={{ backgroundColor:"#3B579D" }}
-                                        className="fab fa-facebook-f me-2 text-light px-2 py-1"></span>
+                                        className="d-sm-none fab fa-facebook-f me-2 text-light px-2 py-1"></span>
                                     Login
                                     with
                                     Facebook
@@ -79,7 +78,6 @@ function SignIn() {
             </div>
         </div>
     </header>
-    <Footer />
     </React.Fragment>
   )
 }
