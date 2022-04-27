@@ -17,7 +17,7 @@ function Header() {
             </nav>
         <div className="container position-relative">
             <div className="row justify-content-center">
-                <div className="col-xl-6 col-sm4">
+                <div className="col-xl-6 col-sm-4">
                     <div className="text-center text-white">
                         {/* Page heading*/}
                         <h1 className="mb-3">Unlimited movies, TV shows, and more.</h1>
