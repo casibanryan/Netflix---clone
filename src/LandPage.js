@@ -11,11 +11,8 @@ function LandPage() {
   return (
    <React.Fragment>
         <NavBar />
-        {/* <Header />
-        <VideoShowcase />
-        <FrequentlyAsked />
-        <Footer /> */}
-
+         <Header />
+      
    </React.Fragment>  
   )
 }
