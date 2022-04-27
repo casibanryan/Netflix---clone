@@ -1,6 +1,8 @@
 import Footer from '../include/Footer';
 import React from 'react'
 import logo from '../assets/img/logo.png';
+import {Link} from 'react-router-dom';
+
 
 function SignIn() {
   return (
@@ -9,9 +11,9 @@ function SignIn() {
     <header className="masthead" style={{ height: "80vh" }}>
         <nav className="navbar navbar-light static-top">
             <div className="container">
-                <a className="navbar-brand" href="index.html">
+                <Link to="/" className="navbar-brand" href="index.html">
                     <img src={ logo } />
-                </a>
+                </Link>
             </div>
         </nav>
 

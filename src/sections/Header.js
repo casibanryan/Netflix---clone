@@ -11,12 +11,10 @@ function Header() {
         <header className="masthead" style={{ height:"80vh" }}>
             <nav className="navbar navbar-light static-top">
                     <div className="container">
-                        <Link to="/" className="navbar-brand" >
-                            <img src={ logo } />
-                        </Link>
+                        <Link to="/" className="navbar-brand" >  <img src={ logo } />  </Link>
                         <Link to="/signIn" className="btn btn-primary btn-sm">Sign In</Link>
                     </div>
-                </nav>
+            </nav>
         <div className="container position-relative">
             <div className="row justify-content-center">
                 <div className="col-xl-6">
@@ -50,7 +48,6 @@ function Header() {
             {/* Bootstrap icons*/}
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"
                     type="text/css" />
-
         {/* font awesome*/}
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
                     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
