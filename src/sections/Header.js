@@ -1,12 +1,19 @@
 import React from 'react'
-import NavBar from '../include/NavBar';
+import logo from '../assets/img/logo.png';
 
 function Header() {
   return (
     <React.Fragment>
-        
+
         <header className="masthead" style={{ height:"80vh" }}>
-        <NavBar />
+            <nav className="navbar navbar-light static-top">
+                    <div className="container">
+                        <a className="navbar-brand" href="#!">
+                            <img src={ logo } />
+                        </a>
+                        <a className="btn btn-primary btn-sm" href="sign-in.html">Sign In</a>
+                    </div>
+                </nav>
         <div className="container position-relative">
             <div className="row justify-content-center">
                 <div className="col-xl-6">
