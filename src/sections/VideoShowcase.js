@@ -15,11 +15,7 @@ function VideoShowcase() {
         <div className="container-fluid p-0">
             <div className="row g-0">
                 <div className="col-lg-6 order-lg-2 text-white showcase-img">
-                    <video id="netflixVideo" 
-                    muted
-                    autoPlay={"autoplay"}
-                    preload="auto"
-                    loop>
+                    <video id="netflixVideo" muted autoPlay={"autoplay"} preload="auto" loop>
                         <source src={ videoPreview1 } alt="video-preview-1" />
                         Your browser does not support the video tag.
                     </video>
@@ -37,7 +33,7 @@ function VideoShowcase() {
             <div className="row g-0">
                 <div className="col-lg-6 text-white showcase-img">
                     <video autoPlay="autoplay" muted loop>
-                        <source src={{ videoPreview2 }} />
+                        <source src={ videoPreview2 } />
                         Your browser does not support the video tag.
                     </video>
                 </div>
