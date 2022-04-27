@@ -15,7 +15,7 @@ function FrequentlyAsked() {
                             What is Netflix
                         </button>
                     </h2>
-                    <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labeledby="flush-headingOne"
+                    <div id="flush-collapseOne" className="accordion-collapse collapse" aria-label="flush-headingOne"
                         data-bs-parent="#accordionFlushExample">
                         <div className="accordion-body" style={{ backgroundColor:"#303030" }}>
                             <h4 className="my-3">Netflix is a streaming service that offers a wide variety of award-winning
@@ -41,7 +41,7 @@ function FrequentlyAsked() {
                             How much does Netflix cost?
                         </button>
                     </h2>
-                    <div id="flush-collapseTwo" className="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    <div id="flush-collapseTwo" className="accordion-collapse collapse" aria-label="flush-headingTwo"
                         data-bs-parent="#accordionFlushExample">
                         <div className="accordion-body" style={{ backgroundColor:"#303030" }}>
                             <h4 className="my-3">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming
@@ -61,7 +61,7 @@ function FrequentlyAsked() {
                         </button>
                     </h2>
                     <div id="flush-collapseThree" className="accordion-collapse collapse"
-                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        aria-label="flush-headingThree" data-bs-parent="#accordionFlushExample">
                         <div className="accordion-body" style="background-color:#303030">
                             <h4 className="my-3">
                                 Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web
@@ -86,7 +86,7 @@ function FrequentlyAsked() {
                             What can I watch on Netflix?
                         </button>
                     </h2>
-                    <div id="flush-collapseFive" className="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                    <div id="flush-collapseFive" className="accordion-collapse collapse" aria-label="flush-headingFive"
                         data-bs-parent="#accordionFlushExample">
                         <div className="accordion-body" style={{ backgroundColor:"#303030" }}>
                             <h4 className="my-3">
@@ -106,7 +106,7 @@ function FrequentlyAsked() {
                             Is Netflix good for kids?
                         </button>
                     </h2>
-                    <div id="flush-collapseSix" className="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+                    <div id="flush-collapseSix" className="accordion-collapse collapse" aria-label="flush-headingSix"
                         data-bs-parent="#accordionFlushExample">
                         <div className="accordion-body" style={{ backgroundColor:"#303030" }}>
                             <h4 className="my-3">
