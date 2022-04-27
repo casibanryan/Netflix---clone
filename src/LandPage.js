@@ -12,7 +12,9 @@ function LandPage() {
    <React.Fragment>
         <NavBar />
          <Header />
-      
+        <VideoShowcase />
+       
+
    </React.Fragment>  
   )
 }
