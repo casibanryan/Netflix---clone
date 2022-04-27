@@ -144,4 +144,4 @@ function FrequentlyAsked() {
   )
 }
 
-export default FrequentlyAsked
+export default FrequentlyAsked;
