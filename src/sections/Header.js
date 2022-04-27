@@ -20,13 +20,10 @@ function Header() {
            {/* Bootstrap core JS*/}
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     </Helmet>
-     
-    }, [])
-    
 
+    
   return (
     <React.Fragment>
-
         <header className="masthead" style={{ height:"80vh" }}>
             <nav className="navbar navbar-light static-top">
                     <div className="container">
@@ -66,6 +63,10 @@ function Header() {
     </header>
     </React.Fragment>
   )
+     
+    }, [])
+    
+
 }
 
 export default Header;
