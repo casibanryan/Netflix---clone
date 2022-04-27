@@ -3,7 +3,6 @@ import videoPreview1 from '../assets/video/video-preview-1.mp4';
 import videoPreview2 from '../assets/video/video-preview-2.mp4';
 import videoPreviewWebp1 from '../assets/video/video-preview1.webp';
 import videoPreviewWebp2 from '../assets/video/video-preview2.webp';
-import videoPreview2 from '../assets/video/video-preview-2.mp4';
 import showCase3 from '../assets/img/bg-showcase-3.jpg'
 import poster1 from '../assets/img/video-poster-preview1.jpg';
 
