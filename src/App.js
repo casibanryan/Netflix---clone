@@ -9,9 +9,8 @@ function App() {
   return (
         <React.Fragment>
           <Routes>
-               <LandPage />
                <Route path="/landPage" element={ <LandPage />} />
-               <Route path="signIn" element= { <SignIn />} />
+               <Route path="/signIn" element= { <SignIn />} />
           </Routes>
         </React.Fragment>
   )
