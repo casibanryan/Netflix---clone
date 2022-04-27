@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import logo from '../assets/img/logo.png';
 import {Helmet} from 'react-helmet';
 
