@@ -18,7 +18,7 @@ function VideoShowcase() {
                     <video id="netflixVideo" 
                     muted
                     autoPlay={"autoplay"}
-                    preLoad="auto"
+                    preload="auto"
                     loop>
                         <source src={{ videoPreview1 }} alt="video-preview-1" />
                         Your browser does not support the video tag.
