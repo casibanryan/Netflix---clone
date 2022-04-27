@@ -1,20 +1,19 @@
 import React from 'react'
-import Footer from './include/Footer';
-import Header from './sections/Header';
-import ShowCase from './sections/ShowCase';
-import FrequentlyAsked from './sections/FrequentlyAsked';
+import LandPage from './pages/LandPage';
+import SignIn from './pages/SignIn';
 import './css/styles.css'
-
+import {Routes, Route} from 'react-router-dom';
 
 
 function App() {
   return (
-        <>
-          <Header />
-          <ShowCase />
-          <FrequentlyAsked />
-        <Footer />
-        </>
+        <React.Fragment>
+          <Routes>
+               <LandPage />
+               <Route path="/landPage" element={ <LandPage />} />
+               <Route path="signIn" element= { <SignIn />} />
+          </Routes>
+        </React.Fragment>
   )
 }
 
