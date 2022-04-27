@@ -1,13 +1,24 @@
 import React from 'react'
+import React from 'react'
+import NavBar from './include/NavBar';
+import Footer from './include/Footer';
+import Header from './sections/Header';
+import VideoShowcase from './sections/VideoShowcase';
+import FrequentlyAsked from './sections/FrequentlyAsked';
+import './css/styles.css'
 
-import LandPage from './LandPage'
+
 
 function App() {
   return (
         <>
-            <LandPage />
+          <NavBar />
+          <Header />
+          <VideoShowcase />
+        <Footer />
         </>
   )
 }
 
-export default App
+export default App;
+
