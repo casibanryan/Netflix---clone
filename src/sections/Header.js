@@ -15,7 +15,7 @@ function Header() {
                         <Link to="/signIn" className="btn btn-primary btn-sm">Sign In</Link>
                     </div>
             </nav>
-        <div className="container position-relative">
+        <div className="container position-relative" id="heading__title">
             <div className="row justify-content-center">
                 <div className="col-xl-6">
                     <div className="text-center text-white">
