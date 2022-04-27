@@ -7,7 +7,16 @@ function NavBar() {
 
   return (
         <React.Fragment>
-            <Helmet>
+             <nav className="navbar navbar-light static-top">
+            <div className="container">
+                <a className="navbar-brand" href="#!">
+                    <img src={ logo } />
+                </a>
+                <a className="btn btn-primary btn-sm" href="sign-in.html">Sign In</a>
+            </div>
+        </nav>
+
+         <Helmet>
             {/* Bootstrap icons*/}
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"
                     type="text/css" />
@@ -20,14 +29,6 @@ function NavBar() {
                 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
                     type="text/css" />
         </Helmet>
-             <nav className="navbar navbar-light static-top">
-            <div className="container">
-                <a className="navbar-brand" href="#!">
-                    <img src={ logo } />
-                </a>
-                <a className="btn btn-primary btn-sm" href="sign-in.html">Sign In</a>
-            </div>
-        </nav>
         </React.Fragment>
        
   )
