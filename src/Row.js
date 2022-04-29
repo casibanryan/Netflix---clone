@@ -33,7 +33,7 @@ function Row({ title, fetchUrl }) {
         {/* container */}
         <div className="container">
                <div className="row">
-                    <div className="col-md-3">
+                    <div className="col-md-3 d-flex">
                          {movies.map((movie) => (
                                 <img className="img-thumbnail" src={`${baseUrl}${movie.poster_path}`} alt={ movie.name } />
                             ))}
