@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react'
 import axios from './js/axios';
 
 
+const baseUrl = "https://image.tmdb.org/t/p/original/";
+
 function Row({ title, fetchUrl }) {
 
     const [movies, setMovies] = useState([]);
@@ -13,12 +15,12 @@ function Row({ title, fetchUrl }) {
         // using async function to make the program fast
         async function fetchData() {
             const request = await axios.get(fetchUrl);
-            console.log(request);
+            setMovies(request.data.results);
             return request;
         }            
         fetchData();
  
-     }, [])    // if [] => dependency is empty means run once when page loads and dont't run again
+     }, [fetchUrl])    // if [] => dependency is empty means run once when page loads and dont't run again
     
   return (
     <React.Fragment>
@@ -27,6 +29,13 @@ function Row({ title, fetchUrl }) {
         <h1> {title} </h1>
 
         {/* container */}
+        <div className="container">
+            <div className="">
+                {movies.map(movie => {
+                    <img src={ `${baseUrl}${movie.poster_path}` } alt={ movie.name }/>
+                })}
+            </div>
+        </div>
 
     </React.Fragment>
   )
