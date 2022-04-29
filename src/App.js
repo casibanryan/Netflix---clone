@@ -19,7 +19,7 @@ function App(props) {
   // 
 
     <>
-      <Row title="Netflix originals" fetchUrl={requests.fetchNetflixOriginals} />
+      {/* <Row title="Netflix originals" fetchUrl={requests.fetchNetflixOriginals} /> */}
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} /> 
     </>
   )

@@ -16,7 +16,6 @@ function Row({ title, fetchUrl }) {
             console.log(request);
             return request;
         }            
-        
         fetchData();
  
      }, [])    // if [] => dependency is empty means run once when page loads and dont't run again
