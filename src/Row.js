@@ -31,7 +31,7 @@ function Row({ title, fetchUrl }) {
         {/* container */}
         <div className="container">
             testing
-            <div className="">
+            <div className="row">
                 {movies.map(movie => {
                     <img src={ `${baseUrl}${movie.poster_path}` } alt={ movie.name }/>
                 })}
