@@ -33,12 +33,13 @@ function Row({ title, fetchUrl }) {
             <h1> {title} </h1>
 
                <div className="row">
-                    <div className="col-md-3 d-flex">
                         {/* looping the data  */}
                          {movies.map((movie) => (
+                              <div className="col-md-3 d-flex">
                                 <img className="img-thumbnail" src={`${baseUrl}${movie.poster_path}`} alt={ movie.name } />
+                                </div>
                             ))}
-                    </div>
+                 
            
                </div>
         </div>
