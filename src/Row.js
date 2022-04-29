@@ -35,7 +35,7 @@ function Row({ title, fetchUrl }) {
                <div className="row">
                         {/* looping the data  */}
                          {movies.map((movie) => (
-                              <div className="col-md-3 d-flex">
+                              <div className="col-2 d-flex">
                                 <img className="img-thumbnail" src={`${baseUrl}${movie.poster_path}`} alt={ movie.name } />
                                 </div>
                             ))}
