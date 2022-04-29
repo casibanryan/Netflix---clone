@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import axiosInstance from './js/axios';
+import axios from './js/axios';
 
 
 function Row({ title, fetchUrl }) {
@@ -12,7 +12,7 @@ function Row({ title, fetchUrl }) {
 
         // using async function to make the program fast
         async function fetchData() {
-            const request = await axiosInstance.get(fetchUrl);
+            const request = await axios.get(fetchUrl);
             console.log(request);
             return request;
         }            
