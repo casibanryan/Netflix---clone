@@ -32,11 +32,14 @@ function Row({ title, fetchUrl }) {
               {/* title */}
             <h1> {title} </h1>
 
-               <div className="row d-flex">
+               <div className="row">
+                    <div className="col-md-3 d-flex">
                         {/* looping the data  */}
                          {movies.map((movie) => (
                                 <img className="img-thumbnail" src={`${baseUrl}${movie.poster_path}`} alt={ movie.name } />
                             ))}
+                    </div>
+           
                </div>
         </div>
 
