@@ -31,17 +31,12 @@ function Row({ title, fetchUrl }) {
         <div className="container-fluid">
               {/* title */}
             <h1> {title} </h1>
-
-               <div className="row">
-                        {/* looping the data  */}
-                         {movies.map((movie) => (
-                              <div className="col-2 d-flex">
-                                <img className="img-thumbnail" src={`${baseUrl}${movie.poster_path}`} alt={ movie.name } />
-                                </div>
-                            ))}
-                 
-           
-               </div>
+                {/* looping the data  */}
+                    {movies.map((movie) => (
+                    <div className="row">
+                        <img className="img-thumbnail" src={`${baseUrl}${movie.poster_path}`} alt={ movie.name } />
+                    </div>
+                    ))}
         </div>
 
     </React.Fragment>
