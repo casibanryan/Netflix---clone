@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from '../include/Footer';
+import Footer from '../sections/Footer';
 import Header from '../sections/Header';
 import ShowCase from '../sections/ShowCase';
 import FrequentlyAsked from '../sections/FrequentlyAsked';
