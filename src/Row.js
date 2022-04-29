@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import axios from './js/axios';
 
 
-const baseUrl = "https://image.tmdb.org/t/p/original/";
+const baseUrl = "https://image.tmdb.org/t/p/original";
 
 function Row({ title, fetchUrl }) {
 
@@ -32,11 +32,11 @@ function Row({ title, fetchUrl }) {
         {/* container */}
         <div className="container">
             testing
-            <div className="row">
+          
                 {movies.map((movie) => {
                     <img src={`${baseUrl}${movie.poster_path}`} alt={ movie.name } />
                 })}
-            </div>
+           
         </div>
 
     </React.Fragment>
