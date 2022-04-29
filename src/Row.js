@@ -26,14 +26,15 @@ function Row({ title, fetchUrl }) {
     
   return (
     <React.Fragment>
-        {/* title */}
-
-        <h1> {title} </h1>
 
         {/* container */}
-        <div className="container">
+        <div className="container-fluid">
+              {/* title */}
+            <h1> {title} </h1>
+
                <div className="row">
                     <div className="col-md-3 d-flex">
+                        {/* looping the data  */}
                          {movies.map((movie) => (
                                 <img className="img-thumbnail" src={`${baseUrl}${movie.poster_path}`} alt={ movie.name } />
                             ))}
