@@ -15,6 +15,7 @@ function Row({ title, fetchUrl }) {
         // using async function to make the program fast
         async function fetchData() {
             const request = await axios.get(fetchUrl);
+            console.log(request);
             setMovies(request.data.results);
             return request;
         }            
@@ -32,8 +33,8 @@ function Row({ title, fetchUrl }) {
         <div className="container">
             testing
             <div className="row">
-                {movies.map(movie => {
-                    <img src={ `${baseUrl}${movie.poster_path}` } alt={ movie.name }/>
+                {movies.map((movie) => {
+                    <img src={`${baseUrl}${movie.poster_path}`} alt={ movie.name } />
                 })}
             </div>
         </div>
