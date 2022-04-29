@@ -33,7 +33,7 @@ function Row({ title, fetchUrl }) {
         <div className="container">
                <div className="row">
                     {movies.map((movie) => (
-                    <img className="img-fluid" imgsrc={`${baseUrl}${movie.poster_path}`} alt={ movie.name } />
+                    <img className="img-fluid" src={`${baseUrl}${movie.poster_path}`} alt={ movie.name } />
                 ))}
            
                </div>
