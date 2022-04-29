@@ -20,7 +20,7 @@ function App(props) {
 
     <>
       {/* <Row title="Netflix originals" fetchUrl={requests.fetchNetflixOriginals} /> */}
-      <Row title="Trending Now" fetchUrl={"https://api.themoviedb.org/3/trending/all/week?api_key=14d57525a7a6772b9699d35339fb5878&language=en-US"} /> 
+      <Row title={requests.fetchTrending} fetchUrl={requests.fetchTrending} /> 
     </>
   )
 }
