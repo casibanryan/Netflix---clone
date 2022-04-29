@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import axios from './js/axios';
 import './css/styles.css';
 
+
 const baseUrl = "https://image.tmdb.org/t/p/original/";
 
 function Row({ title, fetchUrl }) {
@@ -33,7 +34,7 @@ function Row({ title, fetchUrl }) {
         <div className="container">
                <div className="row">
                     {movies.map((movie) => (
-                    <img className="img-fluid" src={`${baseUrl}${movie.poster_path}`} alt={ movie.name } />
+                    <img className="img-thumbnail" src={`${baseUrl}${movie.poster_path}`} alt={ movie.name } />
                 ))}
            
                </div>
