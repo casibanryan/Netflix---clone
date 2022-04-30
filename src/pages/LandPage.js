@@ -1,8 +1,8 @@
 import React from 'react'
-import Footer from '../sections/landPage/Footer';
-import Header from '../sections/landPage/Header';
-import ShowCase from '../sections/landPage/ShowCase';
-import FrequentlyAsked from '../sections/landPage/FrequentlyAsked';
+import Footer from '../sections/Footer';
+import Header from '../sections/Header';
+import ShowCase from '../sections/ShowCase';
+import FrequentlyAsked from '../sections/FrequentlyAsked';
 import '../css/styles.css'
 
 function LandPage() {
