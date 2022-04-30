@@ -646,15 +646,15 @@ hr {
     right: 420px;
 }
 .news-bg-1 {
-	background: url('../img/news/news1.jpg') no-repeat center / cover;
+	background: url('../assets/img/news/news1.jpg') no-repeat center / cover;
     height: 350px;
 }
 .news-bg-2 {
-	background: url('../img/news/news2.jpg') no-repeat center / cover;
+	background: url('../assets/img/news/news2.jpg') no-repeat center / cover;
     height: 350px;
 }
 .news-bg-3 {
-	background: url('../img/news/news3.jpg') no-repeat center / cover;
+	background: url('../assets/img/news/news3.jpg') no-repeat center / cover;
     height: 350px;
 }
 .news-date {
