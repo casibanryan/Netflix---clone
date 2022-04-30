@@ -258,22 +258,22 @@ function HeroArea() {
 									<h3>Cast:</h3>
 									<div className="slide-cast">
 										<div className="single-slide-cast">
-											<img src={cast} alt="about" />
+											<img src={cast1} alt="about" />
 										</div>
                                         <div className="single-slide-cast">
-											<img src={cast} alt="about" />
+											<img src={cast1} alt="about" />
 										</div>
                                         <div className="single-slide-cast">
-											<img src={cast} alt="about" />
+											<img src={cast1} alt="about" />
 										</div>
                                         <div className="single-slide-cast">
-											<img src={cast} alt="about" />
+											<img src={cast1} alt="about" />
 										</div>
                                         <div className="single-slide-cast">
-											<img src={cast} alt="about" />
+											<img src={cast1} alt="about" />
 										</div>
                                         <div className="single-slide-cast">
-											<img src={cast} alt="about" />
+											<img src={cast1} alt="about" />
 										</div>
 										
 										<div className="single-slide-cast text-center">
