@@ -9,6 +9,7 @@ import '../css/magnific-popup.css';
 import '../css/responsive.css'
 import Header from './sections/home/Header';
 import HeroArea from './sections/home/HeroArea';
+import Movie from '/sections/home/Movie';
 import Footer from './sections/home/Footer';
 
 
@@ -38,6 +39,7 @@ function Home({ title, fetchUrl }) {
     <React.Fragment>
      <Header />
         <HeroArea />
+        <Movie />
         <Footer />
        
     </React.Fragment>
