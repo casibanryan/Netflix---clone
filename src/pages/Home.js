@@ -36,7 +36,6 @@ function Home({ title, fetchUrl }) {
     
   return (
     <React.Fragment>
-        <div id="preloader"></div>
         <Header />
         <HeroArea />
         <Footer />
