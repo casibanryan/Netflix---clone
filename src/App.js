@@ -20,7 +20,6 @@ function App(props) {
 
     <>
       <Home title="Netflix originals" fetchUrl={requests.fetchNetflixOriginals} />
-      <Home title="Trending" fetchUrl={requests.fetchTrending} /> 
     </>
   )
 }
