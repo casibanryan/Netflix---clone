@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import axios from '../js/axios';
 import '../css/home.css';
 import '../css/bootstrap.min.css';
-import '../css/slicknav.css';
+import '../css/slicknav.min.css';
 import '../css/icofont.css';
 import '../css/owl.carousel.css';
 import '../css/magnific-popup.css';
