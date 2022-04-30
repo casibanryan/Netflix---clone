@@ -3,10 +3,10 @@ import axios from '../js/axios';
 import '../css/home.css';
 import '../css/bootstrap.min.css';
 import '../css/slicknav.min.css';
-// import '../css/icofont.css';
-// import '../css/owl.carousel.css';
-// import '../css/magnific-popup.css';
-// import '../css/responsive.css'
+import '../css/icofont.css';
+import '../css/owl.carousel.css';
+import '../css/magnific-popup.css';
+import '../css/responsive.css'
 import Header from './sections/home/Header';
 
 
