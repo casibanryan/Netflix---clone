@@ -8,7 +8,7 @@ import '../css/owl.carousel.css';
 import '../css/magnific-popup.css';
 import '../css/responsive.css'
 import Header from './sections/home/Header';
-
+import Footer from './sections/home/Footer';
 
 
 const baseUrl = "https://image.tmdb.org/t/p/original/";
@@ -35,6 +35,7 @@ function Home({ title, fetchUrl }) {
   return (
     <React.Fragment>
         <Header />
+        <Footer />
     </React.Fragment>
   )
 }
