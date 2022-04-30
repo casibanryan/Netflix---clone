@@ -1,4 +1,6 @@
 import React from 'react'
+import logo from '../../../assets/img/logo2.png';
+
 
 function Header() {
   return (
@@ -7,7 +9,7 @@ function Header() {
 			<div className="container">
 				<div className="header-area">
 					<div className="logo">
-						<a href="#"><img src="assets/img/logo.png" alt="logo" /></a>
+						<a href="#"><img src={logo} alt="logo" /></a>
 					</div>
 					<div className="header-right">
 						<form action="#">
