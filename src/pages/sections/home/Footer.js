@@ -71,19 +71,19 @@ function Footer() {
 
         <Helmet>
             	{/* jquery main JS */}
-		<script src="assets/js/jquery.min.js"></script>
+		<script src="../../../assets/js/jquery.min.js"></script>
 		{/* Bootstrap JS */}
-		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="../../../assets/js/bootstrap.min.js"></script>
 		{/* Slick nav JS */}
-		<script src="assets/js/jquery.slicknav.min.js"></script>
+		<script src="../../../assets/js/jquery.slicknav.min.js"></script>
 		{/* owl carousel JS */}
-		<script src="assets/js/owl.carousel.min.js"></script>
+		<script src="../../../assets/js/owl.carousel.min.js"></script>
 		{/* Popup JS */}
-		<script src="assets/js/jquery.magnific-popup.min.js"></script>
+		<script src="../../../assets/js/jquery.magnific-popup.min.js"></script>
 		{/* Isotope JS */}
-		<script src="assets/js/isotope.pkgd.min.js"></script>
+		<script src="../../../assets/js/isotope.pkgd.min.js"></script>
 		{/* main JS */}
-		<script src="assets/js/main.js"></script>
+		<script src="../../../assets/js/main.js"></script>
         </Helmet>
     </React.Fragment>
   )
