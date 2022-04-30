@@ -3,7 +3,7 @@ import React from 'react'
 // import SignIn from './pages/SignIn';
 // import {Routes, Route} from 'react-router-dom';
 
-import Row from './Row';
+import Home from './pages/Home';
 import requests from './js/requests';
 
 // Api key =>  14d57525a7a6772b9699d35339fb5878
@@ -19,8 +19,8 @@ function App(props) {
   // 
 
     <>
-      <Row title="Netflix originals" fetchUrl={requests.fetchNetflixOriginals} />
-      <Row title="Trending" fetchUrl={requests.fetchTrending} /> 
+      <Home title="Netflix originals" fetchUrl={requests.fetchNetflixOriginals} />
+      <Home title="Trending" fetchUrl={requests.fetchTrending} /> 
     </>
   )
 }
