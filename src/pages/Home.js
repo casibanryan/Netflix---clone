@@ -7,7 +7,7 @@ import '../css/icofont.css';
 import '../css/owl.carousel.css';
 import '../css/magnific-popup.css';
 import '../css/responsive.css'
-import './sections/home/Header';
+import Header from './sections/home/Header';
 
 
 
