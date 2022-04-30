@@ -36,9 +36,19 @@ function Home({ title, fetchUrl }) {
     
   return (
     <React.Fragment>
-        <Header />
+            {/* line-height: 24px;
+    font-size: 14px;
+    color: #b6b7b9;
+	background: #13151f;
+	font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    position: relative; */}
+    <div className="body">
+     <Header />
         <HeroArea />
         <Footer />
+    </div>
+       
     </React.Fragment>
   )
 }
