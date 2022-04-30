@@ -52,7 +52,7 @@ function HeroArea() {
 					<div className="row hero-area-slide">
 						<div className="col-lg-6 col-md-5">
 							<div className="hero-area-content">
-								<img src="assets/img/slide1.png" alt="about" />
+								<img src={slide1} alt="about" />
 							</div>
 						</div>
 						<div className="col-lg-6 col-md-7">
