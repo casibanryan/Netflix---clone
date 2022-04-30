@@ -8,13 +8,10 @@ import cast1 from '../../../assets/img/cast/cast1.png';
 
 function HeroArea() {
   return (
-    <React.Fragment>
-        
-		<section className="hero-area" id="home">
+    <React.Fragment>	
+        <section className="hero-area" id="home">
 			<div className="container">
 				<div className="hero-area-slider">
-
-				
 					<div className="row hero-area-slide">
 						<div className="col-lg-6 col-md-5">
 							<div className="hero-area-content">
@@ -40,19 +37,6 @@ function HeroArea() {
 									<div className="single-slide-cast">
 										<img src={cast1} alt="about" />
 									</div>
-                                    	<div className="single-slide-cast">
-										<img src={cast1} alt="about" />
-									</div>
-                                    	<div className="single-slide-cast">
-										<img src={cast1} alt="about" />
-									</div>
-                                    	<div className="single-slide-cast">
-										<img src={cast1} alt="about" />
-									</div>
-
-                                    	<div className="single-slide-cast">
-										<img src={cast1} alt="about" />
-									</div>
 								
 									<div className="single-slide-cast text-center">
 										5+
@@ -60,18 +44,15 @@ function HeroArea() {
 								</div>
 								<div className="slide-trailor">
 									<h3>Watch Trailer</h3>
-										<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" className="popup-youtube theme-btn theme-btn2">
-											Watch
-										</a>
+									<a className="theme-btn theme-btn2" href="#"><i className="icofont icofont-play"></i> Tickets</a>
 								</div>
 							</div>
 						</div>
 					</div>
-
 					<div className="row hero-area-slide">
 						<div className="col-lg-6 col-md-5">
 							<div className="hero-area-content">
-								<img src={slide1} alt="about" />
+								<img src="assets/img/slide1.png" alt="about" />
 							</div>
 						</div>
 						<div className="col-lg-6 col-md-7">
@@ -93,21 +74,6 @@ function HeroArea() {
 									<div className="single-slide-cast">
 										<img src={cast1} alt="about" />
 									</div>
-                                    <div className="single-slide-cast">
-										<img src={cast1} alt="about" />
-									</div>
-                                    <div className="single-slide-cast">
-										<img src={cast1} alt="about" />
-									</div>
-                                    <div className="single-slide-cast">
-										<img src={cast1} alt="about" />
-									</div>
-                                    <div className="single-slide-cast">
-										<img src={cast1} alt="about" />
-									</div>
-                                    <div className="single-slide-cast">
-										<img src={cast1} alt="about" />
-									</div>
 									
 									<div className="single-slide-cast text-center">
 										5+
@@ -115,12 +81,11 @@ function HeroArea() {
 								</div>
 								<div className="slide-trailor">
 									<h3>Watch Trailer</h3>
-									<a className="theme-btn theme-btn2" href="#"><i className="icofont icofont-play"></i> Watch</a>
+									<a className="theme-btn theme-btn2" href="#"><i className="icofont icofont-play"></i> Tickets</a>
 								</div>
 							</div>
 						</div>
 					</div>
-
 					<div className="row hero-area-slide">
 						<div className="col-lg-6 col-md-5">
 							<div className="hero-area-content">
@@ -146,24 +111,6 @@ function HeroArea() {
 									<div className="single-slide-cast">
 										<img src={cast1} alt="about" />
 									</div>
-                                    <div className="single-slide-cast">
-										<img src={cast1} alt="about" />
-									</div>
-                                    <div className="single-slide-cast">
-										<img src={cast1} alt="about" />
-									</div>
-                                    <div className="single-slide-cast">
-										<img src={cast1} alt="about" />
-									</div>
-                                    <div className="single-slide-cast">
-										<img src={cast1} alt="about" />
-									</div>
-                                    <div className="single-slide-cast">
-										<img src={cast1} alt="about" />
-									</div>
-                                    <div className="single-slide-cast">
-										<img src={cast1} alt="about" />
-									</div>
 									
 									<div className="single-slide-cast text-center">
 										5+
@@ -171,14 +118,12 @@ function HeroArea() {
 								</div>
 								<div className="slide-trailor">
 									<h3>Watch Trailer</h3>
-									<a className="theme-btn theme-btn2" href="#"><i className="icofont icofont-play"></i> Watch</a>
+									<a className="theme-btn theme-btn2" href="#"><i className="icofont icofont-play"></i> Tickets</a>
 								</div>
 							</div>
 						</div>
 					</div>
-					
 				</div>
-
 				<div className="hero-area-thumb">
 					<div className="thumb-prev">
 						<div className="row hero-area-slide">
@@ -206,21 +151,6 @@ function HeroArea() {
 										<div className="single-slide-cast">
 											<img src={cast1} alt="about" />
 										</div>
-                                        	<div className="single-slide-cast">
-											<img src={cast1} alt="about" />
-										</div>
-                                        	<div className="single-slide-cast">
-											<img src={cast1} alt="about" />
-										</div>
-                                        	<div className="single-slide-cast">
-											<img src={cast1} alt="about" />
-										</div>
-                                        	<div className="single-slide-cast">
-											<img src={cast1} alt="about" />
-										</div>
-                                        	<div className="single-slide-cast">
-											<img src={cast1} alt="about" />
-										</div>
 									
 										<div className="single-slide-cast text-center">
 											5+
@@ -228,7 +158,7 @@ function HeroArea() {
 									</div>
 									<div className="slide-trailor">
 										<h3>Watch Trailer</h3>
-										<a className="theme-btn theme-btn2" href="#"><i className="icofont icofont-play"></i> Watch</a>
+										<a className="theme-btn theme-btn2" href="#"><i className="icofont icofont-play"></i> Tickets</a>
 									</div>
 								</div>
 							</div>
@@ -260,21 +190,6 @@ function HeroArea() {
 										<div className="single-slide-cast">
 											<img src={cast1} alt="about" />
 										</div>
-                                        <div className="single-slide-cast">
-											<img src={cast1} alt="about" />
-										</div>
-                                        <div className="single-slide-cast">
-											<img src={cast1} alt="about" />
-										</div>
-                                        <div className="single-slide-cast">
-											<img src={cast1} alt="about" />
-										</div>
-                                        <div className="single-slide-cast">
-											<img src={cast1} alt="about" />
-										</div>
-                                        <div className="single-slide-cast">
-											<img src={cast1} alt="about" />
-										</div>
 										
 										<div className="single-slide-cast text-center">
 											5+
@@ -282,7 +197,7 @@ function HeroArea() {
 									</div>
 									<div className="slide-trailor">
 										<h3>Watch Trailer</h3>
-										<a className="theme-btn theme-btn2" href="#"><i className="icofont icofont-play"></i> Watch</a>
+										<a className="theme-btn theme-btn2" href="#"><i className="icofont icofont-play"></i> Tickets</a>
 									</div>
 								</div>
 							</div>
@@ -291,7 +206,6 @@ function HeroArea() {
 				</div>
 			</div>
 		</section>
-
 
     </React.Fragment>
   )
