@@ -3,7 +3,13 @@ import slide2 from '../../../assets/img/slide2.png'
 import slide3 from '../../../assets/img/slide3.png'
 import slide1 from '../../../assets/img/slide1.png'
 import cast1 from '../../../assets/img/cast/cast1.png';
-
+import '../../../css/home.css';
+import '../../../css/bootstrap.min.css';
+import '../../../css/slicknav.min.css';
+import '../../../css/icofont.css';
+import '../../css/owl.carousel.css';
+import '../../css/magnific-popup.css';
+import '../../css/responsive.css'
 
 
 function HeroArea() {
