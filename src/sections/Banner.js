@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
-import axios from './js/axios';
-import requests from './js/requests';
+import axios from '../js/axios';
+import requests from '../js/requests';
 
 function Banner() {
     const [movie, setMovie] = useState([]);
@@ -16,6 +16,8 @@ function Banner() {
       }
       fetchData();
     }, [])
+    
+    console.log(movie);
     
   return (
     <header className="banner" 
