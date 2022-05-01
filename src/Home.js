@@ -25,7 +25,7 @@ function Home({ title, fetchUrl, isLargeRow }) {
     
   return (
     <React.Fragment>
-        <div className="row">
+        <div className="home__row">
               {/* title */}
             <h2> {title} </h2>
                     {/* container */}
