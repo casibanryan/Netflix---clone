@@ -4,7 +4,7 @@ import './css/Row.css';
 
 const baseUrl = "https://image.tmdb.org/t/p/original/";
 
-function Row({ title, fetchUrl }) {
+function Row({ title, fetchUrl, isLargeRow }) {
 
     const [movies, setMovies] = useState([]);
 
@@ -25,7 +25,6 @@ function Row({ title, fetchUrl }) {
     
   return (
     <React.Fragment>
-
         <div className="row">
               {/* title */}
             <h1> {title} </h1>
@@ -33,11 +32,10 @@ function Row({ title, fetchUrl }) {
                 <div className="row__posters">
                      {/* looping the data  */}
                     {movies.map((movie) => (
-                        <img className="row__poster" src={`${baseUrl}${movie.poster_path}`} alt={ movie.name } />
+                        <img className="row__poster" key={movie.id} src={`${baseUrl}${isLargeRow ? movie.poster_path : movie.backdrop_path}`} alt={ movie.name } />
                     ))}
             </div>
         </div>
-
     </React.Fragment>
   )
 }
