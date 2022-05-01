@@ -3,9 +3,24 @@
 import React from 'react'
 
 function starRating(props) {
-  return (
-    <div>starRating {props} </div>
+    
+    if(props > 1000) {
+    return (
+        <>
+          <AiTwotoneStar />
+          <AiTwotoneStar />
+            <AiTwotoneStar />
+              <AiTwotoneStar />
+                <AiTwotoneStar />
+        </>
   )
+    }
+
+    else {
+         <>
+          <AiTwotoneStar />
+        </>
+    }
 }
 
 export default starRating;
