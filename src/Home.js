@@ -71,7 +71,9 @@ function Home({ title, fetchUrl, isLargeRow }) {
                                                 <div className="author-review">
                                                     {
                                                         countStar.map(star => (
-                                                            movie.vote_count > 1000 ? star.two : star.one
+                                                            movie.vote_count > 1000 ? star.veryHigh : 
+                                                            movie.vote_count < 1000 && movie.vote_count > 500 ? star.high :
+                                                            movie.vote_count < 500 && movie.vote_count > 100 ? star.media : star.low
                                                         ))
                                                     }
                                                 </div>
