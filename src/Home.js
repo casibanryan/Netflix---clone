@@ -103,7 +103,7 @@ function Home({ title, fetchUrl, fetchPeople, isLargeRow }) {
                                             
                                                 <h4> {kFormatter(movie.vote_count)} voters</h4>
                                             </div>  
-                                            <p> {truncate(movie.overview, 350)} </p>
+                                            <p> {truncate(movie.overview, 450)} </p>
                                             <h3>Cast:</h3>
                                             <div className="slide-cast">
                                                 {
