@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import axios from './js/axios';
 import './css/Home.css';
-import Footer from './sections/Footer';
+
 
 const baseUrl = "https://image.tmdb.org/t/p/original/";
 
