@@ -37,23 +37,23 @@ function Home({ title, fetchUrl, isLargeRow }) {
                         <img className={`row__poster ${isLargeRow && "row__posterLarge"}`} 
                         src={`${baseUrl}${isLargeRow ? movie.poster_path : movie.backdrop_path}`}
                         alt={ movie.name }/>
-                        </a>
+                      
+                    <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-fullscreen">
+                        <div className="modal-content">
+                        <div className="modal-header">
+                            <h1 className="modal-title" id="staticBackdropLabel">  {movie?.title || movie?.name || movie?.original_name} </h1>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div className="modal-body">
+                                        test
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    </a>
                     ))}
 
-
-<div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div className="modal-dialog modal-fullscreen">
-    <div className="modal-content">
-      <div className="modal-header">
-        <h5 className="modal-title" id="staticBackdropLabel">Modal title</h5>
-        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div className="modal-body">
-                    test
-      </div>
-    </div>
-  </div>
-</div>
 
             </div>
         </div>
