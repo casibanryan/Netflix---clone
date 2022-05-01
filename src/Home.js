@@ -6,9 +6,12 @@ import {Helmet} from 'react-helmet';
 import slide1 from './assets/img/slide1.png';
 import slide3 from './assets/img/slide3.png';
 import './Modal.css';
-import { AiTwotoneStar } from "react-icons/ai";
+
 
 const baseUrl = "https://image.tmdb.org/t/p/original/";
+
+
+
 
 function Home({ title, fetchUrl, isLargeRow }) {
 
@@ -28,6 +31,12 @@ function Home({ title, fetchUrl, isLargeRow }) {
         fetchData();
  
      }, [fetchUrl])    // if [] => dependency is empty means run once when page loads and dont't run again
+
+
+     // format number to k ex => 5000 - 5k
+        function kFormatter(num) {
+            return Math.abs(num) > 999 ? Math.sign(num)*((Math.abs(num)/1000).toFixed(1)) + 'k' : Math.sign(num)*Math.abs(num)
+        }
     
   return (
     <React.Fragment>
@@ -77,7 +86,7 @@ function Home({ title, fetchUrl, isLargeRow }) {
                                                         ))
                                                     }
                                                 </div>
-                                                <h4>{`${movie.vote_count-1000}${movie.vote_count >= 1000 ? 'k' : ''} voters`}</h4>
+                                                <h4> {kFormatter(movie.vote_count)} voters</h4>
                                             </div>  
                                             <p> {movie.overview} </p>
                                             <h3>Cast:</h3>
