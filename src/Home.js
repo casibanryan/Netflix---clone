@@ -69,12 +69,10 @@ function Home({ title, fetchUrl, isLargeRow }) {
                                             <h1> {movie?.title || movie?.name || movie?.original_name}</h1>
                                             <div className="review">
                                                 <div className="author-review">
-                                                    {
-                                                     countStarRating(movie.vote_count)
-                                                    }
+                                                   23
                                                 </div>
                                                 <h4>{movie.vote_count} voters</h4>
-                                            </div>
+                                            </div>  
                                             <p> {movie.overview} </p>
                                             <h3>Cast:</h3>
                                             <div className="slide-cast">
