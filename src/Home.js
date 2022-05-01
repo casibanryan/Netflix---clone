@@ -33,11 +33,11 @@ function Home({ title, fetchUrl, isLargeRow }) {
                 <div className="row__posters">
                      {/* looping the data  */}
                     {movies.map((movie) => (
-                        <a  data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img className={`row__poster ${isLargeRow && "row__posterLarge"}`} 
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img className={`row__poster ${isLargeRow && "row__posterLarge"}`} 
                         key={movie.id}
                         src={`${baseUrl}${isLargeRow ? movie.poster_path : movie.backdrop_path}`}
                         alt={ movie.name }/>
-                        </a>
+                        </button>
                     ))}
 
 
