@@ -68,13 +68,11 @@ function Home({ title, fetchUrl, isLargeRow }) {
                                             <h1> {movie?.title || movie?.name || movie?.original_name}</h1>
                                             <div className="review">
                                                 <div className="author-review">
-                                                 <AiTwotoneStar />
-                                                    <AiTwotoneStar />
-                                                    <AiTwotoneStar />
-                                                        <AiTwotoneStar />
-                                                        <AiTwotoneStar />
+                                                    {
+                                                        (movie.vote_count > 1000) ?  <AiTwotoneStar /> * 5 : <AiTwotoneStar /> 
+                                                    }
                                                 </div>
-                                                <h4>{movie.vote_count}</h4>
+                                                <h4>{movie.vote_count} voters</h4>
                                             </div>
                                             <p> {movie.overview} </p>
                                             <h3>Cast:</h3>
