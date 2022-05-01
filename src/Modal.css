@@ -1,0 +1,20 @@
+.hero-area {
+    position: relative;
+    background-image: url(./assets/img/hero-area.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.hero-area-slider {
+    margin: auto;
+    max-width: 950px;
+}
+
+.hero-area-slide {
+    background: #13151f;
+    margin: 320px 15px 50px;
+    padding-top: 52px;
+    box-shadow: 0 0 20px #000000;
+}
