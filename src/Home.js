@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from 'react'
 import axios from './js/axios';
-import './css/Row.css';
+import './css/Home.css';
 
 const baseUrl = "https://image.tmdb.org/t/p/original/";
 
-function Row({ title, fetchUrl, isLargeRow }) {
+function Home({ title, fetchUrl, isLargeRow }) {
 
     const [movies, setMovies] = useState([]);
 
@@ -27,7 +27,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
     <React.Fragment>
         <div className="row">
               {/* title */}
-            <h1> {title} </h1>
+            <h2> {title} </h2>
                     {/* container */}
                 <div className="row__posters">
                      {/* looping the data  */}
@@ -43,4 +43,4 @@ function Row({ title, fetchUrl, isLargeRow }) {
   )
 }
 
-export default Row;
+export default Home;

@@ -1,11 +1,12 @@
 import React from 'react'
 import Banner from './sections/Banner';
 import './css/App.css';
+import './css/styles.css';
 // import LandPage from './pages/LandPage';
 // import SignIn from './pages/SignIn';
 // import {Routes, Route} from 'react-router-dom';
 
-import Row from './Row';
+import Home from './Home';
 import requests from './js/requests';
 
 // Api key =>  14d57525a7a6772b9699d35339fb5878
@@ -22,17 +23,18 @@ function App(props) {
 
     <>
       {/* navbar */}
+      <Nav />
       <div className="app">
       {/* banner */}
           <Banner />
-            <Row title="Netflix originals" fetchUrl={requests.fetchNetflixOriginals} isLargeRow={true} />
-            <Row title="Trending" fetchUrl={requests.fetchTrending} /> 
-            <Row title="Top Rated" fetchUrl={requests.fetchTopRated} /> 
-            <Row title="Action Movies" fetchUrl={requests.fetchActionMovies} /> 
-            <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} /> 
-            <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} /> 
-            <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} /> 
-            <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} /> 
+            <Home title="Netflix originals" fetchUrl={requests.fetchNetflixOriginals} isLargeHome={true} />
+            <Home title="Trending" fetchUrl={requests.fetchTrending} /> 
+            <Home title="Top Rated" fetchUrl={requests.fetchTopRated} /> 
+            <Home title="Action Movies" fetchUrl={requests.fetchActionMovies} /> 
+            <Home title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} /> 
+            <Home title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} /> 
+            <Home title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} /> 
+            <Home title="Documentaries" fetchUrl={requests.fetchDocumentaries} /> 
         </div>
     </>
   )
