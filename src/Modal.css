@@ -7,7 +7,7 @@
     overflow: hidden;
 }
 
-    
+
 .hero-area-slider {
     margin: auto;
     max-width: 950px;
@@ -124,94 +124,4 @@
     transform-style: preserve-3d;
     transform: rotateY(-2deg);
     cursor: pointer;
-}
-
-/*----------------------------------
---------- HERO AREA CSS END --------
------------------------------------*/
-
-/*----------------------------------
--------- portfolio AREA CSS START -------
-------------------------------------*/
-hr {
-    margin: 0;
-    border-top: 1px solid #ddd;
-}
-
-.portfolio-menu {
-    padding-top: 30px;
-}
-
-.portfolio-menu li {
-    display: inline-block;
-    position: relative;
-    margin-left: 15px;
-    padding-bottom: 20px;
-    cursor: pointer;
-}
-
-.portfolio-menu li::before {
-    background: transparent;
-    bottom: -2px;
-    left: 0;
-    right: 0;
-    transition: 0.4s;
-    content: "";
-    height: 4px;
-    position: absolute;
-    z-index: 99;
-}
-
-.portfolio-menu li.active {
-    color: #fff;
-}
-
-.portfolio-menu li.active::before,
-.portfolio-menu li:hover::before {
-    background: #eb315a;
-}
-
-.portfolio-content h2 {
-    margin-top: 20px;
-}
-
-.single-portfolio {
-    margin-top: 50px;
-}
-
-.video-area,
-.single-portfolio-img {
-    overflow: hidden;
-    position: relative;
-}
-
-.single-portfolio-img:hover .popup-youtube i {
-    opacity: 1;
-}
-
-.single-portfolio-img .popup-youtube i {
-    opacity: 0;
-}
-
-.video-area img,
-.single-portfolio-img img {
-    transition: 0.9s;
-}
-
-.video-area:hover img,
-.single-portfolio:hover img {
-    transform: scale(1.2);
-}
-
-.single-portfolio .review {
-    margin-bottom: 0;
-}
-
-.portfolio-sidebar img {
-    margin-top: 30px;
-    border-radius: 10px;
-}
-
-.portfolio-sidebar {
-    margin-top: 20px;
 }

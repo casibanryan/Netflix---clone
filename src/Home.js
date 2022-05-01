@@ -78,24 +78,7 @@ function Home({ title, fetchUrl, isLargeRow }) {
 									{/* <div className="single-slide-cast">
 										<img src="assets/img/cast/cast1.png" alt="about" />
 									</div>
-									<div className="single-slide-cast">
-										<img src="assets/img/cast/cast2.html" alt="about" />
-									</div>
-									<div className="single-slide-cast">
-										<img src="assets/img/cast/cast3.png" alt="about" />
-									</div>
-									<div className="single-slide-cast">
-										<img src="assets/img/cast/cast4.png" alt="about" />
-									</div>
-									<div className="single-slide-cast">
-										<img src="assets/img/cast/cast5.png" alt="about" />
-									</div>
-									<div className="single-slide-cast">
-										<img src="assets/img/cast/cast6.png" alt="about" />
-									</div>
-									<div className="single-slide-cast">
-										<img src="assets/img/cast/cast7.png" alt="about" />
-									</div> */}
+									> */}
 									<div className="single-slide-cast text-center">
 										5+
 									</div>
