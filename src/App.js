@@ -27,14 +27,14 @@ function App(props) {
       <div className="app">
       {/* banner */}
           <Banner />
-            <Home title="New Release" fetchUrl={requests.fetchNetflixOriginals} isLargeRow={true} />
-            <Home title="Trending Now" fetchUrl={requests.fetchTrending} /> 
-            <Home title="Top Rated" fetchUrl={requests.fetchTopRated} /> 
-            <Home title="Action Movies" fetchUrl={requests.fetchActionMovies} /> 
-            <Home title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} /> 
-            <Home title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} /> 
-            <Home title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} /> 
-            <Home title="Documentaries" fetchUrl={requests.fetchDocumentaries} /> 
+            <Home title="New Release" fetchUrl={requests.fetchNetflixOriginals} fetchPeople={requests.fetchPeople} isLargeRow={true} />
+            <Home title="Trending Now" fetchUrl={requests.fetchTrending} fetchPeople={requests.fetchPeople} /> 
+            <Home title="Top Rated" fetchUrl={requests.fetchTopRated} fetchPeople={requests.fetchPeople} /> 
+            <Home title="Action Movies" fetchUrl={requests.fetchActionMovies} fetchPeople={requests.fetchPeople} /> 
+            <Home title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} fetchPeople={requests.fetchPeople} /> 
+            <Home title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} fetchPeople={requests.fetchPeople} /> 
+            <Home title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} fetchPeople={requests.fetchPeople} /> 
+            <Home title="Documentaries" fetchUrl={requests.fetchDocumentaries} fetchPeople={requests.fetchPeople} /> 
         </div>
     </>
   )

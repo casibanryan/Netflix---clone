@@ -14,14 +14,14 @@ const baseUrl = "https://image.tmdb.org/t/p/original/";
 
 
 
-function Home({ title, fetchUrl, isLargeRow }) {
+function Home({ title, fetchUrl, fetchPeople, isLargeRow }) {
 
     const [movies, setMovies] = useState([]);
+    const [casts, setCasts] = useState([]);
 
     // making request to TMDB
     // every time the row reloads
     useEffect(() => {
-
         // using async function to make the program fast
         async function fetchData() {
             const request = await axios.get(fetchUrl);
@@ -30,9 +30,20 @@ function Home({ title, fetchUrl, isLargeRow }) {
             return request;
         }            
         fetchData();
- 
      }, [fetchUrl])    // if [] => dependency is empty means run once when page loads and dont't run again
 
+
+     useEffect(() => {
+
+        async function fetchPeople() {
+            const request = await axios.get(fetchPeople);
+            console.log(request);
+            return request;
+        }
+
+        fetchPeople();
+
+     }, [fetchPeople])
 
      // format number to k ex => 5000 - 5k
         function kFormatter(num) {
@@ -130,23 +141,19 @@ function Home({ title, fetchUrl, isLargeRow }) {
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</section>
-	
-                        </div>
-                        </div>
                     </div>
-                    </div>
-                    </React.Fragment>
-                    ))}
-
-
-            </div>
+                </div>
+             </section>
         </div>
+        </div>
+    </div>
+    </div>
+    </React.Fragment>
+    ))}
+</div>
+</div>
                         <Helmet>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
                         </Helmet>
     </React.Fragment>
   )
