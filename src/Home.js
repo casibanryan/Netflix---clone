@@ -56,7 +56,9 @@ function Home({ title, fetchUrl, isLargeRow }) {
                                 <div className="row hero-area-slide">
                                     <div className="col-lg-6 col-md-5">
                                         <div className="hero-area-content">
-                                            <img src={`${baseUrl}${movie?.poster_path || movie?.backdrop_path}`} />
+                                            <img src={`${baseUrl}${movie?.poster_path || movie?.backdrop_path}`} 
+                                               style={{ maxWidth: "100%"}} 
+                                            />
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-md-7">
@@ -64,15 +66,15 @@ function Home({ title, fetchUrl, isLargeRow }) {
                                             <h1> {movie?.title || movie?.name || movie?.original_name}</h1>
                                             <div className="review">
                                                 <div className="author-review">
-                                                    <i className="icofont icofont-star"></i>
-                                                    <i className="icofont icofont-star"></i>
-                                                    <i className="icofont icofont-star"></i>
-                                                    <i className="icofont icofont-star"></i>
-                                                    <i className="icofont icofont-star"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                   <i class="bi bi-star-fill"></i>
                                                 </div>
                                                 <h4>180k voters</h4>
                                             </div>
-                                            <p>She is a devil princess from the demon world. She grew up sheltered by her parents and doesn't really know how to be evil or any of the common actions,   She is unable to cry due to Keita's accidental first wish, despite needed for him to wish...</p>
+                                            <p> {movie.overview} </p>
                                             <h3>Cast:</h3>
                                             <div className="slide-cast">
 									{/* <div className="single-slide-cast">
