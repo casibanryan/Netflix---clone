@@ -63,7 +63,7 @@ function Home({ title, fetchUrl, isLargeRow }) {
 
             </div>
         </div>
-        <Footer />
+
     </React.Fragment>
   )
 }

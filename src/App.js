@@ -37,6 +37,7 @@ function App(props) {
             <Home title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} /> 
             <Home title="Documentaries" fetchUrl={requests.fetchDocumentaries} /> 
         </div>
+          <Footer />
     </>
   )
 }
