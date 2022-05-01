@@ -4,7 +4,7 @@ import countStar from './js/countStar';
 import './css/Home.css';
 import {Helmet} from 'react-helmet';
 import slide1 from './assets/img/slide1.png';
-import side1Animation from './assets/video/slide1.mp4';
+import side1Animation from './assets/video/side1.mp4';
 import slide3 from './assets/img/slide3.png';
 import './Modal.css';
 import { BsPlay } from "react-icons/bs";
