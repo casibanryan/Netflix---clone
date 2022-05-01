@@ -125,3 +125,25 @@
     transform: rotateY(-2deg);
     cursor: pointer;
 }
+
+.theme-btn {
+    background: #DB121C;
+    border: 1px solid #DB121C;
+    color: #fff;
+    border-radius: 35px;
+    padding: 5px 25px;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.theme-btn2:hover,
+.theme-btn2 {
+    color: #fff;
+    background: #DB121C;
+    background: -moz-linear-gradient(top, #db121c 0%, #db121c 34%, #db121c 65%, #eb315a 100%);
+    background: -webkit-linear-gradient(top, #db121c 0%, #db121c 34%, #db121c 65%, #db121c 100%);
+    background: linear-gradient(to bottom, #db121c 0%, #db121c 34%, #db121c 65%, #eb315a 100%);
+    border: none;
+}
