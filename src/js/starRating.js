@@ -1,5 +1,5 @@
 
-
+import { AiTwotoneStar } from "react-icons/ai";
 import React from 'react'
 
 function starRating(props) {

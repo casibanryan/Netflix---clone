@@ -6,7 +6,7 @@ import {Helmet} from 'react-helmet';
 import slide1 from './assets/img/slide1.png';
 import slide3 from './assets/img/slide3.png';
 import './Modal.css';
-import { AiTwotoneStar } from "react-icons/ai";
+
 
 const baseUrl = "https://image.tmdb.org/t/p/original/";
 
