@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import axios from './js/axios';
+import countStarRating from './js/starRating';
 import './css/Home.css';
 import {Helmet} from 'react-helmet';
 import slide1 from './assets/img/slide1.png';
@@ -69,7 +70,7 @@ function Home({ title, fetchUrl, isLargeRow }) {
                                             <div className="review">
                                                 <div className="author-review">
                                                     {
-                                                        (movie.vote_count > 1000) ?  <AiTwotoneStar /> * 5 : <AiTwotoneStar /> 
+                                                     countStarRating(movie.vote_count)
                                                     }
                                                 </div>
                                                 <h4>{movie.vote_count} voters</h4>
