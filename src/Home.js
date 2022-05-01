@@ -105,12 +105,12 @@ function Home({ title, fetchUrl, fetchPeople, isLargeRow }) {
                                             <h3>Cast:</h3>
                                             <div className="slide-cast">
                                                 {
-                                                    casts.map((cast, index) => {
+                                                    casts.map((cast, index) => (
                                                         <div className={`single-slide-cast ${index >= 7 ? 'd-none' : ""}`} key={index}>
                                                             <img src={`${baseUrl}${cast.profile_path}`} alt={cast.name} />
                                                         </div>
                                                         
-                                                    })
+                                                    ))
                                                 }
 									
 									<div className="single-slide-cast text-center">
