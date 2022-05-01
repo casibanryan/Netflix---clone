@@ -41,7 +41,7 @@ function Home({ title, fetchUrl, isLargeRow }) {
                     <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div className="modal-dialog modal-fullscreen">
                         <div className="modal-content bg__dark">
-                        <div className="modal-header" stye={{ borderBottom:"none"}}>
+                        <div className="modal-header" style={{ borderBottom:"none"}}>
                             <h1 className="modal-title" id="staticBackdropLabel">  {movie?.title || movie?.name || movie?.original_name} </h1>
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
