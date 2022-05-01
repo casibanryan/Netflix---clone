@@ -11,9 +11,6 @@ import { BsPlay } from "react-icons/bs";
 
 const baseUrl = "https://image.tmdb.org/t/p/original/";
 
-
-
-
 function Home({ title, fetchUrl, fetchPeople, isLargeRow }) {
 
     const [movies, setMovies] = useState([]);
@@ -42,11 +39,16 @@ function Home({ title, fetchUrl, fetchPeople, isLargeRow }) {
         fetchCast();
      }, [fetchPeople])
 
-     console.log(casts);
      // format number to k ex => 5000 - 5k
         function kFormatter(num) {
             return Math.abs(num) > 999 ? Math.sign(num)*((Math.abs(num)/1000).toFixed(1)) + 'k' : Math.sign(num)*Math.abs(num)
         }
+
+         // minimize the text in small screen (responsive)
+    function truncate(str, n) {
+            return str?.length > n ? str.substr(0, n-1) + "..." : str;
+    }
+
     
   return (
     <React.Fragment>
@@ -101,7 +103,7 @@ function Home({ title, fetchUrl, fetchPeople, isLargeRow }) {
                                             
                                                 <h4> {kFormatter(movie.vote_count)} voters</h4>
                                             </div>  
-                                            <p> {movie.overview} </p>
+                                            <p> {truncate(movie.overview, 150)} </p>
                                             <h3>Cast:</h3>
                                             <div className="slide-cast">
                                                 {
