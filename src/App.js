@@ -6,7 +6,6 @@ import './css/styles.css';
 // import LandPage from './pages/LandPage';
 // import SignIn from './pages/SignIn';
 // import {Routes, Route} from 'react-router-dom';
-import Footer from './sections/Footer';
 import Home from './Home';
 import requests from './js/requests';
 
@@ -37,7 +36,6 @@ function App(props) {
             <Home title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} /> 
             <Home title="Documentaries" fetchUrl={requests.fetchDocumentaries} /> 
         </div>
-          <Footer />
     </>
   )
 }
