@@ -15,7 +15,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
         // using async function to make the program fast
         async function fetchData() {
             const request = await axios.get(fetchUrl);
-            console.log(request);
+            // console.log(request);
             setMovies(request.data.results);
             return request;
         }            

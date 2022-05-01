@@ -1,4 +1,5 @@
 import React from 'react'
+import Banner from './sections/Banner';
 // import LandPage from './pages/LandPage';
 // import SignIn from './pages/SignIn';
 // import {Routes, Route} from 'react-router-dom';
@@ -22,7 +23,7 @@ function App(props) {
       {/* navbar */}
 
       {/* banner */}
-      
+      <Banner />
         <Row title="Netflix originals" fetchUrl={requests.fetchNetflixOriginals} isLargeRow={true} />
         <Row title="Trending" fetchUrl={requests.fetchTrending} /> 
         <Row title="Top Rated" fetchUrl={requests.fetchTopRated} /> 
