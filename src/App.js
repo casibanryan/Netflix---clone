@@ -2,7 +2,7 @@ import React from 'react'
 import Banner from './sections/Banner';
 import Nav from './sections/Nav';
 import './css/App.css';
-
+import '../css/styles.css';
 // import LandPage from './pages/LandPage';
 // import SignIn from './pages/SignIn';
 // import {Routes, Route} from 'react-router-dom';
@@ -28,7 +28,7 @@ function App(props) {
       <div className="app">
       {/* banner */}
           <Banner />
-            <Home title="Netflix originals" fetchUrl={requests.fetchNetflixOriginals} isLargeHome={true} />
+            <Home title="Netflix originals" fetchUrl={requests.fetchNetflixOriginals} isLargeRow={true} />
             <Home title="Trending" fetchUrl={requests.fetchTrending} /> 
             <Home title="Top Rated" fetchUrl={requests.fetchTopRated} /> 
             <Home title="Action Movies" fetchUrl={requests.fetchActionMovies} /> 
