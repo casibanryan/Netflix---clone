@@ -105,7 +105,7 @@ function Home({ title, fetchUrl, isLargeRow }) {
 								</div>
 								<div className="slide-trailor">
 									<h3>Watch Trailer</h3>
-									<a className="theme-btn theme-btn2 text-decoration-none" href="#"><BsPlay size={28} />Play</a>
+									<a className="theme-btn theme-btn2 text-decoration-none fw-bold fs-5" href="#"><BsPlay size={28} />Play</a>
 								</div>
 							</div>
 						</div>
