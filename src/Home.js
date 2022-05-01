@@ -6,6 +6,7 @@ import {Helmet} from 'react-helmet';
 import slide1 from './assets/img/slide1.png';
 import slide3 from './assets/img/slide3.png';
 import './Modal.css';
+import { BsPlay } from "react-icons/bs";
 
 
 const baseUrl = "https://image.tmdb.org/t/p/original/";
@@ -104,7 +105,7 @@ function Home({ title, fetchUrl, isLargeRow }) {
 								</div>
 								<div className="slide-trailor">
 									<h3>Watch Trailer</h3>
-									<a className="theme-btn theme-btn2" href="#"><i className="icofont icofont-play"></i> Tickets</a>
+									<a className="theme-btn theme-btn2 text-decoration-none" href="#"><BsPlay />Play</a>
 								</div>
 							</div>
 						</div>
