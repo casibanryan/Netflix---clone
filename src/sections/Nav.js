@@ -26,7 +26,7 @@ function Nav() {
     <nav className={`navbar navbar-dark p-3 fixed-top ${show && "bg__dark"}`}>
         <div className="container-fluid">
             <a href="#" className="navbar-brand" >  <img src={ logo } alt="logo" />  </a>
-            <a href="#" className="btn btn-primary btn-sm me-3">Sign Out</a>
+            <a href="#" className="btn btn-primary btn-sm me-5">Sign Out</a>
         </div>
     </nav>
 
