@@ -2,8 +2,8 @@ import React, {useState, useEffect} from 'react'
 import axios from './js/axios';
 import './css/Home.css';
 import {Helmet} from 'react-helmet';
-import slide1 from './assets/ing/slide1.png';
-import slide3 from './assets/ing/slide3.png';
+import slide1 from './assets/img/slide1.png';
+import slide3 from './assets/img/slide3.png';
 
 const baseUrl = "https://image.tmdb.org/t/p/original/";
 
@@ -168,7 +168,7 @@ function Home({ title, fetchUrl, isLargeRow }) {
 						<div className="row hero-area-slide">
 							<div className="col-lg-6">
 								<div className="hero-area-content">
-									<img src="assets/img/slide1.png" alt="about" />
+									<img src={slide1} alt="about" />
 								</div>
 							</div>
 							<div className="col-lg-6">
