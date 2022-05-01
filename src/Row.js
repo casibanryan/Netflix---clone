@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import axios from './js/axios';
-import './css/styles.css';
-
+import './css/Row';
 
 const baseUrl = "https://image.tmdb.org/t/p/original/";
 
@@ -27,16 +26,16 @@ function Row({ title, fetchUrl }) {
   return (
     <React.Fragment>
 
-        {/* container */}
-        <div className="">
+        <div className="row">
               {/* title */}
             <h1> {title} </h1>
-                {/* looping the data  */}
+                    {/* container */}
+                <div className="row__posters">
+                     {/* looping the data  */}
                     {movies.map((movie) => (
-                    <div className="">
-                        <img className="" src={`${baseUrl}${movie.poster_path}`} alt={ movie.name } />
-                    </div>
+                        <img className="row__poster" src={`${baseUrl}${movie.poster_path}`} alt={ movie.name } />
                     ))}
+            </div>
         </div>
 
     </React.Fragment>
