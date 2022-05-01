@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from 'react'
 import axios from './js/axios';
-import countStarRating from './js/starRating';
+import countStar from './js/countStar';
 import './css/Home.css';
 import {Helmet} from 'react-helmet';
 import slide1 from './assets/img/slide1.png';
 import slide3 from './assets/img/slide3.png';
 import './Modal.css';
-
+import { AiTwotoneStar } from "react-icons/ai";
 
 const baseUrl = "https://image.tmdb.org/t/p/original/";
 
@@ -70,7 +70,9 @@ function Home({ title, fetchUrl, isLargeRow }) {
                                             <div className="review">
                                                 <div className="author-review">
                                                     {
-                                                     countStarRating(movie.vote_count)
+                                                        countStar.map(star => (
+                                                            movie.vote_count > 3 ? star.one : star.two
+                                                        ))
                                                     }
                                                 </div>
                                                 <h4>{movie.vote_count} voters</h4>
