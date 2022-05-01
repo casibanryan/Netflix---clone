@@ -34,15 +34,12 @@ function Home({ title, fetchUrl, fetchPeople, isLargeRow }) {
 
 
      useEffect(() => {
-
-        async function fetchPeople() {
+        async function fetchCast() {
             const request = await axios.get(fetchPeople);
             console.log(request);
             return request;
         }
-
-        fetchPeople();
-
+        fetchCast();
      }, [fetchPeople])
 
      // format number to k ex => 5000 - 5k
