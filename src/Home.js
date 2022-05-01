@@ -5,6 +5,7 @@ import {Helmet} from 'react-helmet';
 import slide1 from './assets/img/slide1.png';
 import slide3 from './assets/img/slide3.png';
 import './Modal.css';
+import { AiTwotoneStar } from "react-icons/ai";
 
 const baseUrl = "https://image.tmdb.org/t/p/original/";
 
@@ -58,7 +59,7 @@ function Home({ title, fetchUrl, isLargeRow }) {
                                     <div className="col-lg-6 col-md-5">
                                         <div className="hero-area-content pb-3">
                                             <img src={`${baseUrl}${movie?.poster_path || movie?.backdrop_path}`} 
-                                               style={{ maxWidth: "100%"}} 
+                                               style={{ maxWidth: "100%", height:"auto"}} 
                                             />
                                         </div>
                                     </div>
@@ -67,11 +68,11 @@ function Home({ title, fetchUrl, isLargeRow }) {
                                             <h1> {movie?.title || movie?.name || movie?.original_name}</h1>
                                             <div className="review">
                                                 <div className="author-review">
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
-                                                    <i class="bi bi-star-fill"></i>
-                                                   <i class="bi bi-star-fill"></i>
+                                                 <AiTwotoneStar />
+                                                    <AiTwotoneStar />
+                                                    <AiTwotoneStar />
+                                                        <AiTwotoneStar />
+                                                        <AiTwotoneStar />
                                                 </div>
                                                 <h4>180k voters</h4>
                                             </div>
