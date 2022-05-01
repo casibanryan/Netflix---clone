@@ -1,5 +1,6 @@
 import React from 'react'
 import Banner from './sections/Banner';
+import './css/App.css';
 // import LandPage from './pages/LandPage';
 // import SignIn from './pages/SignIn';
 // import {Routes, Route} from 'react-router-dom';
@@ -21,17 +22,18 @@ function App(props) {
 
     <>
       {/* navbar */}
-
+      <div className="app">
       {/* banner */}
-      <Banner />
-        <Row title="Netflix originals" fetchUrl={requests.fetchNetflixOriginals} isLargeRow={true} />
-        <Row title="Trending" fetchUrl={requests.fetchTrending} /> 
-        <Row title="Top Rated" fetchUrl={requests.fetchTopRated} /> 
-        <Row title="Action Movies" fetchUrl={requests.fetchActionMovies} /> 
-        <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} /> 
-        <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} /> 
-        <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} /> 
-        <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} /> 
+          <Banner />
+            <Row title="Netflix originals" fetchUrl={requests.fetchNetflixOriginals} isLargeRow={true} />
+            <Row title="Trending" fetchUrl={requests.fetchTrending} /> 
+            <Row title="Top Rated" fetchUrl={requests.fetchTopRated} /> 
+            <Row title="Action Movies" fetchUrl={requests.fetchActionMovies} /> 
+            <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} /> 
+            <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} /> 
+            <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} /> 
+            <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} /> 
+        </div>
     </>
   )
 }

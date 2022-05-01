@@ -18,6 +18,7 @@ function Banner() {
       fetchData();
     }, [])
     
+    // minimize the text in small screen (responsive)
     function truncate(str, n) {
             return str?.length > n ? str.substr(0, n-1) + "..." : str;
     }
@@ -43,8 +44,9 @@ function Banner() {
                 </div>
 
                     {/* description */}
-                <h1 className="banner__description"> {truncate(movie?.overview)} </h1>
+                <h1 className="banner__description"> { truncate(movie?.overview, 150) } </h1>
         </div>
+        <div className="banner__fadeBottom"></div>
     </header>
   )
 }
