@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react'
 import axios from './js/axios';
 import countStar from './js/countStar';
 import './css/Home.css';
-import {Helmet} from 'react-helmet';
 import slide1 from './assets/img/slide1.png';
 import slide3 from './assets/img/slide3.png';
 import './Modal.css';
@@ -157,9 +156,7 @@ function Home({ title, fetchUrl, fetchPeople, isLargeRow }) {
     ))}
 </div>
 </div>
-                        <Helmet>
-                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-                        </Helmet>
+                      
     </React.Fragment>
   )
 }

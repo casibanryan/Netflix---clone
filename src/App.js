@@ -8,6 +8,7 @@ import './css/styles.css';
 // import {Routes, Route} from 'react-router-dom';
 import Home from './Home';
 import requests from './js/requests';
+import {Helmet} from 'react-helmet';
 
 // Api key =>  14d57525a7a6772b9699d35339fb5878
 
@@ -36,6 +37,9 @@ function App(props) {
             <Home title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} fetchPeople={requests.fetchPeople} /> 
             <Home title="Documentaries" fetchUrl={requests.fetchDocumentaries} fetchPeople={requests.fetchPeople} /> 
         </div>
+          <Helmet>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+          </Helmet>
     </>
   )
 }
