@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import axios from '../js/axios';
 import requests from '../js/requests';
 
@@ -18,7 +18,7 @@ function Banner() {
     }, [])
     
     console.log(movie);
-    
+
   return (
     <header className="banner" 
             style={{ backgroundSize: "cover",
