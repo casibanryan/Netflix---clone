@@ -58,7 +58,7 @@ function Home({ title, fetchUrl, isLargeRow }) {
                                     <div className="col-lg-6 col-md-5">
                                         <div className="hero-area-content">
                                             <img src={`${baseUrl}${movie?.poster_path || movie?.backdrop_path}`} 
-                                               style={{ maxWidth: "100%"}} 
+                                               style={{ maxWidth: "100%", height: 700 }} 
                                             />
                                         </div>
                                     </div>
