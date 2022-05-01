@@ -54,12 +54,13 @@
   --bs-body-color: #212529;
   --bs-body-bg: #000000;
 }
-
+/***
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
+} 
+***/
 
 @media (prefers-reduced-motion: no-preference) {
   :root {

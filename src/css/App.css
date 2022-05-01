@@ -1,7 +1,5 @@
-*, *::before,
-*::after {
+* {
     margin : 0;
-    box-sizing:none!important;
 }
 
 .app {
