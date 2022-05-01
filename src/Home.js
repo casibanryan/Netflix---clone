@@ -47,9 +47,8 @@ function Home({ title, fetchUrl, isLargeRow }) {
                 <div className="row__posters">
                      {/* looping the data  */}
                     {movies.map((movie) => (
-                        <React.Fragment >
+                        <React.Fragment key={movie.id}>
                         <img className={`row__poster ${isLargeRow && "row__posterLarge"}`}
-                        key={movie.id}
                         type="button" data-bs-toggle="modal" data-bs-target={`#staticBackdrop${movie.id}`}
                         src={`${baseUrl}${isLargeRow ? movie.poster_path : movie.backdrop_path}`}
                         alt={ movie.name }/>
@@ -75,7 +74,7 @@ function Home({ title, fetchUrl, isLargeRow }) {
                                     </div>
                                     <div className="col-lg-6 col-md-7">
                                         <div className="hero-area-content pr-50">
-                                            <h1> {movie?.title || movie?.name || movie?.original_name}</h1>
+                                            <h2> {movie?.title || movie?.name || movie?.original_name}</h2>
                                             <div className="review">
                                                 <div className="author-review">
                                                     {
