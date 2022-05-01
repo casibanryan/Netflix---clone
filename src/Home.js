@@ -74,7 +74,7 @@ function Home({ title, fetchUrl, isLargeRow }) {
                                                         <AiTwotoneStar />
                                                         <AiTwotoneStar />
                                                 </div>
-                                                <h4>180k voters</h4>
+                                                <h4>{movie.vote_count}</h4>
                                             </div>
                                             <p> {movie.overview} </p>
                                             <h3>Cast:</h3>
