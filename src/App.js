@@ -1,5 +1,6 @@
 import React from 'react'
 import Banner from './sections/Banner';
+import Nav from './sections/Nav';
 import './css/App.css';
 import './css/styles.css';
 // import LandPage from './pages/LandPage';
