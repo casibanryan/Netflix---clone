@@ -77,7 +77,7 @@ function Home({ title, fetchUrl, isLargeRow }) {
                                                         ))
                                                     }
                                                 </div>
-                                                <h4>{`${movie.vote_count} voters ${movie.vote_count >= 1000 ? 'K' : null} `}</h4>
+                                                <h4>{`${movie.vote_count} ${movie.vote_count >= 1000 ? 'K' : ''} voters`}</h4>
                                             </div>  
                                             <p> {movie.overview} </p>
                                             <h3>Cast:</h3>
