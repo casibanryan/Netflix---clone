@@ -42,7 +42,7 @@ function Home({ title, fetchUrl, fetchPeople, isLargeRow }) {
         fetchCast();
      }, [fetchPeople])
 
-     console.log(casts.profile_path);
+     console.log(casts[0].profile_path);
      // format number to k ex => 5000 - 5k
         function kFormatter(num) {
             return Math.abs(num) > 999 ? Math.sign(num)*((Math.abs(num)/1000).toFixed(1)) + 'k' : Math.sign(num)*Math.abs(num)
