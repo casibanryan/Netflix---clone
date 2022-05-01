@@ -54,7 +54,7 @@ function Home({ title, fetchUrl, isLargeRow }) {
                                 <div className="row hero-area-slide">
                                     <div className="col-lg-6 col-md-5">
                                         <div className="hero-area-content">
-                                            <img src={`${baseUrl}${movie.poster_path}`} alt={movie.name} />
+                                            <img src={`${baseUrl}${isLargeRow ? movie.poster_path : movie.backdrop_path}`} />
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-md-7">
