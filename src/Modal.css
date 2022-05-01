@@ -18,3 +18,199 @@
     padding-top: 52px;
     box-shadow: 0 0 20px #000000;
 }
+
+.hero-area-content>img {
+    position: relative;
+    margin-top: -120px;
+}
+
+.hero-area-slider {
+    margin: auto;
+    max-width: 950px;
+}
+
+.author-review {
+    color: #fece50;
+    float: left;
+}
+
+.review h4 {
+    padding-left: 25px;
+    overflow: hidden;
+}
+
+.review {
+    margin: 8px 0 35px;
+}
+
+.hero-area-content h3 {
+    margin-top: 35px;
+}
+
+.single-slide-cast {
+    width: 11.5%;
+    margin-right: 1%;
+    float: left;
+    margin-top: 15px;
+}
+
+.single-slide-cast img {
+    border-radius: 100%;
+}
+
+.single-slide-cast.text-center {
+    height: 45px;
+    line-height: 45px;
+    border-radius: 100%;
+    max-width: 45px;
+    border: 2px solid #eb315a;
+    color: #eb315a;
+}
+
+.pr-50 {
+    padding-right: 10px;
+    margin-left: -15px;
+}
+
+.slide-trailor {
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.slide-cast {
+    overflow: hidden;
+}
+
+.slide-trailor h3 {
+    float: left;
+    margin: 0;
+    margin-right: 25px;
+}
+
+.hero-area-thumb .hero-area-slide {
+    margin: 0 15px;
+}
+
+.thumb-prev {
+    position: absolute;
+    bottom: 0;
+    left: -690px;
+    max-width: 950px;
+    -webkit-perspective: 80px;
+    perspective: 80px;
+}
+
+.thumb-prev .hero-area-slide {
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateY(2deg);
+    transform-style: preserve-3d;
+    transform: rotateY(2deg);
+    cursor: pointer;
+}
+
+.thumb-next {
+    position: absolute;
+    bottom: 0;
+    right: -690px;
+    max-width: 950px;
+    -webkit-perspective: 80px;
+    perspective: 80px;
+}
+
+.thumb-next .hero-area-slide {
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateY(-2deg);
+    transform-style: preserve-3d;
+    transform: rotateY(-2deg);
+    cursor: pointer;
+}
+
+/*----------------------------------
+--------- HERO AREA CSS END --------
+-----------------------------------*/
+
+/*----------------------------------
+-------- portfolio AREA CSS START -------
+------------------------------------*/
+hr {
+    margin: 0;
+    border-top: 1px solid #ddd;
+}
+
+.portfolio-menu {
+    padding-top: 30px;
+}
+
+.portfolio-menu li {
+    display: inline-block;
+    position: relative;
+    margin-left: 15px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.portfolio-menu li::before {
+    background: transparent;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    transition: 0.4s;
+    content: "";
+    height: 4px;
+    position: absolute;
+    z-index: 99;
+}
+
+.portfolio-menu li.active {
+    color: #fff;
+}
+
+.portfolio-menu li.active::before,
+.portfolio-menu li:hover::before {
+    background: #eb315a;
+}
+
+.portfolio-content h2 {
+    margin-top: 20px;
+}
+
+.single-portfolio {
+    margin-top: 50px;
+}
+
+.video-area,
+.single-portfolio-img {
+    overflow: hidden;
+    position: relative;
+}
+
+.single-portfolio-img:hover .popup-youtube i {
+    opacity: 1;
+}
+
+.single-portfolio-img .popup-youtube i {
+    opacity: 0;
+}
+
+.video-area img,
+.single-portfolio-img img {
+    transition: 0.9s;
+}
+
+.video-area:hover img,
+.single-portfolio:hover img {
+    transform: scale(1.2);
+}
+
+.single-portfolio .review {
+    margin-bottom: 0;
+}
+
+.portfolio-sidebar img {
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.portfolio-sidebar {
+    margin-top: 20px;
+}
