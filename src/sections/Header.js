@@ -9,10 +9,10 @@ function Header() {
     <React.Fragment>
 
         <header className="masthead" style={{ height:"80vh" }}>
-            <nav className="navbar navbar-light static-top">
-                    <div className="container">
+            <nav className="navbar navbar-dark fixed-top">
+                    <div className="container-fluid">
                         <Link to="/" className="navbar-brand" >  <img src={ logo } />  </Link>
-                        <Link to="/signIn" className="btn btn-primary btn-sm">Sign In</Link>
+                        <Link to="/signIn" className="btn btn-primary btn-sm me-5">Sign In</Link>
                     </div>
             </nav>
         <div className="container position-relative" id="heading__title">

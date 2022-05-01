@@ -28,8 +28,8 @@ function App(props) {
       <div className="app">
       {/* banner */}
           <Banner />
-            <Home title="Netflix originals" fetchUrl={requests.fetchNetflixOriginals} isLargeRow={true} />
-            <Home title="Trending" fetchUrl={requests.fetchTrending} /> 
+            <Home title="New Release" fetchUrl={requests.fetchNetflixOriginals} isLargeRow={true} />
+            <Home title="Trending Now" fetchUrl={requests.fetchTrending} /> 
             <Home title="Top Rated" fetchUrl={requests.fetchTopRated} /> 
             <Home title="Action Movies" fetchUrl={requests.fetchActionMovies} /> 
             <Home title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} /> 

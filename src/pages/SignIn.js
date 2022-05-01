@@ -8,9 +8,9 @@ function SignIn() {
     <React.Fragment>
    
     <header className="masthead" style={{ height: "80vh" }}>
-        <nav className="navbar navbar-light static-top">
-            <div className="container">
-                <Link to="/" className="navbar-brand" href="index.html">
+        <nav className="navbar navbar-light fixed-top">
+            <div className="container-fluid">
+                <Link to="/" className="navbar-brand">
                     <img src={ logo } />
                 </Link>
             </div>
