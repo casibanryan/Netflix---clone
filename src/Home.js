@@ -107,7 +107,7 @@ function Home({ title, fetchUrl, fetchPeople, isLargeRow }) {
                                                 {
                                                     casts.map((cast, index) => (
                                                         <div className={`single-slide-cast ${index >= 7 ? 'd-none' : ""}`} key={index}>
-                                                            <img className="w-50 h-50" src={`${baseUrl}${cast.profile_path}`} alt={cast.name} />
+                                                            <img src={`${baseUrl}${cast.profile_path}`} alt={cast.name} style={{height:50, width:50}} />
                                                         </div>
                                                         
                                                     ))
