@@ -23,7 +23,10 @@ function Nav() {
     }, [])
     
   return (
-    <nav className={`navbar navbar-dark p-3 fixed-top ${show && "bg__dark"}`}>
+    <nav className={`navbar navbar-dark p-3 fixed-top ${show && "bg__dark"}`}
+          style={{ transitionTimingFunction: "ease-in",
+                    transition: "all 0.5s"    
+        }}>
         <div className="container-fluid">
             <a href="#" className="navbar-brand" >  <img src={ logo } alt="logo" />  </a>
             <a href="#" className="btn btn-primary btn-sm me-5">Sign Out</a>
