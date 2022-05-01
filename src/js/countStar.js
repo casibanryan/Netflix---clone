@@ -1,10 +1,10 @@
-
+import { AiTwotoneStar } from "react-icons/ai";
 
 
 const countStar = [
     {
-        one : '<AiTwotoneStar />',
-        two : '<><AiTwotoneStar /> <AiTwotoneStar /></>',
+        one : <AiTwotoneStar />,
+        two : <><AiTwotoneStar /> <AiTwotoneStar /></>,
     }
 ]
 
