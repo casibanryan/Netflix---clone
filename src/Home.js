@@ -17,7 +17,6 @@ const baseUrl = "https://image.tmdb.org/t/p/original/";
 function Home({ title, fetchUrl, fetchPeople, isLargeRow }) {
 
     const [movies, setMovies] = useState([]);
-    const [casts, setCasts] = useState([]);
 
     // making request to TMDB
     // every time the row reloads
@@ -32,11 +31,12 @@ function Home({ title, fetchUrl, fetchPeople, isLargeRow }) {
         fetchData();
      }, [fetchUrl])    // if [] => dependency is empty means run once when page loads and dont't run again
 
-
+    const [casts, setCasts] = useState([]);
      useEffect(() => {
         async function fetchCast() {
             const request = await axios.get(fetchPeople);
-            console.log(request);
+            ///14uxt0jH28J9zn4vNQNTae3Bmr7.jpg
+            setCasts(request.data.results)
             return request;
         }
         fetchCast();
@@ -103,10 +103,15 @@ function Home({ title, fetchUrl, fetchPeople, isLargeRow }) {
                                             <p> {movie.overview} </p>
                                             <h3>Cast:</h3>
                                             <div className="slide-cast">
-									{/* <div className="single-slide-cast">
-										<img src="assets/img/cast/cast1.png" alt="about" />
-									</div>
-									> */}
+                                                {
+                                                    casts.map((cast, index) => {
+                                                        <div className={`single-slide-cast ${index >= 7 ? d-none : ""}`} key={index}>
+                                                            <img src={cast.profile_path} alt={cast.name} />
+                                                        </div>
+                                                        
+                                                    })
+                                                }
+									
 									<div className="single-slide-cast text-center">
 										5+
 									</div>
