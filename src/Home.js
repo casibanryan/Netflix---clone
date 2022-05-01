@@ -47,8 +47,9 @@ function Home({ title, fetchUrl, isLargeRow }) {
                 <div className="row__posters">
                      {/* looping the data  */}
                     {movies.map((movie) => (
-                        <React.Fragment key={movie.id}>
+                        <React.Fragment>
                         <img className={`row__poster ${isLargeRow && "row__posterLarge"}`}
+                        key={movie.id}
                         type="button" data-bs-toggle="modal" data-bs-target={`#staticBackdrop${movie.id}`}
                         src={`${baseUrl}${isLargeRow ? movie.poster_path : movie.backdrop_path}`}
                         alt={ movie.name }/>
@@ -76,15 +77,18 @@ function Home({ title, fetchUrl, isLargeRow }) {
                                         <div className="hero-area-content pr-50">
                                             <h2> {movie?.title || movie?.name || movie?.original_name}</h2>
                                             <div className="review">
-                                                <div className="author-review">
-                                                    {
-                                                        countStar.map(star => (
-                                                            movie.vote_count > 1000 ? star.veryHigh : 
-                                                            movie.vote_count < 1000 && movie.vote_count > 500 ? star.high :
-                                                            movie.vote_count < 500 && movie.vote_count > 100 ? star.medium : star.low
-                                                        ))
-                                                    }
-                                                </div>
+                                              
+                                                {/* detecting the rating (star) of the movies */}
+                                                {countStar.map((star, index) => (
+                                                    <div className="author-review" key={index}>
+                                                       {
+                                                        movie.vote_count > 1000 ? star.veryHigh : 
+                                                        movie.vote_count < 1000 && movie.vote_count > 500 ? star.high :
+                                                        movie.vote_count < 500 && movie.vote_count > 100 ? star.medium : star.low
+                                                       }
+                                                    </div>
+                                                ))}
+                                            
                                                 <h4> {kFormatter(movie.vote_count)} voters</h4>
                                             </div>  
                                             <p> {movie.overview} </p>
