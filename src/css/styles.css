@@ -653,18 +653,13 @@ progress {
 
 .img-thumbnail {
   padding: 0.25rem;
-  /* background-color: #fff;
+  background-color: #fff;
   border: 1px solid #dee2e6;
-  border-radius: 0.25rem; */
-  object-fit: contain;
+  border-radius: 0.25rem;
   max-width: 100%;
   height: auto;
-  transition: transform 450ms;
 }
 
-.img-thumbnail:hover {
-  transform: scale(1.08);
-}
 
 .figure {
   display: inline-block;
