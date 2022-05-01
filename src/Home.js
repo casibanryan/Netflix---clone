@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react'
 import axios from './js/axios';
 import './css/Home.css';
 import {Helmet} from 'react-helmet';
+import slide1 from './assets/ing/slide1.png';
+import slide3 from './assets/ing/slide3.png';
 
 const baseUrl = "https://image.tmdb.org/t/p/original/";
 
@@ -43,10 +45,164 @@ function Home({ title, fetchUrl, isLargeRow }) {
                         <div className="modal-content bg__dark">
                         <div className="modal-header" style={{ borderBottom:"none"}}>
                             <h1 className="modal-title" id="staticBackdropLabel">  {movie?.title || movie?.name || movie?.original_name} </h1>
-                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" className="btn-close btn-lg bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
-                                        test
+                                
+		<section className="hero-area" id="home">
+			<div className="container">
+				<div className="hero-area-slider">
+					<div className="row hero-area-slide">
+						<div className="col-lg-6 col-md-5">
+							<div className="hero-area-content">
+								<img src={`${baseUrl}${movie?.poster_path || movie?.backdrop_path}`} alt={movie.name} />
+							</div>
+						</div>
+						<div className="col-lg-6 col-md-7">
+							<div className="hero-area-content pr-50">
+								<h2>The Devil Princess</h2>
+								<div className="review">
+									<div className="author-review">
+										<i className="icofont icofont-star"></i>
+										<i className="icofont icofont-star"></i>
+										<i className="icofont icofont-star"></i>
+										<i className="icofont icofont-star"></i>
+										<i className="icofont icofont-star"></i>
+									</div>
+									<h4>180k voters</h4>
+								</div>
+								<p>She is a devil princess from the demon world. She grew up sheltered by her parents and doesn't really know how to be evil or any of the common actions,   She is unable to cry due to Keita's accidental first wish, despite needed for him to wish...</p>
+								<h3>Cast:</h3>
+								<div className="slide-cast">
+									{/* <div className="single-slide-cast">
+										<img src="assets/img/cast/cast1.png" alt="about" />
+									</div>
+									<div className="single-slide-cast">
+										<img src="assets/img/cast/cast2.html" alt="about" />
+									</div>
+									<div className="single-slide-cast">
+										<img src="assets/img/cast/cast3.png" alt="about" />
+									</div>
+									<div className="single-slide-cast">
+										<img src="assets/img/cast/cast4.png" alt="about" />
+									</div>
+									<div className="single-slide-cast">
+										<img src="assets/img/cast/cast5.png" alt="about" />
+									</div>
+									<div className="single-slide-cast">
+										<img src="assets/img/cast/cast6.png" alt="about" />
+									</div>
+									<div className="single-slide-cast">
+										<img src="assets/img/cast/cast7.png" alt="about" />
+									</div> */}
+									<div className="single-slide-cast text-center">
+										5+
+									</div>
+								</div>
+								<div className="slide-trailor">
+									<h3>Watch Trailer</h3>
+									<a className="theme-btn theme-btn2" href="#"><i className="icofont icofont-play"></i> Tickets</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="hero-area-thumb">
+					<div className="thumb-prev">
+						<div className="row hero-area-slide">
+							<div className="col-lg-6">
+								<div className="hero-area-content">
+									<img src={slide3} alt="about" />
+								</div>
+							</div>
+							<div className="col-lg-6">
+								<div className="hero-area-content pr-50">
+									<h2>Last Avatar</h2>
+									<div className="review">
+										<div className="author-review">
+											<i className="icofont icofont-star"></i>
+											<i className="icofont icofont-star"></i>
+											<i className="icofont icofont-star"></i>
+											<i className="icofont icofont-star"></i>
+											<i className="icofont icofont-star"></i>
+										</div>
+										<h4>180k voters</h4>
+									</div>
+									<p>She is a devil princess from the demon world. She grew up sheltered by her parents and doesn't really know how to be evil or any of the common actions,   She is unable to cry due to Keita's accidental first wish, despite needed for him to wish...</p>
+									<h3>Cast:</h3>
+									<div className="slide-cast">
+										{/* <div className="single-slide-cast">
+											<img src="assets/img/cast/cast1.png" alt="about" />
+										</div>
+										<div className="single-slide-cast">
+											<img src="assets/img/cast/cast2.html" alt="about" />
+										</div>
+										<div className="single-slide-cast">
+											<img src="assets/img/cast/cast3.png" alt="about" />
+										</div>
+										<div className="single-slide-cast">
+											<img src="assets/img/cast/cast4.png" alt="about" />
+										</div>
+										<div className="single-slide-cast">
+											<img src="assets/img/cast/cast5.png" alt="about" />
+										</div>
+										<div className="single-slide-cast">
+											<img src="assets/img/cast/cast6.png" alt="about" />
+										</div>
+										<div className="single-slide-cast">
+											<img src="assets/img/cast/cast7.png" alt="about" />
+										</div> */}
+										<div className="single-slide-cast text-center">
+											5+
+										</div>
+									</div>
+									<div className="slide-trailor">
+										<h3>Watch Trailer</h3>
+										<a className="theme-btn theme-btn2" href="#"><i className="icofont icofont-play"></i> Tickets</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className="thumb-next">
+						<div className="row hero-area-slide">
+							<div className="col-lg-6">
+								<div className="hero-area-content">
+									<img src="assets/img/slide1.png" alt="about" />
+								</div>
+							</div>
+							<div className="col-lg-6">
+								<div className="hero-area-content pr-50">
+									<h2>The Deer God</h2>
+									<div className="review">
+										<div className="author-review">
+											<i className="icofont icofont-star"></i>
+											<i className="icofont icofont-star"></i>
+											<i className="icofont icofont-star"></i>
+											<i className="icofont icofont-star"></i>
+											<i className="icofont icofont-star"></i>
+										</div>
+										<h4>180k voters</h4>
+									</div>
+									<p>She is a devil princess from the demon world. She grew up sheltered by her parents and doesn't really know how to be evil or any of the common actions,   She is unable to cry due to Keita's accidental first wish, despite needed for him to wish...</p>
+									<h3>Cast:</h3>
+									<div className="slide-cast">
+										<div className="single-slide-cast text-center">
+											5+
+										</div>
+									</div>
+									<div className="slide-trailor">
+										<h3>Watch Trailer</h3>
+										<a className="theme-btn theme-btn2" href="#"><i className="icofont icofont-play"></i> Tickets</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	
                         </div>
                         </div>
                     </div>
