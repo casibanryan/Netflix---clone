@@ -73,7 +73,7 @@ function Home({ title, fetchUrl, isLargeRow }) {
                                                         countStar.map(star => (
                                                             movie.vote_count > 1000 ? star.veryHigh : 
                                                             movie.vote_count < 1000 || movie.vote_count > 500 ? star.high :
-                                                            movie.vote_count < 500 || movie.vote_count > 100 ? star.media : star.low
+                                                            movie.vote_count < 500 || movie.vote_count > 100 ? star.medium : star.low
                                                         ))
                                                     }
                                                 </div>
