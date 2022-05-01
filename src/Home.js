@@ -4,6 +4,7 @@ import countStar from './js/countStar';
 import './css/Home.css';
 import {Helmet} from 'react-helmet';
 import slide1 from './assets/img/slide1.png';
+import side1Animation from './assets/video/slide1.mp4';
 import slide3 from './assets/img/slide3.png';
 import './Modal.css';
 import { BsPlay } from "react-icons/bs";
@@ -125,7 +126,14 @@ function Home({ title, fetchUrl, isLargeRow }) {
 						<div className="row hero-area-slide">
 							<div className="col-lg-6">
 								<div className="hero-area-content">
-									<img src={slide1} alt="about" />
+                                     {/* <video id="netflixVideo" autoPlay="autoplay" preload="none" muted loop poster={poster1} >
+                        <source src={ videoPreviewWebp1 } alt="video-preview-1" type="video/webp" />
+                        <source src={ videoPreview1 } alt="video-preview-1" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video> */}
+									<video autoPlay="autoplay" preload="none" muted loop poster={slide1}>
+                                        <source src={side1Animation} type="video/mp4" />
+                                    </video>
 								</div>
 							</div>
 						</div>
