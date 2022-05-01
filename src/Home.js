@@ -56,9 +56,9 @@ function Home({ title, fetchUrl, isLargeRow }) {
                             <div className="hero-area-slider">
                                 <div className="row hero-area-slide">
                                     <div className="col-lg-6 col-md-5">
-                                        <div className="hero-area-content">
+                                        <div className="hero-area-content pb-3">
                                             <img src={`${baseUrl}${movie?.poster_path || movie?.backdrop_path}`} 
-                                               style={{ maxWidth: "100%", height: 700 }} 
+                                               style={{ maxWidth: "100%"}} 
                                             />
                                         </div>
                                     </div>
@@ -95,7 +95,7 @@ function Home({ title, fetchUrl, isLargeRow }) {
 					</div>
 				</div>
 				<div className="hero-area-thumb">
-					<div className="thumb-prev">
+					<div className="thumb-prev w-100">
 						<div className="row hero-area-slide">
 							<div className="col-lg-6">
 								<div className="hero-area-content">
@@ -104,7 +104,7 @@ function Home({ title, fetchUrl, isLargeRow }) {
 							</div>
 						</div>
 					</div>
-					<div className="thumb-next">
+					<div className="thumb-next w-100">
 						<div className="row hero-area-slide">
 							<div className="col-lg-6">
 								<div className="hero-area-content">
