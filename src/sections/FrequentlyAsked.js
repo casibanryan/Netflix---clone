@@ -36,17 +36,19 @@ function FrequentlyAsked() {
                 
             </div>
              <p className="mb-3 text-center fs-6">Ready to watch? Enter your email to create or restart your membership.</p>
-            <form className="form-subscribe px-5" id="contactFormFooter" >
+            <form className="form-subscribe px-lg-5" id="contactFormFooter" >
                 {/* Email address input*/}
                 <div className="row">
                     <div className="col px-0">
                         <input className="form-control form-control-lg bdr-0"  id="emailAddressBelow"
                             type="email" placeholder="Email address" required />
                     </div>
-                    <div className="col-auto px-0"><button className="btn btn-primary btn-lg bdr-0" id="submitButton" type="submit">
+                    <div className="col-auto px-0">
+                        <button className="btn btn-primary btn-lg bdr-0" id="submitButton" type="submit">
                             Get Started
                             <span className="fa-solid fa-greater-than fw-bold px-2"></span>
-                        </button></div>
+                        </button>
+                        </div>
                 </div>
             </form>
         </div>
