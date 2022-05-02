@@ -67,7 +67,7 @@ function Nav() {
                 <li className="nav-item">
                     <a className="nav-link" href="#"><BsFillBellFill /></a>
                 </li>
-                <li className="nav-item ms-3">
+                <li className="nav-item ms-lg-3 ms-md-3">
                     <a className="btn btn-primary btn-sm" href="#">Sign Out</a>
                 </li>
             </ul>

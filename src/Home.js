@@ -55,7 +55,7 @@ function Home({ title, fetchUrl, fetchPeople, isLargeRow }) {
               {/* title */}
             <h2> {title} </h2>
                     {/* container */}
-                <div className="row__posters">
+                <div className="row__posters mb-3">
                      {/* looping the data  */}
                     {movies.map((movie, index) => (
                         <React.Fragment key={index}>
