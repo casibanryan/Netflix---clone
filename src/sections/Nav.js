@@ -32,7 +32,7 @@ function Nav() {
     //         <a href="#" className="btn btn-primary btn-sm me-5">Sign Out</a>
     //     </div>
     // </nav>
-    <nav className={`navbar navbar-expand-lg navbar-dark px-lg-4 ${show && "bg__dark"} `}
+    <nav className={`navbar navbar-expand-lg navbar-dark fixed-top px-lg-4 ${show && "bg__dark"} `}
           style={{ transitionTimingFunction: "ease-in",
                    transition: "all 0.5s"    
             }}>
