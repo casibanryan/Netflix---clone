@@ -698,6 +698,10 @@ progress {
     width: 100%;
   }
 
+  
+  .hero-area-slide {
+    margin: 110px 15px 50px;
+  }
   .navbar {
       background-color: #111;
       padding-bottom: 1rem;
