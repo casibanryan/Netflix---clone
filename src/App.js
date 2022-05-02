@@ -6,7 +6,7 @@ import './css/styles.css';
 // import LandPage from './pages/LandPage';
 // import SignIn from './pages/SignIn';
 // import {Routes, Route} from 'react-router-dom';
-import Home from './Home';
+import Home from './pages/Home';
 import requests from './js/requests';
 import {Helmet} from 'react-helmet';
 

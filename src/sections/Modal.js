@@ -3,7 +3,7 @@ import { BsPlay } from "react-icons/bs";
 import countStar from '../js/countStar';
 import slide1 from '../assets/img/slide1.png';
 import slide3 from '../assets/img/slide3.png';
-import '../Modal.css';
+import '../css/Modal.css';
 
 function Modal({movie, casts}) {
 

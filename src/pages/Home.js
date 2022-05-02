@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
-import axios from './js/axios';
-import './css/Home.css';
-import Modal from './sections/Modal';
+import axios from '../js/axios';
+import '../css/Home.css';
+import Modal from '../sections/Modal';
 
 
 
