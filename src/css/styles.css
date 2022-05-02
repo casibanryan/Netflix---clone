@@ -700,7 +700,7 @@ progress {
 
   
   .hero-area-slide {
-    margin: 110px 15px 50px;
+    margin: 110px 15px 50px !important;
   }
   .navbar {
       background-color: #111;
