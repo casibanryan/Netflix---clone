@@ -43,7 +43,7 @@ function FrequentlyAsked() {
                         <input className="form-control form-control-lg bdr-0"  id="emailAddressBelow"
                             type="email" placeholder="Email address" required />
                     </div>
-                    <div className="col-auto px-0"><button className="btn btn-primary btn-lg disabled bdr-0" id="submitButton" type="submit">
+                    <div className="col-auto px-0"><button className="btn btn-primary btn-lg bdr-0" id="submitButton" type="submit">
                             Get Started
                             <span className="fa-solid fa-greater-than fw-bold px-2"></span>
                         </button></div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Banner from './sections/Banner';
 import Nav from './sections/Nav';
+import Footer from './sections/Footer';
 import './css/App.css';
 import './css/styles.css';
 import Home from './pages/Home';
@@ -26,6 +27,7 @@ function App() {
             <Home title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} fetchPeople={requests.fetchPeople} /> 
             <Home title="Documentaries" fetchUrl={requests.fetchDocumentaries} fetchPeople={requests.fetchPeople} /> 
         </div>
+           <Footer />
           <Helmet>
                {/* Google fonts*/}
                 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"

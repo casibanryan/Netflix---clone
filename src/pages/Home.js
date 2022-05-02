@@ -56,6 +56,7 @@ function Home({ title, fetchUrl, fetchPeople, isLargeRow }) {
                      ))}
             </div>
         </div>
+     
   )
 }
 
