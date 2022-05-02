@@ -697,6 +697,11 @@ progress {
   [class*="col-"] {
     width: 100%;
   }
+
+  .navbar {
+      background-color: #111;
+      padding-bottom: 1rem;
+  }
   #heading__title {
     margin-top: 20px !important;
   }
