@@ -3308,13 +3308,13 @@ fieldset:disabled .btn {
   color: #fff;
   background-color: #db121c;
   border-color: #E30813;
-  font-weight: bolder;
 }
 
 .btn-primary:hover {
   color: #fff;
   background-color: #111;
   border-color: #080808;
+  font-weight:bold;
 }
 
 .btn-check:focus+.btn-primary,
