@@ -45,16 +45,14 @@ function Home({ title, fetchUrl, fetchPeople, isLargeRow }) {
                 <div className="row__posters">
                      {/* looping the data  */}
                     {movies.map((movie) => (
-                        <>
+                        <React.Fragment  key={movie.id}>
                         <img className={`row__poster ${isLargeRow && "row__posterLarge"}`}
-                        key={movie.id}
                         type="button" data-bs-toggle="modal" data-bs-target={`#staticBackdrop${movie.id}`}
                         src={`${baseUrl}${isLargeRow ? movie.poster_path : movie.backdrop_path}`}
                         alt={ movie.name }/>
-
                         {/* modal */}
                         <Modal movie={movie} casts={casts} />
-                    </>
+                    </React.Fragment>
                      ))}
             </div>
         </div>
