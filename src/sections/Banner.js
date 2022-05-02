@@ -34,7 +34,7 @@ function Banner() {
 
         <div className="banner__contains">
                {/* title */}
-               <h1 className="banner__title">
+               <h1 className="banner__title mt-lg-5 mt-md-5">
                    {movie?.title || movie?.name || movie?.original_name}
                </h1>
                 {/* 2 buttons */}
