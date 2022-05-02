@@ -34,3 +34,7 @@
 .row__posterLarge:hover {
     transform:scale(1.09);
 }
+
+#root>div>div:nth-child(2)>h2 {
+    margin-top: 1rem !important;
+}
