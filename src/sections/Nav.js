@@ -54,7 +54,7 @@ function Nav() {
                 </li>
             </ul>
             <span className="navbar-text">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 flex-row">
                 <li className="nav-item">
                     <a className="nav-link" href="#"><BsSearch /></a>
                 </li>
@@ -67,7 +67,7 @@ function Nav() {
                 <li className="nav-item">
                     <a className="nav-link" href="#"><BsFillBellFill /></a>
                 </li>
-                <li className="nav-item ms-lg-3 ms-md-3">
+                <li className="nav-item ms-lg-3 ms-md-3 ms-sm-3">
                     <a className="btn btn-primary btn-sm" href="#">Sign Out</a>
                 </li>
             </ul>
