@@ -35,9 +35,10 @@ function SignIn() {
                                 </div>
 
                                 <div className="d-grid mt-3">
-                                    <Link to="/home" className="btn btn-primary btn-sm btn-login text-uppercase fw-bold"
-                                        type="submit">Sign
-                                        in</Link>
+                                    <button className="btn btn-primary btn-sm btn-login text-uppercase fw-bold"
+                                        type="submit">
+                                            <Link to="/home"> Sign in</Link>
+                                       </button>
                                 </div>
                                 <div className="form-check mt-2">
                                     <input className="form-check-input" type="checkbox" value="" id="rememberPasswordCheck" />
