@@ -23,13 +23,13 @@ function Footer() {
                 <div className="col-lg-6 h-100 text-center text-lg-end my-auto">
                     <ul className="list-inline mb-0">
                         <li className="list-inline-item me-4">
-                            <a href="#!"><BsFacebook size={70} /></a>
+                            <a href="#!"><BsFacebook size={42} /></a>
                         </li>
                         <li className="list-inline-item me-4">
-                            <a href="#!"><BsTwitter size={70} /></a>
+                            <a href="#!"><BsTwitter size={42} /></a>
                         </li>
                         <li className="list-inline-item">
-                            <a href="#!"><BsInstagram size={70} /></a>
+                            <a href="#!"><BsInstagram size={42} /></a>
                         </li>
                     </ul>
                 </div>
