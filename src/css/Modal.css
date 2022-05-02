@@ -147,3 +147,12 @@
     background: linear-gradient(to bottom, #db121c 0%, #db121c 34%, #db121c 65%, #eb315a 100%);
     border: none;
 }
+
+@media only screen and (max-width: 768px) {
+    .pr-50 {
+        padding-bottom: 20px;
+    }
+    .theme-btn {
+        padding: 2px 9px;
+    }
+}
