@@ -51,11 +51,11 @@ function SignIn() {
                                     </label>
                                 </div>
 
-                                <a href="!#" className="mb-2 btn btn-facebook btn-login text-muted fs-6 p-0" type="submit">
+                                <Link to="/home" className="mb-2 btn btn-facebook btn-login text-muted fs-6 p-0" type="submit">
                                     Login
                                     with
                                     Facebook
-                                </a>
+                                </Link>
 
                                 <p className="text-muted mt-2">New to Netflix?<a href="#!"
                                         className="text-decoration-none text-light ms-2"> Sign up

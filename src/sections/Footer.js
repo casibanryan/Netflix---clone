@@ -1,4 +1,5 @@
 import React from 'react'
+import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
 
 function Footer() {
   return (
@@ -22,13 +23,13 @@ function Footer() {
                 <div className="col-lg-6 h-100 text-center text-lg-end my-auto">
                     <ul className="list-inline mb-0">
                         <li className="list-inline-item me-4">
-                            <a href="#!"><i className="bi-facebook fs-3"></i></a>
+                            <a href="#!"><BsFacebook /></a>
                         </li>
                         <li className="list-inline-item me-4">
-                            <a href="#!"><i className="bi-twitter fs-3"></i></a>
+                            <a href="#!"><BsTwitter /></a>
                         </li>
                         <li className="list-inline-item">
-                            <a href="#!"><i className="bi-instagram fs-3"></i></a>
+                            <a href="#!"><BsInstagram /></a>
                         </li>
                     </ul>
                 </div>

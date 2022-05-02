@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-// import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import logo from '../assets/img/logo.png';
 import { BsFillBellFill, BsSearch } from "react-icons/bs";
 
@@ -68,7 +68,7 @@ function Nav() {
                     <a className="nav-link" href="#"><BsFillBellFill /></a>
                 </li>
                 <li className="nav-item ms-lg-3 ms-md-3 ms-sm-3">
-                    <a className="btn btn-primary btn-sm" href="#">Sign Out</a>
+                    <Link to="/" className="btn btn-primary btn-sm" href="#">Sign Out</Link>
                 </li>
             </ul>
             </span>

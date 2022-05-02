@@ -1,6 +1,5 @@
 import React from 'react'
 import logo from '../assets/img/logo.png';
-import {Helmet} from 'react-helmet';
 import {Link} from 'react-router-dom';
 
 
@@ -32,7 +31,7 @@ function Header() {
                                        required />
                                 </div>
                                 <div className="col-auto px-0"><button
-                                        className="btn btn-primary btn-lg bdr-0 disabled"
+                                        className="btn btn-primary btn-lg bdr-0"
                                         id="submitButton" type="submit">Get
                                         Started <span className="fa-solid fa-greater-than fw-bold px-2"></span>
                                     </button></div>
@@ -44,17 +43,6 @@ function Header() {
         </div>
     </header>
 
-      <Helmet>
-            {/* Bootstrap icons*/}
-                <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"
-                    type="text/css" />
-     
-            {/* Google fonts*/}
-                <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
-                    type="text/css" />
-           {/* Bootstrap core JS*/}
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    </Helmet>
     </React.Fragment>
   )
 }
