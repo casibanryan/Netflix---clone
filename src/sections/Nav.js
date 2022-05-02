@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 // import {Link} from 'react-router-dom';
 import logo from '../assets/img/logo.png';
+import { BsFillBellFill, BsSearch } from "react-icons/bs";
 
 
 function Nav() {
@@ -23,15 +24,7 @@ function Nav() {
     }, [])
     
   return (
-    // <nav className={`navbar navbar-dark p-3 fixed-top ${show && "bg__dark"}`}
-    //       style={{ transitionTimingFunction: "ease-in",
-    //                 transition: "all 0.5s"    
-    //     }}>
-    //     <div className="container-fluid">
-    //         <a href="#" className="navbar-brand" >  <img src={ logo } alt="logo" />  </a>
-    //         <a href="#" className="btn btn-primary btn-sm me-5">Sign Out</a>
-    //     </div>
-    // </nav>
+    
     <nav className={`navbar navbar-expand-lg navbar-dark fixed-top px-lg-4 ${show && "bg__dark"} `}
           style={{ transitionTimingFunction: "ease-in",
                    transition: "all 0.5s"    
@@ -63,7 +56,7 @@ function Nav() {
             <span className="navbar-text">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                    <a className="nav-link" href="#"><i className="bi bi-search"></i></a>
+                    <a className="nav-link" href="#"><BsSearch /></a>
                 </li>
                 <li className="nav-item">
                     <a className="nav-link" href="#">KDS</a>
@@ -72,7 +65,7 @@ function Nav() {
                     <a className="nav-link" href="#">DVD</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#"><i className="bi bi-bell-fill"></i></a>
+                    <a className="nav-link" href="#"><BsFillBellFill /></a>
                 </li>
                 <li className="nav-item">
                     <a className="btn btn-primary btn-sm mt-1 ms-2" href="#">Sign Out</a>
