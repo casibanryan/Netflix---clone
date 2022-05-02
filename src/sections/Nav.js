@@ -55,16 +55,16 @@ function Nav() {
             </ul>
             <span className="navbar-text">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 flex-row">
-                <li className="nav-item">
+                <li className="nav-item me-3">
                     <a className="nav-link" href="#"><BsSearch /></a>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item me-3">
                     <a className="nav-link" href="#">KDS</a>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item me-3">
                     <a className="nav-link" href="#">DVD</a>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item me-3">
                     <a className="nav-link" href="#"><BsFillBellFill /></a>
                 </li>
                 <li className="nav-item ms-lg-3 ms-md-3 ms-sm-3">
