@@ -12,7 +12,7 @@ import {Helmet} from 'react-helmet';
 
 // Api key =>  14d57525a7a6772b9699d35339fb5878
 
-function App(props) {
+function App() {
   return (
   //       <React.Fragment>
   //         <Routes>
@@ -22,7 +22,7 @@ function App(props) {
   //       </React.Fragment>
   // 
 
-    <>
+    <React.Fragment>
       {/* navbar */}
       <Nav />
       <div className="app">
@@ -40,7 +40,7 @@ function App(props) {
           <Helmet>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
           </Helmet>
-    </>
+    </React.Fragment>
   )
 }
 
