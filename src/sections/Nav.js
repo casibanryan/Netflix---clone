@@ -17,9 +17,9 @@ function Nav() {
             }
       });
 
-      return () => {
-          window.removeEventListener("scroll");
-      }
+    //   return () => {
+    //       window.removeEventListener("scroll");
+    //   }
       
     }, [])
     
