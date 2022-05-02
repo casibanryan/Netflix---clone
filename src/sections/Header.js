@@ -5,8 +5,6 @@ import {Link} from 'react-router-dom';
 
 function Header() {
   return (
-    <React.Fragment>
-
         <header className="masthead" style={{ height:"80vh" }}>
             <nav className="navbar navbar-dark fixed-top">
                     <div className="container-fluid">
@@ -42,8 +40,6 @@ function Header() {
             </div>
         </div>
     </header>
-
-    </React.Fragment>
   )
 }
 
