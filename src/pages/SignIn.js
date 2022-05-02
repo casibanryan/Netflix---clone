@@ -37,7 +37,7 @@ function SignIn() {
                                 <div className="d-grid mt-3">
                                     <button className="btn btn-primary btn-sm btn-login text-uppercase fw-bold"
                                         type="submit">
-                                            <Link to="/home"> Sign in</Link>
+                                            <Link className="text-white text-decoration-none" to="/home"> Sign in</Link>
                                        </button>
                                 </div>
                                 <div className="form-check mt-2">
