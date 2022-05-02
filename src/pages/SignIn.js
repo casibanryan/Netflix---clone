@@ -22,7 +22,7 @@ function SignIn() {
                     <div className="card border-0 shadow rounded-3 my-5" style={{ backgroundColor: "rgba(0,0,0,.75)" }}>
                         <div className="card-body p-4 p-sm-5">
                             <h1 className="card-title text-white mb-5 fw-bold fs-5">Sign In</h1>
-                            <form action="../App.js">
+                            <form >
                                 <div className="form-floating mb-4">
                                     <input type="email" className="form-control form-control-sm" id="floatingInput"
                                         placeholder="name@example.com" required />
@@ -35,9 +35,9 @@ function SignIn() {
                                 </div>
 
                                 <div className="d-grid mt-3">
-                                    <button className="btn btn-primary btn-sm btn-login text-uppercase fw-bold"
+                                    <Link to="/home" className="btn btn-primary btn-sm btn-login text-uppercase fw-bold"
                                         type="submit">Sign
-                                        in</button>
+                                        in</Link>
                                 </div>
                                 <div className="form-check mt-2">
                                     <input className="form-check-input" type="checkbox" value="" id="rememberPasswordCheck" />
