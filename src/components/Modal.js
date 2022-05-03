@@ -34,7 +34,8 @@ function Modal({movie, casts}) {
                                     <div className="col-lg-6 col-md-5">
                                         <div className="hero-area-content pb-3">
                                             <img src={`${baseUrl}${movie?.poster_path || movie?.backdrop_path}`} 
-                                               style={{ maxWidth: "100%", height:"auto"}} 
+                                               style={{ maxWidth: "100%", height:"auto"}}
+                                               alt={movie?.name || movie?.title} 
                                             />
                                         </div>
                                     </div>
