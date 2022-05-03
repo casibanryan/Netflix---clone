@@ -26,7 +26,7 @@ function Modal({movie, casts}) {
                     <div className="modal-header" style={{ borderBottom:"none"}}>
                     <button type="button" className="btn-close btn-lg bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            <div className="modal-body">
+            <div className="modal-body mt-lg-5 mt-md-5">
                     <section className="hero-area" id="home">
                         <div className="container">
                             <div className="hero-area-slider">
@@ -40,7 +40,7 @@ function Modal({movie, casts}) {
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-md-7">
-                                        <div className="hero-area-content pr-50">
+                                        <div className="hero-area-content pr-50 mt-lg-5 mt-md-5">
                                             <h2> {movie?.title || movie?.name || movie?.original_name}</h2>
                                             <div className="review">
                                               

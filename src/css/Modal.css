@@ -155,4 +155,7 @@
     .theme-btn {
         padding: 2px 9px;
     }
+    .hero-area-slide {
+        margin: 10px 15px 50px !important;
+    }
 }
