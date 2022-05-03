@@ -28,7 +28,7 @@ function Modal({movie, casts}) {
                 </div>
             <div className="modal-body mt-lg-5 mt-md-5">
                     <section className="hero-area" id="home">
-                        <div className="container">
+                        <div className="container mt-md-5 mt-lg-5">
                             <div className="hero-area-slider">
                                 <div className="row hero-area-slide">
                                     <div className="col-lg-6 col-md-5">
