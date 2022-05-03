@@ -1,12 +1,13 @@
 import React from 'react'
 import Banner from './sections/Banner';
-import Nav from './sections/Nav';
+import Nav from './components/Nav';
 import Footer from './sections/Footer';
-import './css/App.css';
-import './css/styles.css';
 import Home from './pages/Home';
 import requests from './js/requests';
 import {Helmet} from 'react-helmet';
+import './css/App.css';
+import './css/styles.css';
+
 
 
 function App() {
