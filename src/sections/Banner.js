@@ -26,7 +26,7 @@ function Banner() {
     }
 
      const opts = {
-      height: '100%',
+      height: '100vh',
       width: '100%',
       playerVars: {
         // https://developers.google.com/youtube/player_parameters
@@ -69,7 +69,7 @@ function Banner() {
         <button type="button" className="btn-close btn-lg bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div className="modal-body">
-        <YouTube videoId="2g811Eo7K8U" opts={opts} />;
+        <YouTube videoId="2g811Eo7K8U" opts={opts} />
       </div>
     </div>
   </div>
