@@ -48,7 +48,6 @@ function Modal({movie, casts}) {
     const handleClick = (movie) => {
 
         watchList.push(movie);
-
         if(trailerUrl) {
             setTrailerUrl('');
         }
@@ -71,7 +70,7 @@ function Modal({movie, casts}) {
         setTrailerUrl('');
     };
 
-
+    console.log(watchList);
   return (
       <>
         <div className="modal fade" id={`staticBackdrop${movie.id}`} data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
