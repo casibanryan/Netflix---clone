@@ -26,9 +26,6 @@ function Modal({movie, casts}) {
      const opts = {
       height: '800',
       width: '100%',
-      playerVars: {
-        autoplay: 1,
-      }
     }
 
     const handleClick = (movie) => {
@@ -45,8 +42,8 @@ function Modal({movie, casts}) {
 
     // pause the video if clicked
     const handleClose = () => {
-        const closeBtn = document.getElementById('closeWatch');
-        if(!closeBtn.clicked) setTrailerUrl('');
+        const closeBtnWatch = document.getElementById('closeWatch');
+        if(!closeBtnWatch.clicked) setTrailerUrl('');
     };
 
 
@@ -147,7 +144,7 @@ function Modal({movie, casts}) {
               <div className="modal-header" style={{ borderBottom:"none"}}>
                 <button type="button" className="btn-close btn-lg bg-danger" 
                         data-bs-dismiss="modal"
-                        id="close" aria-label="Close"
+                        id="closeWatch" aria-label="Close"
                         onClick={() => handleClose()}           
                         ></button>
               </div>
