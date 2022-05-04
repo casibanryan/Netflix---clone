@@ -106,7 +106,7 @@ function Modal({movie, casts}) {
 								</div>
 								<div className="slide-trailor">
 									<h3>Watch Trailer</h3>
-									<a className="theme-btn theme-btn2 text-decoration-none fw-bold" data-bs-target="#watch" data-bs-toggle="modal" onClick={() => handleClick(movie)}>
+									<a className="theme-btn theme-btn2 text-decoration-none fw-bold"  data-bs-dismiss="modal" data-bs-target="#watch" data-bs-toggle="modal" onClick={() => handleClick(movie)}>
                                         <BsPlay size={28} />  Play
                                     </a>
 								</div>

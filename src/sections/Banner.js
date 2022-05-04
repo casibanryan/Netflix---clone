@@ -40,7 +40,6 @@ function Banner() {
             //get everything after the  ?
             console.log(`URL = ${url}`);
             const urlParams = new URLSearchParams(new URL(url).search);
-              console.log(urlParams);
             setTrailerUrl(urlParams.get("v"));
           }).catch((error) => console.log(error));
       //}
