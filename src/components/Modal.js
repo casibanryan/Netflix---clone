@@ -29,20 +29,20 @@ function Modal({movie, casts}) {
     }
 
     const handleClick = (movie) => {
-        movieTrailer(movie?.name || movie?.title || movie?.original_name || "")
+
+        if(trailerUrl) {
+            setTrailerUrl('');
+        }
+        else {
+            movieTrailer(movie?.name || movie?.title || movie?.original_name || "")
           .then(url => {
             //get everything after the  ?
             const urlParams = new URLSearchParams(new URL(url).search);
             setTrailerUrl(urlParams.get("v"));
           }).catch((error) => console.log(error));
-      //}
+        }
     };
 
-    // pause the video if clicked
-    const handleClose = () => {
-        const closeBtnWatch = document.getElementById('closeWatch');
-        if(!closeBtnWatch.clicked) setTrailerUrl('');
-    };
 
 
   return (
