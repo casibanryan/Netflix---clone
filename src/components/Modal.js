@@ -13,7 +13,6 @@ function Modal({movie, casts}) {
 
     const baseUrl = "https://image.tmdb.org/t/p/original/";
     const [trailerUrl, setTrailerUrl] = useState("");
-    var movieInfo = document.getElementById('home');
 
      // format number to k ex => 5000 - 5k
         function kFormatter(num) {
@@ -35,8 +34,6 @@ function Modal({movie, casts}) {
     }
 
     const handleClick = (movie) => {
-       
-        movieInfo.setAttribute('display', 'none');
         if(trailerUrl) {
             setTrailerUrl('');
         }
@@ -67,6 +64,7 @@ function Modal({movie, casts}) {
                     <button type="button" className="btn-close btn-lg bg-danger" id="closeButton" onClick={() => handleClose()} data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
             <div className="modal-body mt-lg-5 mt-md-5">
+                  {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
                     <section className="hero-area" id="home">
                         <div className="container mt-md-5 mt-lg-5">
                             <div className="hero-area-slider">
@@ -144,8 +142,6 @@ function Modal({movie, casts}) {
                     </div>
                 </div>
              </section>
-              {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
-            
         </div>
         </div>
     </div>
