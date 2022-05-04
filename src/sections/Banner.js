@@ -36,6 +36,8 @@ function Banner() {
     }
 
     const handleClick = (movie) => {
+      const closeBtn = document.getElementById('close');
+      console.log(closeBtn);
       if(trailerUrl) {
         setTrailerUrl('');
       } else {
@@ -48,7 +50,7 @@ function Banner() {
             setTrailerUrl(urlParams.get("v"));
           }).catch((error) => console.log(error));
       }
-    }
+    };
   return (
     <header className="banner mb-3" 
             style={{ backgroundSize: "cover",
@@ -84,7 +86,7 @@ function Banner() {
           <div className="modal-dialog modal-fullscreen">
             <div className="modal-content bg__dark">
               <div className="modal-header" style={{ borderBottom:"none"}}>
-                <button type="button" className="btn-close btn-lg bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" className="btn-close btn-lg bg-danger" data-bs-dismiss="modal" id="close" aria-label="Close"></button>
               </div>
               <div className="modal-body">
                 {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
