@@ -26,6 +26,10 @@ function Modal({movie, casts}) {
      const opts = {
       height: '800',
       width: '100%',
+        playerVars: { 
+        'origin': 'http://localhost:3000' 
+    },
+
     }
 
     const handleClick = (movie) => {
