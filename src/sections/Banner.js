@@ -39,10 +39,11 @@ function Banner() {
       if(trailerUrl) {
         setTrailerUrl('');
       } else {
+        console.log(`movie name = ${movie.name}`);
         movieTrailer(movie?.name || "")
           .then(url => {
-            //https://www.youtube.com/watch?v=XtMThy8QKqU
             //get everything after the  ?
+            console.log(`URL = ${url}`);
             const urlParams = new URLSearchParams(new URL(url).search);
             setTrailerUrl(urlParams.get("v"));
           }).catch((error) => console.log(error));
