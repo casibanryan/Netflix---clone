@@ -32,7 +32,7 @@ function Modal({movie, casts}) {
     }
 
     const handleClick = (movie) => {
-        movieTrailer(movie?.name || movie?.title || "")
+        movieTrailer(movie?.name || movie?.title || movie?.original_name || "")
           .then(url => {
             //get everything after the  ?
             console.log(`URL = ${url}`);
