@@ -50,6 +50,7 @@ function Modal({movie, casts}) {
 
 
   return (
+      <>
         <div className="modal fade" id={`staticBackdrop${movie.id}`} data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div className="modal-dialog modal-fullscreen">
                 <div className="modal-content bg__dark">
@@ -103,7 +104,7 @@ function Modal({movie, casts}) {
 								</div>
 								<div className="slide-trailor">
 									<h3>Watch Trailer</h3>
-									<a className="theme-btn theme-btn2 text-decoration-none fw-bold">
+									<a className="theme-btn theme-btn2 text-decoration-none fw-bold" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
                                         <BsPlay size={28} />  Play
                                     </a>
 								</div>
@@ -139,7 +140,25 @@ function Modal({movie, casts}) {
     </div>
     </div>
 
-            
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Hide this modal and show the first with the button below.
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
+                        first</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </>      
                                                 
    
   )
