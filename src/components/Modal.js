@@ -33,7 +33,8 @@ function Modal({movie, casts}) {
 
     const handleClick = (movie) => {
         console.log("test");
-        document.getElementById('home').classList.add('d-none');
+        let movieInfo = document.getElementById('home');
+        movieInfo.setAttribute('display', 'none');
         if(trailerUrl) {
             setTrailerUrl('');
         }
