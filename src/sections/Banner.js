@@ -36,11 +36,9 @@ function Banner() {
     }
 
     const handleClick = (movie) => {
-      const closeBtn = document.getElementById('close');
-      console.log(closeBtn.clicked == true ? "clicked" : "false");
-      if(trailerUrl) {
-        setTrailerUrl('');
-      } else {
+      // if(trailerUrl) {
+      //   setTrailerUrl('');
+      // } else {
         console.log(`movie name = ${movie.name} or ${movie.title}`);
         movieTrailer(movie?.name || movie?.title || "")
           .then(url => {
@@ -49,7 +47,7 @@ function Banner() {
             const urlParams = new URLSearchParams(new URL(url).search);
             setTrailerUrl(urlParams.get("v"));
           }).catch((error) => console.log(error));
-      }
+      //}
     };
 
   return (
