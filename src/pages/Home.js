@@ -50,7 +50,7 @@ function Home({ title, fetchUrl, fetchPeople, isLargeRow }) {
                         <img className={`row__poster ${isLargeRow && "row__posterLarge"}`}
                         type="button" data-bs-toggle="modal" data-bs-target={`#staticBackdrop${movie.id}`}
                         src={`${baseUrl}${isLargeRow ? movie.poster_path : movie.backdrop_path}`}
-                        alt={ movie.name }/>
+                        alt={ movie?.name || movie?.title || "..." }/>
                         {/* modal */}
                         <Modal movie={movie} casts={casts} />
                     </React.Fragment>

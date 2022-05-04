@@ -2,6 +2,9 @@ import React, {useState, useEffect} from 'react'
 import axios from '../js/axios';
 import requests from '../js/requests';
 import '../css/Banner.css';
+import YouTube from 'react-youtube';
+
+
 
 function Banner() {
     const [movie, setMovie] = useState([]);
@@ -17,12 +20,19 @@ function Banner() {
       }
       fetchData();
     }, [])
-    
     // minimize the text in small screen (responsive)
     function truncate(str, n) {
             return str?.length > n ? str.substr(0, n-1) + "..." : str;
     }
 
+     const opts = {
+      height: '390',
+      width: '640',
+      playerVars: {
+        // https://developers.google.com/youtube/player_parameters
+        autoplay: 1,
+      }
+    }
   return (
     <header className="banner mb-3" 
             style={{ backgroundSize: "cover",
@@ -39,7 +49,11 @@ function Banner() {
                </h1>
                 {/* 2 buttons */}
                 <div className="banner__buttons">
-                    <button className="banner__button">Play</button>
+                    <button className="banner__button" 
+                            type="button" data-bs-toggle="modal" 
+                            data-bs-target="#staticBackdrop">
+                              Play
+                    </button>
                       <button className="banner__button">My List</button>
                 </div>
 
@@ -47,6 +61,26 @@ function Banner() {
                 <h1 className="banner__description"> { truncate(movie?.overview, 150) } </h1>
         </div>
         <div className="banner__fadeBottom"></div>
+
+<div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div className="modal-dialog modal-fullscreen">
+    <div className="modal-content">
+      <div className="modal-header">
+        <h5 className="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div className="modal-body">
+       
+        <YouTube videoId="2g811Eo7K8U" opts={opts} />;
+      </div>
+      <div className="modal-footer">
+        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" className="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     </header>
   )
 }
