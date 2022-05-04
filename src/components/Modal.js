@@ -7,6 +7,8 @@ import YouTube from 'react-youtube';
 import movieTrailer from 'movie-trailer';
 import '../css/Modal.css';
 
+
+var movieInfo = document.getElementById('home');
 function Modal({movie, casts}) {
 
     const baseUrl = "https://image.tmdb.org/t/p/original/";
@@ -32,8 +34,7 @@ function Modal({movie, casts}) {
     }
 
     const handleClick = (movie) => {
-        console.log("test");
-        let movieInfo = document.getElementById('home');
+       
         movieInfo.setAttribute('display', 'none');
         if(trailerUrl) {
             setTrailerUrl('');
