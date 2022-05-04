@@ -52,7 +52,7 @@ function Banner() {
 
     const handleClose = (movie) => {
         const closeBtn = document.getElementById('close');
-        if(close && trailerUrl) setTrailerUrl('');
+        if(closeBtn.clicked==true && trailerUrl) setTrailerUrl('');
     };
 
   return (
