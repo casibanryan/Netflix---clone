@@ -46,16 +46,17 @@ function Modal({movie, casts}) {
      * @param movie - the movie object that is passed in from the movie list component
      */
     const handleClick = (movie) => {
+
+        watchList.push(movie);
+
         if(trailerUrl) {
             setTrailerUrl('');
         }
         else {
-
             movieTrailer(movie?.name || movie?.title || movie?.original_name || "")
             .then(url => {
                 //get everything after the  ?
                 const urlParams = new URLSearchParams(new URL(url).search);
-                watchList.push(urlParams.get('v'));   // adding items to the array
                 setTrailerUrl(urlParams.get("v"));
             }).catch((error) => console.log("problem = " + error));
             }
