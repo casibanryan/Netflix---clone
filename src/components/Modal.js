@@ -116,25 +116,7 @@ function Modal({movie, casts}) {
                                     </a>
 								</div>
 
-                                                  {/* watch modal */}
-                                            <div className="modal fade" id="watch" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                                <div className="modal-dialog modal-fullscreen">
-                                                    <div className="modal-content bg__dark">
-                                                    <div className="modal-header" style={{ borderBottom:"none"}}>
-                                                        <button type="button" className="btn-close btn-lg bg-danger" 
-                                                                data-bs-dismiss="modal"
-                                                                id="closeWatch" aria-label="Close"
-                                                                onClick={() => handleClose()}           
-                                                                ></button>
-                                                    </div>
-                                                    <div className="modal-body">
-                                                        {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
-                                                    </div>
-                                                    </div>
-                                                </div>
-                                                </div>      
-
-                                                {/* end of watch modal  */}
+                                      
 
 							</div>
 						</div>
@@ -162,10 +144,32 @@ function Modal({movie, casts}) {
                     </div>
                 </div>
              </section>
+
+             
+                                            <div className="modal fade" id="watch" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div className="modal-dialog modal-fullscreen">
+                                                    <div className="modal-content bg__dark">
+                                                    <div className="modal-header" style={{ borderBottom:"none"}}>
+                                                        <button type="button" className="btn-close btn-lg bg-danger" 
+                                                                data-bs-dismiss="modal"
+                                                                id="closeWatch" aria-label="Close"
+                                                                onClick={() => handleClose()}           
+                                                                ></button>
+                                                    </div>
+                                                    <div className="modal-body">
+                                                        {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                </div>      
+
         </div>
         </div>
     </div>
     </div>
+
+            
+                                                
    
   )
 }
