@@ -30,16 +30,11 @@ function Banner() {
       height: '800',
       width: '100%',
       playerVars: {
-        // https://developers.google.com/youtube/player_parameters
         autoplay: 1,
       }
     }
 
     const handleClick = (movie) => {
-      // if(trailerUrl) {
-      //   setTrailerUrl('');
-      // } else {
-        console.log(`movie name = ${movie.name} or ${movie.title}`);
         movieTrailer(movie?.name || movie?.title || "")
           .then(url => {
             //get everything after the  ?
@@ -50,8 +45,8 @@ function Banner() {
       //}
     };
 
+    // pause the video if clicked
     const handleClose = () => {
-        const closeBtn = document.getElementById('close');
         console.log(closeBtn.clicked===true ? "true" : false);
         if(!closeBtn.clicked) setTrailerUrl('');
     };
