@@ -26,19 +26,13 @@ function Modal({movie, casts}) {
      const opts = {
       height: '800',
       width: '100%',
-        playerVars: { 
-        'origin': 'http://192.168.1.2:3000/home' 
-    },
-
     }
 
     const handleClick = (movie) => {
         movieTrailer(movie?.name || movie?.title || movie?.original_name || "")
           .then(url => {
             //get everything after the  ?
-            console.log(`URL = ${url}`);
             const urlParams = new URLSearchParams(new URL(url).search);
-            console.log(urlParams);
             setTrailerUrl(urlParams.get("v"));
           }).catch((error) => console.log(error));
       //}
@@ -106,7 +100,7 @@ function Modal({movie, casts}) {
 								</div>
 								<div className="slide-trailor">
 									<h3>Watch Trailer</h3>
-									<a className="theme-btn theme-btn2 text-decoration-none fw-bold"  data-bs-dismiss="modal" data-bs-target="#watch" data-bs-toggle="modal" onClick={() => handleClick(movie)}>
+									<a className="theme-btn theme-btn2 text-decoration-none fw-bold"  onClick={() => handleClick(movie)}>
                                         <BsPlay size={28} />  Play
                                     </a>
 								</div>
@@ -137,27 +131,14 @@ function Modal({movie, casts}) {
                     </div>
                 </div>
              </section>
+              {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
+            
         </div>
         </div>
     </div>
     </div>
-     
-        <div className="modal fade" id="watch" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div className="modal-dialog modal-fullscreen">
-            <div className="modal-content bg__dark">
-              <div className="modal-header" style={{ borderBottom:"none"}}>
-                <button type="button" className="btn-close btn-lg bg-danger" 
-                        data-bs-dismiss="modal"
-                        id="closeWatch" aria-label="Close"
-                        onClick={() => handleClose()}           
-                        ></button>
-              </div>
-              <div className="modal-body">
-                {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
-              </div>
-            </div>
-          </div>
-        </div>
+           
+               
     </>      
                                                 
    
