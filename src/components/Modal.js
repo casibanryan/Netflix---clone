@@ -105,7 +105,14 @@ function Modal({movie, casts}) {
 								</div>
 								<div className="slide-trailor">
 									<h3>Watch Trailer</h3>
-									<a className="theme-btn theme-btn2 text-decoration-none fw-bold" data-bs-toggle="modal" data-bs-target="#watch"><BsPlay size={28} onClick={() => handleClick(movie)} />Play</a>
+									<a className="theme-btn theme-btn2 text-decoration-none fw-bold" 
+                                        data-bs-toggle="modal"
+                                        data-dismiss="modal" 
+                                        data-bs-target="#watch">
+                                        <BsPlay size={28} 
+                                        onClick={() => handleClick(movie)} /
+                                        >Play
+                                    </a>
                                     {/* watch modal */}
                                             <div className="modal fade" id="watch" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                                 <div className="modal-dialog modal-fullscreen">
