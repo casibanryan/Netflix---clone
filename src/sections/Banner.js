@@ -37,7 +37,7 @@ function Banner() {
 
     const handleClick = (movie) => {
       const closeBtn = document.getElementById('close');
-      console.log(closeBtn);
+      console.log(closeBtn.value);
       if(trailerUrl) {
         setTrailerUrl('');
       } else {
