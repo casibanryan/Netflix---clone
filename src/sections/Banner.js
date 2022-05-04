@@ -64,7 +64,7 @@ function Banner() {
 
 <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div className="modal-dialog modal-fullscreen">
-    <div className="modal-content">
+    <div className="modal-content bg__dark">
       <div className="modal-header" style={{ borderBottom:"none"}}>
         <button type="button" className="btn-close btn-lg bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
