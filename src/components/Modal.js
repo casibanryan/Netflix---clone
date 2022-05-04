@@ -34,7 +34,7 @@ function Modal({movie, casts}) {
     const handleClick = (movie) => {
 
         const movieInfo = document.getElementById('home');
-        if(!movieInfo.classList.contains('d-none')) movieInfo.classList.add('d-none');
+        movieInfo.classList.add('d-none');
         if(trailerUrl) {
             setTrailerUrl('');
         }
