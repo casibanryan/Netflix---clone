@@ -14,6 +14,17 @@ function WatchModal({target}) {
       }
     }
 
+     const handleClick = (movie) => {
+        movieTrailer(movie?.name || movie?.title || "")
+          .then(url => {
+            //get everything after the  ?
+            console.log(`URL = ${url}`);
+            const urlParams = new URLSearchParams(new URL(url).search);
+            setTrailerUrl(urlParams.get("v"));
+          }).catch((error) => console.log(error));
+      //}
+    };
+
     // pause the video if clicked
     const handleClose = () => {
         console.log(closeBtn.clicked===true ? "true" : false);

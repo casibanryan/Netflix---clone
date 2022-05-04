@@ -47,7 +47,7 @@ function Banner() {
 
     // pause the video if clicked
     const handleClose = () => {
-        console.log(closeBtn.clicked===true ? "true" : false);
+        const closeBtn = document.getElementById('close');
         if(!closeBtn.clicked) setTrailerUrl('');
     };
 
