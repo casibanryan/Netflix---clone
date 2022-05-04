@@ -32,7 +32,7 @@ function Modal({movie, casts}) {
     }
 
     const handleClick = (movie) => {
-        console.log(test);
+        console.log("test");
         if(trailerUrl) {
             setTrailerUrl('');
         }
