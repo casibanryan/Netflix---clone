@@ -32,15 +32,14 @@ function Modal({movie, casts}) {
     }
 
     const handleClick = (movie) => {
-        const movieInfo = document.getElementById('home');
-        
         if(trailerUrl) {
             setTrailerUrl('');
         }
         else {
-            movieInfo.classList.add('d-none');
             movieTrailer(movie?.name || movie?.title || movie?.original_name || "")
             .then(url => {
+                 const movieInfo = document.getElementById('home');
+                 movieInfo.classList.add('d-none');
                 //get everything after the  ?
                 const urlParams = new URLSearchParams(new URL(url).search);
                 setTrailerUrl(urlParams.get("v"));
