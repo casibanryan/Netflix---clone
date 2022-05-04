@@ -26,7 +26,7 @@ function Banner() {
     }
 
      const opts = {
-      height: '100vh',
+      height: '100%',
       width: '100%',
       playerVars: {
         // https://developers.google.com/youtube/player_parameters
