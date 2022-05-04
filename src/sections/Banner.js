@@ -39,7 +39,7 @@ function Banner() {
       if(trailerUrl) {
         setTrailerUrl('');
       } else {
-        console.log(`movie name = ${movie.name}`);
+        console.log(`movie name = ${movie.name} or ${movie.title}`);
         movieTrailer(movie?.name || movie?.title || "")
           .then(url => {
             //get everything after the  ?
