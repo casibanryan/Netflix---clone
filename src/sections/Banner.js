@@ -44,7 +44,7 @@ function Banner() {
             //https://www.youtube.com/watch?v=XtMThy8QKqU
             //get everything after the  ?
             const urlParams = new URLSearchParams(URL(url).search);
-            setTrailerUlr(urlParams.get("v"));
+            setTrailerUrl(urlParams.get("v"));
           }).catch((error) => console.log(error));
       }
     }
