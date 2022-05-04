@@ -3,11 +3,14 @@ import { BsPlay } from "react-icons/bs";
 import countStar from '../js/countStar';
 import slide1 from '../assets/img/slide1.png';
 import slide3 from '../assets/img/slide3.png';
+import YouTube from 'react-youtube';
+import movieTrailer from 'movie-trailer';
 import '../css/Modal.css';
 
 function Modal({movie, casts}) {
 
     const baseUrl = "https://image.tmdb.org/t/p/original/";
+    const [trailerUrl, setTrailerUrl] = useState("");
 
      // format number to k ex => 5000 - 5k
         function kFormatter(num) {
@@ -18,6 +21,33 @@ function Modal({movie, casts}) {
     function truncate(str, n) {
             return str?.length > n ? str.substr(0, n-1) + "..." : str;
     }
+
+    
+     const opts = {
+      height: '800',
+      width: '100%',
+      playerVars: {
+        autoplay: 1,
+      }
+    }
+
+    const handleClick = (movie) => {
+        movieTrailer(movie?.name || movie?.title || "")
+          .then(url => {
+            //get everything after the  ?
+            console.log(`URL = ${url}`);
+            const urlParams = new URLSearchParams(new URL(url).search);
+            setTrailerUrl(urlParams.get("v"));
+          }).catch((error) => console.log(error));
+      //}
+    };
+
+    // pause the video if clicked
+    const handleClose = () => {
+        const closeBtn = document.getElementById('close');
+        if(!closeBtn.clicked) setTrailerUrl('');
+    };
+
 
   return (
         <div className="modal fade" id={`staticBackdrop${movie.id}`} data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -75,7 +105,26 @@ function Modal({movie, casts}) {
 								</div>
 								<div className="slide-trailor">
 									<h3>Watch Trailer</h3>
-									<a className="theme-btn theme-btn2 text-decoration-none fw-bold" ><BsPlay size={28} />Play</a>
+									<a className="theme-btn theme-btn2 text-decoration-none fw-bold" data-bs-toggle="modal" data-bs-target="watch"><BsPlay size={28} />Play</a>
+                                    {/* watch modal */}
+                                            <div className="modal fade" id="watch" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div className="modal-dialog modal-fullscreen">
+                                                    <div className="modal-content bg__dark">
+                                                    <div className="modal-header" style={{ borderBottom:"none"}}>
+                                                        <button type="button" className="btn-close btn-lg bg-danger" 
+                                                                data-bs-dismiss="modal"
+                                                                id="close" aria-label="Close"
+                                                                onClick={() => handleClose()}           
+                                                                ></button>
+                                                    </div>
+                                                    <div className="modal-body">
+                                                        {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                </div>      
+
+                                                {/* end of watch modal  */}
 								</div>
 							</div>
 						</div>
