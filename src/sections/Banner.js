@@ -50,9 +50,9 @@ function Banner() {
       //}
     };
 
-    const handleClose = (movie) => {
+    const handleClose = () => {
         const closeBtn = document.getElementById('close');
-        console.log(closeBtn);
+        console.log(closeBtn.clicked==true ? "true" : false);
         if(closeBtn.clicked==true) setTrailerUrl('');
     };
 
@@ -94,7 +94,7 @@ function Banner() {
                 <button type="button" className="btn-close btn-lg bg-danger" 
                         data-bs-dismiss="modal"
                         id="close" aria-label="Close"
-                        onClick={() => handleClose(movie)}           
+                        onClick={() => handleClose()}           
                         ></button>
               </div>
               <div className="modal-body">
