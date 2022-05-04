@@ -37,7 +37,7 @@ function Banner() {
 
     const handleClick = (movie) => {
       const closeBtn = document.getElementById('close');
-      console.log(closeBtn.value);
+      console.log(closeBtn.clicked);
       if(trailerUrl) {
         setTrailerUrl('');
       } else {
@@ -51,6 +51,7 @@ function Banner() {
           }).catch((error) => console.log(error));
       }
     };
+
   return (
     <header className="banner mb-3" 
             style={{ backgroundSize: "cover",
