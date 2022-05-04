@@ -43,7 +43,7 @@ function Banner() {
           .then(url => {
             //https://www.youtube.com/watch?v=XtMThy8QKqU
             //get everything after the  ?
-            const urlParams = new URLSearchParams(URL(url).search);
+            const urlParams = new URLSearchParams(new URL(url).search);
             setTrailerUrl(urlParams.get("v"));
           }).catch((error) => console.log(error));
       }
@@ -67,7 +67,7 @@ function Banner() {
                     <button className="banner__button" 
                             type="button" data-bs-toggle="modal" 
                             data-bs-target="#staticBackdrop"
-                            onClick={handleClick(movie)}
+                            onclick={() => handleClick(movie)}
                             >
                               Play
                     </button>
