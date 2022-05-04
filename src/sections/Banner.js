@@ -62,18 +62,18 @@ function Banner() {
         </div>
         <div className="banner__fadeBottom"></div>
 
-        <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div className="modal-dialog modal-fullscreen">
-            <div className="modal-content">
-              <div className="modal-body">
-                <YouTube videoId="2g811Eo7K8U" opts={opts} />;
-              </div>
-              <div className="modal-footer">
-                <button type="button" className="btn btn-primary">close</button>
-              </div>
-            </div>
-          </div>
-        </div>
+<div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div className="modal-dialog modal-fullscreen">
+    <div className="modal-content">
+      <div className="modal-header" style={{ borderBottom:"none"}}>
+        <button type="button" className="btn-close btn-lg bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div className="modal-body">
+        <YouTube videoId="2g811Eo7K8U" opts={opts} />;
+      </div>
+    </div>
+  </div>
+</div>
 
     </header>
   )
