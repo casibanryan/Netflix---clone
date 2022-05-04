@@ -43,6 +43,11 @@ function Modal({movie, casts}) {
         }
     };
 
+     // pause the video if clicked
+    const handleClose = () => {
+        const closeButton = document.getElementById('closeButton');
+        if(!closeBtn.clicked) setTrailerUrl('');
+    };
 
 
   return (
@@ -51,7 +56,7 @@ function Modal({movie, casts}) {
             <div className="modal-dialog modal-fullscreen">
                 <div className="modal-content bg__dark">
                     <div className="modal-header" style={{ borderBottom:"none"}}>
-                    <button type="button" className="btn-close btn-lg bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" className="btn-close btn-lg bg-danger" id="closeButton" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
             <div className="modal-body mt-lg-5 mt-md-5">
                     <section className="hero-area" id="home">
