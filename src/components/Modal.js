@@ -46,7 +46,7 @@ function Modal({movie, casts}) {
      // pause the video if clicked
     const handleClose = () => {
         const closeButton = document.getElementById('closeButton');
-        if(!closeBtn.clicked) setTrailerUrl('');
+        if(!closeButton.clicked) setTrailerUrl('');
     };
 
 
