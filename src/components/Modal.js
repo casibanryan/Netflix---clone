@@ -27,7 +27,7 @@ function Modal({movie, casts}) {
       height: '800',
       width: '100%',
         playerVars: { 
-        'origin': 'http://localhost:3000' 
+        'origin': 'http://192.168.1.2:3000/home' 
     },
 
     }
