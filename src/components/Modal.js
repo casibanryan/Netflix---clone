@@ -113,7 +113,9 @@ function Modal({movie, casts}) {
                                         onClick={() => handleClick(movie)} /
                                         >Play
                                     </a>
-                                    {/* watch modal */}
+								</div>
+
+                                                  {/* watch modal */}
                                             <div className="modal fade" id="watch" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                                 <div className="modal-dialog modal-fullscreen">
                                                     <div className="modal-content bg__dark">
@@ -132,7 +134,7 @@ function Modal({movie, casts}) {
                                                 </div>      
 
                                                 {/* end of watch modal  */}
-								</div>
+
 							</div>
 						</div>
 					</div>
