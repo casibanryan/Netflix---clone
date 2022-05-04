@@ -8,11 +8,12 @@ import movieTrailer from 'movie-trailer';
 import '../css/Modal.css';
 
 
-var movieInfo = document.getElementById('home');
+
 function Modal({movie, casts}) {
 
     const baseUrl = "https://image.tmdb.org/t/p/original/";
     const [trailerUrl, setTrailerUrl] = useState("");
+    var movieInfo = document.getElementById('home');
 
      // format number to k ex => 5000 - 5k
         function kFormatter(num) {
