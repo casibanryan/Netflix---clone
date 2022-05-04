@@ -53,7 +53,7 @@ function Banner() {
     const handleClose = () => {
         const closeBtn = document.getElementById('close');
         console.log(closeBtn.clicked===true ? "true" : false);
-        if(closeBtn.clicked==true) setTrailerUrl('');
+        if(!closeBtn.clicked) setTrailerUrl('');
     };
 
   return (
