@@ -67,7 +67,7 @@ function Banner() {
                     <button className="banner__button" 
                             type="button" data-bs-toggle="modal" 
                             data-bs-target="#staticBackdrop"
-                            onclick={() => handleClick(movie)}
+                            onClick={() => handleClick(movie)}
                             >
                               Play
                     </button>
