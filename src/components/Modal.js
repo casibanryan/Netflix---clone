@@ -95,28 +95,18 @@ function Modal({movie, casts}) {
                                                         <div className={`single-slide-cast ${index >= 7 ? 'd-none' : ""}`} key={index}>
                                                             <img src={`${baseUrl}${cast.profile_path}`} alt={cast.name} style={{height:50, width:50}} />
                                                         </div>
-                                                        
                                                     ))
                                                 }
-									
 									<div className="single-slide-cast text-center">
 										5+
 									</div>
 								</div>
 								<div className="slide-trailor">
 									<h3>Watch Trailer</h3>
-									<a className="theme-btn theme-btn2 text-decoration-none fw-bold" 
-                                        data-bs-toggle="modal"
-                                        data-dismiss="modal" 
-                                        href="#watch"
-                                         onClick={() => handleClick(movie)} 
-                                         >
-                                        <BsPlay size={28} />
-                                        Play
+									<a className="theme-btn theme-btn2 text-decoration-none fw-bold">
+                                        <BsPlay size={28} />  Play
                                     </a>
 								</div>
-
-                                      
 
 							</div>
 						</div>
@@ -144,25 +134,6 @@ function Modal({movie, casts}) {
                     </div>
                 </div>
              </section>
-
-             
-                                            <div className="modal fade" id="watch" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                                <div className="modal-dialog modal-fullscreen">
-                                                    <div className="modal-content bg__dark">
-                                                    <div className="modal-header" style={{ borderBottom:"none"}}>
-                                                        <button type="button" className="btn-close btn-lg bg-danger" 
-                                                                data-bs-dismiss="modal"
-                                                                id="closeWatch" aria-label="Close"
-                                                                onClick={() => handleClose()}           
-                                                                ></button>
-                                                    </div>
-                                                    <div className="modal-body">
-                                                        {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
-                                                    </div>
-                                                    </div>
-                                                </div>
-                                                </div>      
-
         </div>
         </div>
     </div>
