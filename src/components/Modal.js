@@ -11,8 +11,13 @@ import '../css/Modal.css';
 
 function Modal({movie, casts}) {
 
+  /* Setting the baseUrl to the image.tmdb.org/t/p/original/ and setting the trailerUrl to an empty
+  string. */
     const baseUrl = "https://image.tmdb.org/t/p/original/";
     const [trailerUrl, setTrailerUrl] = useState("");
+
+    // empty array
+    const watchList = [];
 
      // format number to k ex => 5000 - 5k
         function kFormatter(num) {
@@ -20,11 +25,12 @@ function Modal({movie, casts}) {
         }
 
          // minimize the text in small screen (responsive)
-    function truncate(str, n) {
-            return str?.length > n ? str.substr(0, n-1) + "..." : str;
-    }
+        function truncate(str, n) {
+                return str?.length > n ? str.substr(0, n-1) + "..." : str;
+        }
 
     
+     /* The options for the youtube video. */
      const opts = {
       height: '800',
       width: '100%',
@@ -33,18 +39,28 @@ function Modal({movie, casts}) {
       }
     }
 
+    /**
+     * When the user clicks on a movie, if there's already a trailer playing, then set the trailerUrl
+     * to an empty string, otherwise, get the trailerUrl from the movieTrailer function and set the
+     * trailerUrl to the urlParams.get("v") value.
+     * @param movie - the movie object that is passed in from the movie list component
+     */
     const handleClick = (movie) => {
         if(trailerUrl) {
             setTrailerUrl('');
         }
         else {
+
             movieTrailer(movie?.name || movie?.title || movie?.original_name || "")
             .then(url => {
                 //get everything after the  ?
                 const urlParams = new URLSearchParams(new URL(url).search);
+                watchList.push(urlParams.get('v'));   // adding items to the array
                 setTrailerUrl(urlParams.get("v"));
-            }).catch((error) => console.log(error));
+            }).catch((error) => console.log("problem = " + error));
             }
+
+            console.log(watchList);
     };
 
      // pause the video if clicked
