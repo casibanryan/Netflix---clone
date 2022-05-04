@@ -26,10 +26,15 @@ function Modal({movie, casts}) {
      const opts = {
       height: '800',
       width: '100%',
+        playerVars: {
+        autoplay: 1,
+      }
     }
 
     const handleClick = (movie) => {
 
+        const movieInfo = document.getElementById('home');
+        if(!movieInfo.classList.contains('d-none')) movieInfo.classList.add('d-none');
         if(trailerUrl) {
             setTrailerUrl('');
         }
@@ -45,6 +50,8 @@ function Modal({movie, casts}) {
 
      // pause the video if clicked
     const handleClose = () => {
+        const movieInfo = document.getElementById('home');
+        movieInfo.classList.contains('d-none') ? movieInfo.classList.remove('d-none') : movieInfo.classList.add('d-block');
         setTrailerUrl('');
     };
 
