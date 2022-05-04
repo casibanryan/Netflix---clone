@@ -75,7 +75,7 @@ function Modal({movie, casts}) {
 								</div>
 								<div className="slide-trailor">
 									<h3>Watch Trailer</h3>
-									<a className="theme-btn theme-btn2 text-decoration-none fw-bold" href="#"><BsPlay size={28} />Play</a>
+									<a className="theme-btn theme-btn2 text-decoration-none fw-bold" ><BsPlay size={28} />Play</a>
 								</div>
 							</div>
 						</div>

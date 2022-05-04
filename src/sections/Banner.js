@@ -69,7 +69,7 @@ function Banner() {
                 <div className="banner__buttons">
                     <button className="banner__button" 
                             type="button" data-bs-toggle="modal" 
-                            data-bs-target="#staticBackdrop"
+                            data-bs-target="#play"
                             onClick={() => handleClick(movie)}
                             >
                               Play
@@ -82,7 +82,7 @@ function Banner() {
         </div>
         <div className="banner__fadeBottom"></div>
 
-        <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div className="modal fade" id="play" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
           <div className="modal-dialog modal-fullscreen">
             <div className="modal-content bg__dark">
               <div className="modal-header" style={{ borderBottom:"none"}}>

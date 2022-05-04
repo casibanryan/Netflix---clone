@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import YouTube from 'react-youtube';
 import movieTrailer from 'movie-trailer';
     
-function WatchModal({target}) {
+function WatchModal({target, movie}) {
 
     const [trailerUrl, setTrailerUrl] = useState("");
 
