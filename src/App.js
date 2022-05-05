@@ -9,11 +9,13 @@ import './css/App.css';
 import './css/styles.css';
 import ContinueWatching from './sections/ContinueWatching';
 import watchList from './js/watchList';
+import {renderWatchList} from './components/Modal';
+
 
 function App() {
 
+  renderWatchList();
 
-  console.log(watchList);
   return (
     <React.Fragment>
       {/* navbar */}

@@ -62,12 +62,6 @@ function Modal({movie, casts}) {
     const handleClose = () => {
         setTrailerUrl('');
     };
-
-    const [list, setList] = useState([]);
-    useEffect(() => {
-        setList(watchList);
-    })
-
   return (
       <>
         <div className="modal fade" id={`staticBackdrop${movie.id}`} data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -169,5 +163,13 @@ function Modal({movie, casts}) {
    
   )
 }
+
+  export function renderWatchList() {
+        const [list, setList] = useState([]);
+    useEffect(() => {
+        setList(watchList);
+    })
+}
+
 
 export default Modal;
