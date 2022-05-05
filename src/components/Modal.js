@@ -6,11 +6,7 @@ import slide3 from '../assets/img/slide3.png';
 import YouTube from 'react-youtube';
 import movieTrailer from 'movie-trailer';
 import '../css/Modal.css';
-import ContinueWatching from '../sections/ContinueWatching';
 import watchList from '../js/watchList';
-
-// empty array
-//const watchList = [];
 
 
 function Modal({movie, casts}) {
@@ -67,7 +63,6 @@ function Modal({movie, casts}) {
         setTrailerUrl('');
     };
 
-       console.log(watchList);
   return (
       <>
         <div className="modal fade" id={`staticBackdrop${movie.id}`} data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -77,6 +72,9 @@ function Modal({movie, casts}) {
                     <button type="button" className="btn-close btn-lg bg-danger" id="closeButton" onClick={() => handleClose()} data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
             <div className="modal-body mt-lg-5 mt-md-5">
+
+            {/* It's a conditional rendering. If the trailerUrl is true, then render the YouTube
+             component. */}
                   {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
                     <section className="hero-area" id="home">
                         <div className="container mt-md-5 mt-lg-5">
