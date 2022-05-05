@@ -13,7 +13,7 @@ function Modal({movie, casts}) {
 
     var data = {}
     data.table = []
-    for (i=0; i <26 ; i++){
+    for (let i=0; i <26 ; i++){
     var obj = {
         id: i,
         square: i * i
