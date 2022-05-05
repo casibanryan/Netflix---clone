@@ -16,7 +16,6 @@ function Modal({movie, casts}) {
     const baseUrl = "https://image.tmdb.org/t/p/original/";
     const [trailerUrl, setTrailerUrl] = useState("");
 
-
      // format number to k ex => 5000 - 5k
         function kFormatter(num) {
             return Math.abs(num) > 999 ? Math.sign(num)*((Math.abs(num)/1000).toFixed(1)) + 'k' : Math.sign(num)*Math.abs(num)
@@ -37,6 +36,7 @@ function Modal({movie, casts}) {
       }
     }
 
+
     /**
      * When the user clicks on a movie, if there's already a trailer playing, then set the trailerUrl
      * to an empty string, otherwise, get the trailerUrl from the movieTrailer function and set the
@@ -52,8 +52,15 @@ function Modal({movie, casts}) {
                     .then(url => {
                         //get everything after the  ?
                         const urlParams = new URLSearchParams(new URL(url).search);
-                        watchList.push(urlParams.get("v"));
                         setTrailerUrl(urlParams.get("v"));
+
+                        const [list, setList] = useState([]);
+                        useEffect(() => {   
+                            setList(watchList.push(urlParams.get("v")));
+                        })
+
+                        console.log(list);
+
                     }).catch((error) => alert('no video available sorry, Trg again later!'));
                     }
                 };
@@ -63,6 +70,7 @@ function Modal({movie, casts}) {
         setTrailerUrl('');
     };
 
+   
 
   return (
       <>
