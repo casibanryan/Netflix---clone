@@ -1,25 +1,25 @@
 import React,  {useState,useEffect, useCallback}  from 'react';
 import YouTube from 'react-youtube';
-
+import data from './js/watchList';
 
 function ContinueWatching({title}) {
 
     const [watchList, setWatchList] = useState([]);
 
-   const fetchList = useCallback(() => {
-       fetch('../js/watchList.js')
-       .then(response => response.json())
-       .then(data => {
-           console.log(data);
-         setWatchList(data);
-       })
-     },
-     [],    
-   )
+//    const fetchList = useCallback(() => {
+//        fetch('../js/watchList.js')
+//        .then(response => response.json())
+//        .then(data => {
+//            console.log(data);
+//          setWatchList(data);
+//        })
+//      },
+//      [],    
+//    )
    
    useEffect(() => {
-      fetchList();
-   })
+        setWatchList(data);
+   })   
    
 
    console.log(watchList);
