@@ -1,14 +1,10 @@
 import React from 'react';
-import watchList from '../js/watchList';
 
 
-function ContinueWatching() {
-
-    const data = watchList;
+function ContinueWatching({watchList}) {
   return (
     <div>
-        
-        {data.map((value, index) => (
+        {watchList.map((value, index) => (
             <p key={index}> {value} </p>
         ))};
     </div>
