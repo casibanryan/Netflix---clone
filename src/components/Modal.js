@@ -7,6 +7,7 @@ import YouTube from 'react-youtube';
 import movieTrailer from 'movie-trailer';
 import '../css/Modal.css';
 import watchList from '../js/watchList';
+const fs = require("fs");
 
 function Modal({movie, casts}) {
     var data = fs.readFileSync('../js/watchList.json');
