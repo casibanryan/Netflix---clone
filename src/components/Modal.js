@@ -59,12 +59,6 @@ function Modal({movie, casts}) {
                 };
      // pause the video if clicked
     const handleClose = () => {
-        const [list, setList] = useState([]);
-
-        useEffect(() => {
-            setList(watchList);
-        })
-
         setTrailerUrl('');
     };
   return (

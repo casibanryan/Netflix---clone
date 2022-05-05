@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState,useEffect, useCallback} from 'react'
 import Banner from './sections/Banner';
 import Nav from './components/Nav';
 import Footer from './sections/Footer';
@@ -8,11 +8,29 @@ import {Helmet} from 'react-helmet';
 import './css/App.css';
 import './css/styles.css';
 import ContinueWatching from './sections/ContinueWatching';
-import watchList from './js/watchList';
+//import data from './js/watchList';
 
 
 function App() {
 
+   const [watchList, setWatchList] = useState([]);
+
+   const fetchList = useCallback(() => {
+       fetch('./js/watchList.js')
+       .then(response => response.json())
+       .then(data => {
+         setWatchList(data);
+       })
+     },
+     [],
+   )
+   
+   useEffect(() => {
+      fetchList();
+   }, [fetchList])
+   
+
+   console.log(watchList);
 
   return (
     <React.Fragment>
