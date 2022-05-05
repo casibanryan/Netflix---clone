@@ -2,7 +2,7 @@ import React from 'react';
 import YouTube from 'react-youtube';
 
 
-function ContinueWatching({watchList}) {
+function ContinueWatching({title, watchList}) {
 
     /* The options for the youtube video. */
      const opts = {
