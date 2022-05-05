@@ -22,7 +22,7 @@ function ContinueWatching({title, watchList}) {
                                      videoId={trailerUrl} 
                                      opts={opts} 
                                      className="row__poster"
-                                     stye={{ width:"none" }}
+                                     style={{ width: "none" }}
                                      />
                      ))}
             </div>
