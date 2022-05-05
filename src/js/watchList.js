@@ -1,4 +1,5 @@
 
+/* Creating an empty array. */
 const watchList = [
 
 ];
