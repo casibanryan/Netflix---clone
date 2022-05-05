@@ -12,6 +12,8 @@ import watchList from './js/watchList';
 
 function App() {
 
+
+  console.log(watchList);
   return (
     <React.Fragment>
       {/* navbar */}
