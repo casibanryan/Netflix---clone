@@ -68,7 +68,6 @@ function Modal({movie, casts}) {
     };
 
        console.log(watchList);
-       ContinueWatching
   return (
       <>
         <div className="modal fade" id={`staticBackdrop${movie.id}`} data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
