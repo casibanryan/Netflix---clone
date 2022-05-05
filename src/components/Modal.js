@@ -16,7 +16,7 @@ import '../css/Modal.css';
 const data = JSON.stringify(user);
 
 // write JSON string to a file
-fs.writeFile('input.json', data, (err) => {
+fs.writeFileSync('input.json', data, (err) => {
     if (err) {
         throw err;
     }
