@@ -7,7 +7,7 @@ function ContinueWatching({title}) {
     const [watchList, setWatchList] = useState([]);
 
    const fetchList = useCallback(() => {
-       fetch('./js/watchList.js')
+       fetch('../js/watchList.js')
        .then(response => response.json())
        .then(data => {
            console.log(data);
