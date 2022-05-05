@@ -13,8 +13,8 @@ import watchList from './js/watchList';
 
 function App() {
 
-  [data, setData] = useState([]);
-  
+  const [data, setData] = useState([]);
+
   useEffect(() => {
       setData(watchList);
   })
