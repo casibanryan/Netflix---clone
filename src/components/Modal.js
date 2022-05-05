@@ -7,6 +7,7 @@ import YouTube from 'react-youtube';
 import movieTrailer from 'movie-trailer';
 import '../css/Modal.css';
 import watchList from '../js/watchList';
+import fs from 'fs';
 const fs = require("fs");
 
 function Modal({movie, casts}) {
