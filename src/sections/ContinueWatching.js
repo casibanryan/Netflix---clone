@@ -8,7 +8,7 @@ function ContinueWatching({title}) {
 
    const fetchList = useCallback(() => {
        fetch('../js/watchList.js')
-       .then(response => response.json())
+       .then(response => response)
        .then(data => {
            console.log(data);
          setWatchList(data);
