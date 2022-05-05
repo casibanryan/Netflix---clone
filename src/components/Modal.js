@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import { BsPlay } from "react-icons/bs";
 import countStar from '../js/countStar';
 import slide1 from '../assets/img/slide1.png';
@@ -9,6 +9,22 @@ import '../css/Modal.css';
 
 
 function Modal({movie, casts}) {
+    var fs = require('fs');
+
+    var data = {}
+    data.table = []
+    for (i=0; i <26 ; i++){
+    var obj = {
+        id: i,
+        square: i * i
+    }
+    data.table.push(obj)
+    }
+    fs.writeFile ("input.json", JSON.stringify(data), function(err) {
+        if (err) throw err;
+        console.log('complete');
+        }
+    );
 
   /* Setting the baseUrl to the image.tmdb.org/t/p/original/ and setting the trailerUrl to an empty
   string. */
@@ -52,14 +68,15 @@ function Modal({movie, casts}) {
                         //get everything after the  ?
                         const urlParams = new URLSearchParams(new URL(url).search);
                         setTrailerUrl(urlParams.get("v"));
-                        watchList.push(urlParams.get("v"));
                     }).catch((error) => alert('no video available sorry, Trg again later!'));
                     }
                 };
+
      // pause the video if clicked
     const handleClose = () => {
         setTrailerUrl('');
     };
+
   return (
       <>
         <div className="modal fade" id={`staticBackdrop${movie.id}`} data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
