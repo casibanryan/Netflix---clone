@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { BsPlay } from "react-icons/bs";
 import countStar from '../js/countStar';
 import slide1 from '../assets/img/slide1.png';
@@ -59,6 +59,8 @@ function Modal({movie, casts}) {
                     }).catch((error) => alert('no video available sorry, Trg again later!'));
                     }
                 };
+
+            handleClick();
     })
   
 
