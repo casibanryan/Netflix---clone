@@ -43,9 +43,7 @@ function Modal({movie, casts}) {
      * trailerUrl to the urlParams.get("v") value.
      * @param movie - the movie object that is passed in from the movie list component
      */
-
-    useEffect(() => {
-          const handleClick = (movie) => {
+      const handleClick = (movie) => {
                 if(trailerUrl) {
                     setTrailerUrl('');
                 }
@@ -60,16 +58,11 @@ function Modal({movie, casts}) {
                     }
                 };
 
-            handleClick();
-    })
-  
-
      // pause the video if clicked
     const handleClose = () => {
         setTrailerUrl('');
     };
 
-    console.log(watchList);
 
   return (
       <>
