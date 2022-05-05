@@ -11,7 +11,7 @@ function ContinueWatching({title, watchList}) {
     }
 
   return (
-     <div className={`home__row ${watchList.length < 1 ? "d-none" : 'd-block'}`}>
+     <div className="home__row">
               {/* title */}
             <h2> {title} </h2>
                     {/* container */}
