@@ -4,9 +4,6 @@ import axios from '../js/axios';
 import '../css/Home.css';
 
 
-
-
-
 const baseUrl = "https://image.tmdb.org/t/p/original/";
 
 function Home({ title, fetchUrl, fetchPeople, isLargeRow }) {
@@ -35,6 +32,7 @@ function Home({ title, fetchUrl, fetchPeople, isLargeRow }) {
             return request;
         }
         fetchCast();
+
      }, [fetchPeople])
 
     

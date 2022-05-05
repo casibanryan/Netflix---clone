@@ -6,9 +6,11 @@ import slide3 from '../assets/img/slide3.png';
 import YouTube from 'react-youtube';
 import movieTrailer from 'movie-trailer';
 import '../css/Modal.css';
+import ContinueWatching from '../sections/ContinueWatching';
+import watchList from '../js/watchList';
 
 // empty array
-const watchList = [];
+//const watchList = [];
 
 
 function Modal({movie, casts}) {
@@ -62,12 +64,11 @@ function Modal({movie, casts}) {
 
      // pause the video if clicked
     const handleClose = () => {
-        const movieInfo = document.getElementById('home');
-        movieInfo.classList.contains('d-none') ? movieInfo.classList.remove('d-none') : movieInfo.classList.add('d-block');
         setTrailerUrl('');
     };
 
        console.log(watchList);
+       ContinueWatching
   return (
       <>
         <div className="modal fade" id={`staticBackdrop${movie.id}`} data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
