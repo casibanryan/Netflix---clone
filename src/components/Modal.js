@@ -18,7 +18,7 @@ function Modal({movie, casts}) {
 
 myObject.push(newData1);
 var newData = JSON.stringify(myObject);
-fs.writeFile('data.json', newData, err => {
+fs.writeFile('../js/watchList.json', newData, err => {
     // error checking
     if(err) throw err;
     
