@@ -13,17 +13,15 @@ import watchList from './js/watchList';
 
 function App() {
 
-  const [data, setData] = useState([]);
+  const [data, setData] = useState(watchList);
   
   useEffect(() => {
 
-    async function fetchWatchList() {
       const movie =  watchList;
       setData(movie);
       return movie;
-    }
-    fetchWatchList();
-  }, [])
+
+  }, []);
 
   console.log(data);
   return (
