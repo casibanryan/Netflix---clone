@@ -11,16 +11,19 @@ function ContinueWatching({title, watchList}) {
     }
 
   return (
-     <div className="home__row">
+     <div className={`home__row ${watchList.length < 0 ? "d-none" : ''}`}>
               {/* title */}
             <h2> {title} </h2>
                     {/* container */}
                 <div className="row__posters">
                      {/* looping the data  */}
                     {watchList.map((trailerUrl, index) => (
-                        <React.Fragment  key={index}>
-                           <YouTube videoId={trailerUrl} opts={opts} className="row__poster" />
-                        </React.Fragment>
+                           <YouTube  key={index} 
+                                     videoId={trailerUrl} 
+                                     opts={opts} 
+                                     className="row__poster"
+                                     stye={{ width:"none" }}
+                                     />
                      ))}
             </div>
         </div>
