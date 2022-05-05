@@ -6,10 +6,10 @@ import slide3 from '../assets/img/slide3.png';
 import YouTube from 'react-youtube';
 import movieTrailer from 'movie-trailer';
 import '../css/Modal.css';
-
+ var fs = require('fs');
 
 function Modal({movie, casts}) {
-    var fs = require('fs');
+   
 
     var data = {}
     data.table = []
