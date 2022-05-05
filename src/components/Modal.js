@@ -6,22 +6,6 @@ import slide3 from '../assets/img/slide3.png';
 import YouTube from 'react-youtube';
 import movieTrailer from 'movie-trailer';
 import '../css/Modal.css';
- var fs = require('fs');
- const user = {
-    "id": 1,
-    "name": "John Doe",
-    "age": 22
-};
-   // convert JSON object to string
-const data = JSON.stringify(user);
-
-// write JSON string to a file
-fs.writeFileSync('input.json', data, (err) => {
-    if (err) {
-        throw err;
-    }
-    console.log("JSON data is saved.");
-});
 
 function Modal({movie, casts}) {
    
