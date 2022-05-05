@@ -7,6 +7,8 @@ import YouTube from 'react-youtube';
 import movieTrailer from 'movie-trailer';
 import '../css/Modal.css';
 
+// empty array
+const watchList = [];
 
 
 function Modal({movie, casts}) {
@@ -16,8 +18,6 @@ function Modal({movie, casts}) {
     const baseUrl = "https://image.tmdb.org/t/p/original/";
     const [trailerUrl, setTrailerUrl] = useState("");
 
-    // empty array
-    const watchList = [];
 
      // format number to k ex => 5000 - 5k
         function kFormatter(num) {
@@ -46,8 +46,6 @@ function Modal({movie, casts}) {
      * @param movie - the movie object that is passed in from the movie list component
      */
     const handleClick = (movie) => {
-
-        watchList.push(movie);
         if(trailerUrl) {
             setTrailerUrl('');
         }
@@ -56,11 +54,10 @@ function Modal({movie, casts}) {
             .then(url => {
                 //get everything after the  ?
                 const urlParams = new URLSearchParams(new URL(url).search);
+                watchList.push(urlParams.get("v"));
                 setTrailerUrl(urlParams.get("v"));
-            }).catch((error) => console.log("problem = " + error));
+            }).catch((error) => alert('no video available sorry, Trg again later!'));
             }
-
-            console.log(watchList);
     };
 
      // pause the video if clicked
@@ -70,7 +67,7 @@ function Modal({movie, casts}) {
         setTrailerUrl('');
     };
 
-    console.log(watchList);
+       console.log(watchList);
   return (
       <>
         <div className="modal fade" id={`staticBackdrop${movie.id}`} data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
