@@ -8,9 +8,21 @@ import movieTrailer from 'movie-trailer';
 import '../css/Modal.css';
 import watchList from '../js/watchList';
 
-
 function Modal({movie, casts}) {
+    var data = fs.readFileSync('../js/watchList.json');
+    var myObject= JSON.parse(data);
+    let newData1 = {
+    "country": "England"
+}  
 
+myObject.push(newData1);
+var newData = JSON.stringify(myObject);
+fs.writeFile('data.json', newData, err => {
+    // error checking
+    if(err) throw err;
+    
+    console.log("New data added");
+});   
   /* Setting the baseUrl to the image.tmdb.org/t/p/original/ and setting the trailerUrl to an empty
   string. */
     const baseUrl = "https://image.tmdb.org/t/p/original/";
