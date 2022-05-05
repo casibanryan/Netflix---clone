@@ -1,4 +1,4 @@
-import React, {useState,useEffect, useCallback} from 'react'
+import React from 'react'
 import Banner from './sections/Banner';
 import Nav from './components/Nav';
 import Footer from './sections/Footer';
@@ -8,29 +8,8 @@ import {Helmet} from 'react-helmet';
 import './css/App.css';
 import './css/styles.css';
 import ContinueWatching from './sections/ContinueWatching';
-//import data from './js/watchList';
-
 
 function App() {
-
-   const [watchList, setWatchList] = useState([]);
-
-   const fetchList = useCallback(() => {
-       fetch('./js/watchList.js')
-       .then(response => response.json())
-       .then(data => {
-         setWatchList(data);
-       })
-     },
-     [],
-   )
-   
-   useEffect(() => {
-      fetchList();
-   }, [fetchList])
-   
-
-   console.log(watchList);
 
   return (
     <React.Fragment>
@@ -40,7 +19,7 @@ function App() {
       {/* banner */}
           <Banner />
             <Home title="New Release" fetchUrl={requests.fetchNetflixOriginals} fetchPeople={requests.fetchPeople} isLargeRow={true} />
-            <ContinueWatching title="Continue Watching" watchList={watchList}/>
+            <ContinueWatching title="Continue Watching">
             <Home title="Trending Now" fetchUrl={requests.fetchTrending} fetchPeople={requests.fetchPeople} /> 
             <Home title="Top Rated" fetchUrl={requests.fetchTopRated} fetchPeople={requests.fetchPeople} /> 
             <Home title="Action Movies" fetchUrl={requests.fetchActionMovies} fetchPeople={requests.fetchPeople} /> 

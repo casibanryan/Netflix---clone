@@ -1,8 +1,28 @@
-import React from 'react';
+import React,  {useState,useEffect, useCallback}  from 'react';
 import YouTube from 'react-youtube';
 
 
-function ContinueWatching({title, watchList}) {
+function ContinueWatching({title}) {
+
+    const [watchList, setWatchList] = useState([]);
+
+   const fetchList = useCallback(() => {
+       fetch('./js/watchList.js')
+       .then(response => response.json())
+       .then(data => {
+           console.log(data);
+         setWatchList(data);
+       })
+     },
+     [],    
+   )
+   
+   useEffect(() => {
+      fetchList();
+   }, [fetchList])
+   
+
+   console.log(watchList);
 
     /* The options for the youtube video. */
      const opts = {
