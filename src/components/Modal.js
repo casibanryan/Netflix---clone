@@ -11,20 +11,21 @@ import '../css/Modal.css';
 function Modal({movie, casts}) {
    
 
-    var data = {}
-    data.table = []
-    for (let i=0; i <26 ; i++){
-    var obj = {
-        id: i,
-        square: i * i
+   const user = {
+    "id": 1,
+    "name": "John Doe",
+    "age": 22
+};
+   // convert JSON object to string
+const data = JSON.stringify(user);
+
+// write JSON string to a file
+fs.writeFile('input.json', data, (err) => {
+    if (err) {
+        throw err;
     }
-    data.table.push(obj)
-    }
-    fs.writeFile ("input.json", JSON.stringify(data), function(err) {
-        if (err) throw err;
-        console.log('complete');
-        }
-    );
+    console.log("JSON data is saved.");
+});
 
   /* Setting the baseUrl to the image.tmdb.org/t/p/original/ and setting the trailerUrl to an empty
   string. */
