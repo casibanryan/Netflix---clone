@@ -7,7 +7,7 @@ function ContinueWatching({title, watchList}) {
     /* The options for the youtube video. */
      const opts = {
       height: '100',
-      width: '100',
+      width: '100%',
     }
 
   return (
