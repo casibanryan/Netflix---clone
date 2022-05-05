@@ -1,6 +1,6 @@
 import React,  {useState,useEffect, useCallback}  from 'react';
 import YouTube from 'react-youtube';
-import data from './js/watchList';
+import data from '../js/watchList';
 
 function ContinueWatching({title}) {
 
