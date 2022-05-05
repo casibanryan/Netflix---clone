@@ -57,9 +57,14 @@ function Modal({movie, casts}) {
                     }).catch((error) => alert('no video available sorry, Trg again later!'));
                     }
                 };
-
      // pause the video if clicked
     const handleClose = () => {
+        const [list, setList] = useState([]);
+
+        useEffect(() => {
+            setList(watchList);
+        })
+
         setTrailerUrl('');
     };
   return (
@@ -163,13 +168,5 @@ function Modal({movie, casts}) {
    
   )
 }
-
-  export function renderWatchList() {
-        const [list, setList] = useState([]);
-    useEffect(() => {
-        setList(watchList);
-    })
-}
-
 
 export default Modal;
