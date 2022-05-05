@@ -6,39 +6,24 @@ import slide3 from '../assets/img/slide3.png';
 import YouTube from 'react-youtube';
 import movieTrailer from 'movie-trailer';
 import '../css/Modal.css';
-import watchList from '../js/watchList';
-import fs from 'fs';
-const fs = require("fs");
+
 
 function Modal({movie, casts}) {
-    var data = fs.readFileSync('../js/watchList.json');
-    var myObject= JSON.parse(data);
-    let newData1 = {
-    "country": "England"
-}  
 
-myObject.push(newData1);
-var newData = JSON.stringify(myObject);
-fs.writeFile('../js/watchList.json', newData, err => {
-    // error checking
-    if(err) throw err;
-    
-    console.log("New data added");
-});   
   /* Setting the baseUrl to the image.tmdb.org/t/p/original/ and setting the trailerUrl to an empty
   string. */
     const baseUrl = "https://image.tmdb.org/t/p/original/";
     const [trailerUrl, setTrailerUrl] = useState("");
 
-     // format number to k ex => 5000 - 5k
-        function kFormatter(num) {
-            return Math.abs(num) > 999 ? Math.sign(num)*((Math.abs(num)/1000).toFixed(1)) + 'k' : Math.sign(num)*Math.abs(num)
-        }
+    // format number to k ex => 5000 - 5k
+    function kFormatter(num) {
+        return Math.abs(num) > 999 ? Math.sign(num)*((Math.abs(num)/1000).toFixed(1)) + 'k' : Math.sign(num)*Math.abs(num)
+    }
 
-         // minimize the text in small screen (responsive)
-        function truncate(str, n) {
-                return str?.length > n ? str.substr(0, n-1) + "..." : str;
-        }
+    // minimize the text in small screen (responsive)
+    function truncate(str, n) {
+            return str?.length > n ? str.substr(0, n-1) + "..." : str;
+    }
 
     
      /* The options for the youtube video. */
@@ -169,11 +154,7 @@ fs.writeFile('../js/watchList.json', newData, err => {
         </div>
     </div>
     </div>
-           
-               
     </>      
-                                                
-   
   )
 }
 
