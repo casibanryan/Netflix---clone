@@ -43,25 +43,31 @@ function Modal({movie, casts}) {
      * trailerUrl to the urlParams.get("v") value.
      * @param movie - the movie object that is passed in from the movie list component
      */
-    const handleClick = (movie) => {
-        if(trailerUrl) {
-            setTrailerUrl('');
-        }
-        else {
-            movieTrailer(movie?.name || movie?.title || movie?.original_name || "")
-            .then(url => {
-                //get everything after the  ?
-                const urlParams = new URLSearchParams(new URL(url).search);
-                watchList.push(urlParams.get("v"));
-                setTrailerUrl(urlParams.get("v"));
-            }).catch((error) => alert('no video available sorry, Trg again later!'));
-            }
-    };
+
+    useEffect(() => {
+          const handleClick = (movie) => {
+                if(trailerUrl) {
+                    setTrailerUrl('');
+                }
+                else {
+                    movieTrailer(movie?.name || movie?.title || movie?.original_name || "")
+                    .then(url => {
+                        //get everything after the  ?
+                        const urlParams = new URLSearchParams(new URL(url).search);
+                        watchList.push(urlParams.get("v"));
+                        setTrailerUrl(urlParams.get("v"));
+                    }).catch((error) => alert('no video available sorry, Trg again later!'));
+                    }
+                };
+    })
+  
 
      // pause the video if clicked
     const handleClose = () => {
         setTrailerUrl('');
     };
+
+    console.log(watchList);
 
   return (
       <>

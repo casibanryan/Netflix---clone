@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import Banner from './sections/Banner';
 import Nav from './components/Nav';
 import Footer from './sections/Footer';
@@ -12,18 +12,7 @@ import watchList from './js/watchList';
 
 
 function App() {
-
-  const [data, setData] = useState(watchList);
-  
-  useEffect(() => {
-
-      const movie =  watchList;
-      setData(movie);
-      return movie;
-
-  }, []);
-
-  console.log(data);
+ 
   return (
 
     <React.Fragment>
@@ -33,7 +22,7 @@ function App() {
       {/* banner */}
           <Banner />
             <Home title="New Release" fetchUrl={requests.fetchNetflixOriginals} fetchPeople={requests.fetchPeople} isLargeRow={true} />
-            <ContinueWatching title="Continue Watching" watchList={data}/>
+            <ContinueWatching title="Continue Watching" watchList={watchList}/>
             <Home title="Trending Now" fetchUrl={requests.fetchTrending} fetchPeople={requests.fetchPeople} /> 
             <Home title="Top Rated" fetchUrl={requests.fetchTopRated} fetchPeople={requests.fetchPeople} /> 
             <Home title="Action Movies" fetchUrl={requests.fetchActionMovies} fetchPeople={requests.fetchPeople} /> 
