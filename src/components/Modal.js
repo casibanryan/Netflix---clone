@@ -7,11 +7,7 @@ import YouTube from 'react-youtube';
 import movieTrailer from 'movie-trailer';
 import '../css/Modal.css';
  var fs = require('fs');
-
-function Modal({movie, casts}) {
-   
-
-   const user = {
+ const user = {
     "id": 1,
     "name": "John Doe",
     "age": 22
@@ -27,6 +23,8 @@ fs.writeFile('input.json', data, (err) => {
     console.log("JSON data is saved.");
 });
 
+function Modal({movie, casts}) {
+   
   /* Setting the baseUrl to the image.tmdb.org/t/p/original/ and setting the trailerUrl to an empty
   string. */
     const baseUrl = "https://image.tmdb.org/t/p/original/";
