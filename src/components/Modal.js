@@ -53,14 +53,7 @@ function Modal({movie, casts}) {
                         //get everything after the  ?
                         const urlParams = new URLSearchParams(new URL(url).search);
                         setTrailerUrl(urlParams.get("v"));
-
-                        const [list, setList] = useState([]);
-                        useEffect(() => {   
-                            setList(watchList.push(urlParams.get("v")));
-                        })
-
-                        console.log(list);
-
+                        watchList.push(urlParams.get("v"));
                     }).catch((error) => alert('no video available sorry, Trg again later!'));
                     }
                 };
@@ -70,6 +63,12 @@ function Modal({movie, casts}) {
         setTrailerUrl('');
     };
 
+    const [list, setList] = useState([]);
+    useEffect(() => {
+        setList(watchList);
+    })
+
+    console.log(list);
    
 
   return (
