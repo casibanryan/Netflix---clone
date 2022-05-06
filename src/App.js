@@ -22,7 +22,7 @@ function App() {
       fetch('./data.json')
       .then(response => response.json())
       .then(data => {
-        
+        console.log(data);
        /* Setting the state of the watchDataList to the data that is being fetched from the data.json
        file. */
         setWatchDataList(data);
