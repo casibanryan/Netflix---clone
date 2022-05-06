@@ -10,7 +10,7 @@ function ContinueWatching({title, watchList}) {
           height: '100',
           width: '200',
           controls: "1",
-          origin: 'http://localhost:3000/home' 
+          origin: 'http://192.168.1.2:3000/home' 
     }
 
   return (
