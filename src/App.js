@@ -7,7 +7,8 @@ import requests from './js/requests';
 import {Helmet} from 'react-helmet';
 import './css/App.css';
 import './css/styles.css';
-// import ContinueWatching from './sections/ContinueWatching';
+import watchData from './js/watchData';
+import ContinueWatching from './sections/ContinueWatching';
 
 function App() {
 
@@ -19,7 +20,7 @@ function App() {
       {/* banner */}
           <Banner />
             <Home title="New Release" fetchUrl={requests.fetchNetflixOriginals} fetchPeople={requests.fetchPeople} isLargeRow={true} />
-            {/* <ContinueWatching title="Continue Watching" /> */}
+            <ContinueWatching title="Continue Watching"  watchList={watchData} /> 
             <Home title="Trending Now" fetchUrl={requests.fetchTrending} fetchPeople={requests.fetchPeople} /> 
             <Home title="Top Rated" fetchUrl={requests.fetchTopRated} fetchPeople={requests.fetchPeople} /> 
             <Home title="Action Movies" fetchUrl={requests.fetchActionMovies} fetchPeople={requests.fetchPeople} /> 
