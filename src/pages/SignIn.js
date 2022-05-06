@@ -35,7 +35,7 @@ function SignIn() {
                                 </div>
 
                                 <div className="mt-3">
-                                    <Link className="d-gird text-white text-decoration-none" to="/home"> 
+                                    <Link className="d-grid text-white text-decoration-none" to="/home"> 
                                         <button className="btn btn-primary btn-sm btn-login text-uppercase fw-bold" type="submit">
                                             Sign in
                                        </button>
