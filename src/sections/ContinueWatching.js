@@ -20,7 +20,7 @@ function ContinueWatching({title, watchList}) {
                      {/* looping the data  */}
                     {watchList.map((trailerUrl, index) => (
                            <YouTube  key={index} 
-                                     videoId={trailerUrl} 
+                                     videoId={trailerUrl.movie} 
                                      opts={opts} 
                                      className="row__poster"
                                      />
