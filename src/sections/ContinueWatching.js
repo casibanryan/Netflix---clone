@@ -2,7 +2,7 @@ import React from 'react';
 import YouTube from 'react-youtube';
 import screenfull from "screenfull";  
 import DeviceDetector from "device-detector-js"; 
-import { makeStyles } from "material-ui/core/styles"; 
+import { makeStyles } from "@material-ui/core/styles"; 
 
 function ContinueWatching({title, watchList}) {
 
