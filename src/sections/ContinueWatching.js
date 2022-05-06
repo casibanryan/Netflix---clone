@@ -25,6 +25,7 @@ function ContinueWatching({title, watchList}) {
      const opts = {
           height: '100',
           width: '200',
+          controls: "1"  
     }
 
     const useStyles = makeStyles({  
@@ -47,8 +48,7 @@ function ContinueWatching({title, watchList}) {
                            <YouTube  key={index} 
                                      videoId={trailerUrl.movie} 
                                      opts={opts} 
-                                     className="row__poster"
-                                      containerClassName={classes.videoDiv}
+                                      containerClassName={`row__poster ${classes.videoDiv}`}
                                       onPlay={() => (mobile ? fullScreen : {})}  
 
                                      />
