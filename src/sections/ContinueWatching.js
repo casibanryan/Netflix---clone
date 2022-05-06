@@ -26,7 +26,7 @@ function ContinueWatching({title, watchList}) {
           height: '100',
           width: '200',
           controls: "1",
-           'origin': 'http://localhost:3000' 
+           origin: 'http://localhost:3000/home' 
     }
 
     const useStyles = makeStyles({  
