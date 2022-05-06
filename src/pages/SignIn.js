@@ -34,8 +34,8 @@ function SignIn() {
                                     <label htmlFor="floatingPassword">Password</label>
                                 </div>
 
-                                <div className="d-grid mt-3">
-                                    <Link className="text-white text-decoration-none" to="/home"> 
+                                <div className="mt-3">
+                                    <Link className="d-gird text-white text-decoration-none" to="/home"> 
                                         <button className="btn btn-primary btn-sm btn-login text-uppercase fw-bold" type="submit">
                                             Sign in
                                        </button>
