@@ -32,7 +32,7 @@ function ContinueWatching({title, watchList}) {
                                      videoId={trailerUrl.movie} 
                                      opts={opts} 
                                      className="row__poster"
-                                     onCLick={() => handleTrailer(trailerUrl.movie)}
+                                     onCLick={() => handleTrailer(watchList)}
                                      />
                           </React.Fragment>
                      ))}
