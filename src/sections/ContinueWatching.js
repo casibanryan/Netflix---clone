@@ -12,13 +12,13 @@ function ContinueWatching({title, watchList}) {
           controls: "1",
     }
 
-    // pause the video if clicked
-    const handleClose = () => {
-        const closeBtn = document.getElementById('close');
-        if(!closeBtn.clicked) setTrailerUrl('');
-    };
+    // // pause the video if clicked
+    // const handleClose = () => {
+    //     const closeBtn = document.getElementById('close');
+    //     if(!closeBtn.clicked) setTrailerUrl('');
+    // };
 
-    var trailer;
+    var trailer = "";
   return (
      <div className={`home__row ${watchList.length == 0 ? "d-none" : "d-block" }`} id="my_list">
               {/* title */}
