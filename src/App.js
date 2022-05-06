@@ -18,10 +18,7 @@ function App() {
   const fetchData = useCallback(
     () => {
       fetch('./js/watchData.js')
-      .then(response => response.json())
-      .then(data => {
-        setWatchDataList(data);
-      })
+      .then(response => console.log(response.json()))
     },
     [],
   )
