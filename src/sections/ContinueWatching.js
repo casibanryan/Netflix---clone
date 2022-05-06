@@ -42,7 +42,7 @@ function ContinueWatching({title, watchList}) {
                                     <button type="button" className="btn-close btn-lg bg-danger" 
                                             data-bs-dismiss="modal"
                                             id="continue_close" aria-label="Close"
-                                            onClick={() => handleClose()}           
+                                                  
                                             ></button>
                                   </div>
                                   <div className="modal-body">
