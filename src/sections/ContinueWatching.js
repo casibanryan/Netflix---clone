@@ -33,24 +33,9 @@ function ContinueWatching({title, watchList}) {
                                      trailer = {trailerUrl.movie}
                                      opts={opts} 
                                       className="row__poster"
-                                       data-bs-toggle="modal" data-bs-target={`#continueWatching${i}`} 
+                                       
                                      />
-                            <div className="modal fade" id={`continueWatching${i}`} data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                              <div className="modal-dialog modal-fullscreen">
-                                <div className="modal-content bg__dark">
-                                  <div className="modal-header" style={{ borderBottom:"none"}}>
-                                    <button type="button" className="btn-close btn-lg bg-danger" 
-                                            data-bs-dismiss="modal"
-                                            id="continue_close" aria-label="Close"
-                                                  
-                                            ></button>
-                                  </div>
-                                  <div className="modal-body">
-                                  <YouTube videoId={trailer} opts={opts} />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+                           
                             </React.Fragment>
                      ))}
                       
