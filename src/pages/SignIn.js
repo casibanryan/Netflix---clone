@@ -35,18 +35,19 @@ function SignIn() {
                                 </div>
 
                                 <div className="d-grid mt-3">
-                                    <button className="btn btn-primary btn-sm btn-login text-uppercase fw-bold"
-                                        type="submit">
-                                            <Link className="text-white text-decoration-none" to="/home"> Sign in</Link>
-                                       </button>
+                                    <Link className="text-white text-decoration-none" to="/home"> 
+                                        <button className="btn btn-primary btn-sm btn-login text-uppercase fw-bold" type="submit">
+                                            Sign in
+                                        </button>
+                                    </Link>
                                 </div>
                                 <div className="form-check mt-2">
                                     <input className="form-check-input" type="checkbox" value="" id="rememberPasswordCheck" />
                                     <label className="form-check-label text-secondary" htmlFor="rememberPasswordCheck">
                                         <div className="d-flex">
                                             <p className="me-5">Remember me</p>
-                                            <p className="ms-5 fs-6"><a href="#" className="text-decoration-none">Need
-                                                    help?</a>
+                                            <p className="ms-5 fs-6"><Link href="#" className="text-decoration-none">Need
+                                                    help?</Link>
                                             </p>
                                         </div>
                                     </label>
