@@ -7,7 +7,6 @@ import requests from './js/requests';
 import {Helmet} from 'react-helmet';
 import './css/App.css';
 import './css/styles.css';
-import watchData from './js/watchData';
 import ContinueWatching from './sections/ContinueWatching';
 
 function App() {
@@ -37,7 +36,6 @@ function App() {
     fetchData();
   }, [fetchData])
   
-  console.log(watchDataList);
   
   return (
     <React.Fragment>
