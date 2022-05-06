@@ -15,14 +15,24 @@ function App() {
  /* A hook that is used to store data in the state. */
   const [watchDataList, setWatchDataList] = useState([]);
 
+ /* Fetching the data from the data.json file and setting the state of the watchDataList to the data
+ that is being fetched from the data.json file. */
   const fetchData = useCallback(
     () => {
       fetch('./data.json')
-      .then(response => console.log(response.json()))
+      .then(response => response.json())
+      .then(data => {
+        
+       /* Setting the state of the watchDataList to the data that is being fetched from the data.json
+       file. */
+        setWatchDataList(data);
+      })
     },
     [],
   )
 
+ /* Fetching the data from the data.json file and setting the state of the watchDataList to the data
+ that is being fetched from the data.json file. */
   useEffect(() => {
     fetchData();
   }, [fetchData])
