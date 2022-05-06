@@ -27,13 +27,14 @@ function ContinueWatching({title, watchList}) {
                 <div className="row__posters">
                      {/* looping the data  */}
                     {watchList.map((trailerUrl, i) => (
-                  
+                        <React.Fragment>
                            <YouTube  key={i}
                                      videoId={trailerUrl.movie} 
                                      opts={opts} 
                                      className="row__poster"
                                      onCLick={() => handleTrailer(trailerUrl.movie)}
                                      />
+                          </React.Fragment>
                      ))}
                       
             </div>
