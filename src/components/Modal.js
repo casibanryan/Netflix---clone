@@ -8,7 +8,7 @@ import movieTrailer from 'movie-trailer';
 import '../css/Modal.css';
 
 
- const temp = [];
+
 function Modal({movie, casts}) {
    
   /* Setting the baseUrl to the image.tmdb.org/t/p/original/ and setting the trailerUrl to an empty
@@ -43,9 +43,6 @@ function Modal({movie, casts}) {
      * trailerUrl to the urlParams.get("v") value.
      * @param movie - the movie object that is passed in from the movie list component
      */
-
-
-       
       const handleClick = (movie) => {
                 if(trailerUrl) {
                     setTrailerUrl('');
@@ -56,7 +53,6 @@ function Modal({movie, casts}) {
                         //get everything after the  ?
                         const urlParams = new URLSearchParams(new URL(url).search);
                         setTrailerUrl(urlParams.get("v"));
-                        temp.push(urlParams.get("v"));
                     }).catch((error) => alert('no video available sorry, Trg again later!'));
                     }
                 };
@@ -65,8 +61,6 @@ function Modal({movie, casts}) {
     const handleClose = () => {
         setTrailerUrl('');
     };
-
-    console.log(temp);
 
   return (
       <>

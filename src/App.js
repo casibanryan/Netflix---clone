@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect, useCallback} from 'react'
 import Banner from './sections/Banner';
 import Nav from './components/Nav';
 import Footer from './sections/Footer';
@@ -12,6 +12,26 @@ import ContinueWatching from './sections/ContinueWatching';
 
 function App() {
 
+ /* A hook that is used to store data in the state. */
+  const [watchDataList, setWatchDataList] = useState([]);
+
+  const fetchData = useCallback(
+    () => {
+      fetch('./js/watchData.js')
+      .then(response => response.json())
+      .then(data => {
+        setWatchDataList(data);
+      })
+    },
+    [],
+  )
+
+  useEffect(() => {
+    fetchData();
+  }, [fetchData])
+  
+  console.log(watchDataList);
+  
   return (
     <React.Fragment>
       {/* navbar */}
