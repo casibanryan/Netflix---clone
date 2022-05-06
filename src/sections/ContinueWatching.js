@@ -26,16 +26,17 @@ function ContinueWatching({title, watchList}) {
                     {/* container */}
                 <div className="row__posters">
                      {/* looping the data  */}
-                    {watchList.map((trailerUrl, index) => (
-                        <React.Fragment key={index}>
+                    {watchList.map((trailerUrl, i) => (
+                        <React.Fragment key={i}>
+                          <a data-bs-toggle="modal" data-bs-target={`#continueWatching${i}`} >
                            <YouTube   
                                      videoId={trailerUrl.movie} 
                                      trailer = {trailerUrl.movie}
                                      opts={opts} 
                                       className="row__poster"
-                                      data-bs-toggle="modal" data-bs-target={`#watch${index}`}
                                      />
-                            <div className="modal fade" id={`watch${index}`} data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                     </a>
+                            <div className="modal fade" id={`continueWatching${i}`} data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                               <div className="modal-dialog modal-fullscreen">
                                 <div className="modal-content bg__dark">
                                   <div className="modal-header" style={{ borderBottom:"none"}}>
