@@ -48,7 +48,7 @@ function ContinueWatching({title, watchList}) {
                            <YouTube  key={index} 
                                      videoId={trailerUrl.movie} 
                                      opts={opts} 
-                                      containerClassName={`row__poster ${classes.videoDiv}`}
+                                      className={`row__poster ${classes.videoDiv}`}
                                       onPlay={() => (mobile ? fullScreen : {})}  
 
                                      />
