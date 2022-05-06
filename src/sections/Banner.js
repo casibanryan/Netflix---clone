@@ -74,7 +74,10 @@ function Banner() {
                             >
                               Play
                     </button>
-                      <button className="banner__button">My List</button>
+
+                    <a href="#my_list">
+                        <button className="banner__button" >My List</button>
+                    </a>
                 </div>
 
                     {/* description */}
