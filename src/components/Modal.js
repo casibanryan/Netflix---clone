@@ -33,6 +33,7 @@ function Modal({movie, casts}) {
       width: '100%',
         playerVars: {
         autoplay: 1,
+        origin: 'http://localhost:3000/home' 
       }
     }
 
