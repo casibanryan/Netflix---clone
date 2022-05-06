@@ -25,12 +25,12 @@ function SignIn() {
                             <form >
                                 <div className="form-floating mb-4">
                                     <input type="email" className="form-control form-control-sm" id="floatingInput"
-                                        placeholder="name@example.com" required />
+                                        placeholder="name@example.com" />
                                     <label htmlFor="floatingInput">Email or Phone number</label>
                                 </div>
                                 <div className="form-floating mb-4">
                                     <input type="password" className="form-control form-control-sm" id="floatingPassword"
-                                        placeholder="Password" required />
+                                        placeholder="Password" />
                                     <label htmlFor="floatingPassword">Password</label>
                                 </div>
 
