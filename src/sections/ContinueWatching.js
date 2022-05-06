@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import YouTube from 'react-youtube';
 
 
@@ -12,13 +12,13 @@ function ContinueWatching({title, watchList}) {
           controls: "1",
     }
 
-    // // pause the video if clicked
-    // const handleClose = () => {
-    //     const closeBtn = document.getElementById('close');
-    //     if(!closeBtn.clicked) setTrailerUrl('');
-    // };
+    const [trailer, setTrailer] = useState[""];
 
-    var trailer = "";
+      const handleTrailer = (movie) => {
+          // pause the movie if the user clicks another video
+          movie ? setTrailer('') : setTrailer(movie)
+      }
+                
   return (
      <div className={`home__row ${watchList.length == 0 ? "d-none" : "d-block" }`} id="my_list">
               {/* title */}
@@ -27,16 +27,13 @@ function ContinueWatching({title, watchList}) {
                 <div className="row__posters">
                      {/* looping the data  */}
                     {watchList.map((trailerUrl, i) => (
-                        <React.Fragment key={i}>
-                           <YouTube   
+                  
+                           <YouTube  key={i}
                                      videoId={trailerUrl.movie} 
-                                     trailer = {trailerUrl.movie}
                                      opts={opts} 
-                                      className="row__poster"
-                                       
+                                     className="row__poster"
+                                     onCLick={() => handleTrailer(trailerUrl.movie)}
                                      />
-                           
-                            </React.Fragment>
                      ))}
                       
             </div>
