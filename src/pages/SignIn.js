@@ -46,11 +46,9 @@ function SignIn() {
                                     <label className="form-check-label text-secondary" htmlFor="rememberPasswordCheck">
                                         <div className="d-flex">
                                             <p className="me-5">Remember me</p>
-                                            <Link href="#" className="text-decoration-none">
-                                                <p className="ms-5 fs-6">Need
-                                                    help?
+                                            <p className="ms-5 fs-6"><a href="#" className="text-decoration-none">Need
+                                                    help?</a>
                                             </p>
-                                            </Link>
                                         </div>
                                     </label>
                                 </div>
