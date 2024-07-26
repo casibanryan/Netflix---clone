@@ -68,7 +68,6 @@ function Modal({ movie, casts }) {
         data-bs-backdrop="static"
         data-bs-keyboard="false"
         tabIndex="-1"
-        aria-labelledby="staticBackdropLabel"
         aria-hidden="true"
       >
         <div className="modal-dialog modal-fullscreen">
@@ -151,13 +150,12 @@ function Modal({ movie, casts }) {
                           </div>
                           <div className="slide-trailor">
                             <h3>Watch Trailer</h3>
-                            <a
+                            <button
                               className="theme-btn theme-btn2 text-decoration-none fw-bold"
-                              href="javascript:void(0)"
                               onClick={() => handleClick(movie)}
                             >
                               <BsPlay size={28} /> Play
-                            </a>
+                            </button>
                           </div>
                         </div>
                       </div>
